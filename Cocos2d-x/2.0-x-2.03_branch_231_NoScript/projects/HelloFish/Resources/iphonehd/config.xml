@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<!--address ip0="127.0.0.1" ip="192.168.10.6" port="2000" port1="6100"/-->
+	<address ip="192.168.10.6" port="2000"/>
+	<debug_number number1="0.01f" number2="10f" comment="值越小精度越高" />
+</root>

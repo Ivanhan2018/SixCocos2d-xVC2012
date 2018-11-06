@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6E1DAB37-BB4D-43AE-8537-15D92DAE354F}</ProjectGuid>
+    <RootNamespace>HelloFishwin32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>HelloFish</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)cocos2dx;$(SolutionDir)cocos2dx\include;$(SolutionDir)cocos2dx\kazmath\include;$(SolutionDir)cocos2dx\platform\win32;$(SolutionDir)cocos2dx\platform\third_party\win32\OGLES;$(SolutionDir)cocos2dx\platform\third_party\win32\pthread;$(SolutionDir)cocos2dx\platform\third_party\win32\MMEAD;$(SolutionDir)CocosDenshion;$(SolutionDir)CocosDenshion\include;$(SolutionDir)extensions;$(SolutionDir)scripting\lua\cocos2dx_support;$(SolutionDir)scripting\lua\lua;$(SolutionDir)scripting\lua\tolua;$(SolutionDir)scripting\lua\src;..\Classes\SIX_Framework;..\Classes\SIX_Framework\Base_Interface;..\Classes\SIX_Framework\Game_Interface;..\Classes\SIX_Framework\JNI_Interface;..\Classes\SIX_Framework\Net_Interface;..\Classes\SIX_Framework\Shared_Interface;..\Classes\SIX_Framework\tinyxml;..\Classes\SIX_Framework\UI_Interface;.\;..\Classes;..\Classes\SIX_Classes;..\Classes\SIX_Head;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_USRLIB;TIXML_USE_STL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;iconv.lib;Winmm.lib;user32.lib;pthreadVCE2.lib;liblua.lib;libcurl_imp.lib;libBox2d.lib;libchipmunk.lib;libcocos2d.lib;libExtensions.lib;libCocosDenshion.lib;MMEAD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(SolutionDir)cocos2dx;$(SolutionDir)cocos2dx\include;$(SolutionDir)cocos2dx\kazmath\include;$(SolutionDir)cocos2dx\platform\win32;$(SolutionDir)cocos2dx\platform\third_party\win32\OGLES;$(SolutionDir)cocos2dx\platform\third_party\win32\pthread;$(SolutionDir)cocos2dx\platform\third_party\win32\MMEAD;$(SolutionDir)CocosDenshion;$(SolutionDir)CocosDenshion\include;$(SolutionDir)extensions;$(SolutionDir)scripting\lua\cocos2dx_support;$(SolutionDir)scripting\lua\lua;$(SolutionDir)scripting\lua\tolua;$(SolutionDir)scripting\lua\src;$(SolutionDir)SIX_Framework;$(SolutionDir)SIX_Framework\Base_Interface;$(SolutionDir)SIX_Framework\Game_Interface;$(SolutionDir)SIX_Framework\JNI_Interface;$(SolutionDir)SIX_Framework\Net_Interface;$(SolutionDir)SIX_Framework\Shared_Interface;$(SolutionDir)SIX_Framework\tinyxml;$(SolutionDir)SIX_Framework\UI_Interface;.\;..\Classes;..\Classes\SIX_Classes;$(SolutionDir)..\..\GoodFrame\PUBLIC_H;$(SolutionDir)..\..\GoodFrame\common;$(SolutionDir)..\..\GoodFrame\GameApp\Fish\GameMsg;$(SolutionDir)..\..\GoodFrame\APP_HEAD;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_USRLIB;TIXML_USE_STL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;iconv.lib;Winmm.lib;user32.lib;pthreadVCE2.lib;liblua.lib;libcurl_imp.lib;libBox2d.lib;libchipmunk.lib;libcocos2d.lib;libExtensions.lib;libCocosDenshion.lib;MMEAD.lib;SIX_Framework.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\SIX_Classes\BulletAndNetMgr.cpp" />
+    <ClCompile Include="..\Classes\SIX_Classes\CCActionEx.cpp" />
+    <ClCompile Include="..\Classes\SIX_Classes\Curve.cpp" />
+    <ClCompile Include="..\Classes\SIX_Classes\FishManage.cpp" />
+    <ClCompile Include="..\Classes\SIX_Classes\Gold.cpp" />
+    <ClCompile Include="..\Classes\SIX_Classes\Ship.cpp" />
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_ClientLogic.cpp" />
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_ClientRoom.cpp" />
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_ClientLogin.cpp" />
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_ConsoleGM.cpp" />
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_LoginPanel.cpp" />
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_MatchEnd.cpp" />
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_MatchList.cpp" />
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_PlayerMgr.cpp" />
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_PopWndBuyBullet.cpp" />
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_PopWndRank.cpp" />
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_PopWndSellFish.cpp" />
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_PopWndSetting.cpp" />
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_RippleGrid3D.cpp" />
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_RoomList.cpp" />
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_RoomMgr.cpp" />
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_SceneGame.cpp" />
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_SceneGate.cpp" />
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_World.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\JNI_Interface\SIX_CCJNIHelper.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\Net_Interface\SIX_ClientBase.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\Net_Interface\SIX_Http.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\Net_Interface\SIX_PackageMgr.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\Net_Interface\SIX_Proxy.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\Net_Interface\SIX_Socket.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\Net_Interface\SIX_SocketClient.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\Net_Interface\SIX_Thread.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\Shared_Interface\MiniDumper.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\Shared_Interface\SIX_CacheMgr.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\Shared_Interface\SIX_FileSystem.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\Shared_Interface\SIX_GlobalMgr.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\Shared_Interface\SIX_Logger.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\Shared_Interface\SIX_MusicMgr.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\Shared_Interface\SIX_UIMgr.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\Shared_Interface\SIX_UIScene.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\Shared_Interface\SIX_Utility.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\Shared_Interface\SIX_XMLParser.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\Shared_Interface\SmartRes.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\tinyxml\tinystr.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\tinyxml\tinyxml.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_Console.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_CountDown.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_Cursor.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_DisconnectBox.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_EditBox.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_EffectBatchNode.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_EffectPopWnd.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_ExpandLayer.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_ListView.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_ListViewCell.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_MsgBox.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_NumberBatchNode.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_PopWnd.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_Scissor.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_ScrollBar.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_Slider.cpp" />
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_UILayer.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\SIX_Classes\BulletAndNetMgr.h" />
+    <ClInclude Include="..\Classes\SIX_Classes\CCActionEx.h" />
+    <ClInclude Include="..\Classes\SIX_Classes\Curve.h" />
+    <ClInclude Include="..\Classes\SIX_Classes\FishManage.h" />
+    <ClInclude Include="..\Classes\SIX_Classes\Gold.h" />
+    <ClInclude Include="..\Classes\SIX_Classes\Ship.h" />
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_ClientLogic.h" />
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_ClientRoom.h" />
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_ClientLogin.h" />
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_Common.h" />
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_ConsoleGM.h" />
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_LoginPanel.h" />
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_MatchEnd.h" />
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_MatchList.h" />
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_PlayerMgr.h" />
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_PopWndBuyBullet.h" />
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_PopWndRank.h" />
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_PopWndSellFish.h" />
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_PopWndSetting.h" />
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_RippleGrid3D.h" />
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_RoomList.h" />
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_RoomMgr.h" />
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_SceneGame.h" />
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_SceneGate.h" />
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_World.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\JNI_Interface\SIX_CCJNIHelper.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\Net_Interface\SIX_ClientBase.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\Net_Interface\SIX_Http.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\Net_Interface\SIX_PackageMgr.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\Net_Interface\SIX_Proxy.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\Net_Interface\SIX_Socket.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\Net_Interface\SIX_SocketClient.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\Net_Interface\SIX_Thread.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\collisionLib.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\MiniDumper.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\polygon.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\SIX_CacheMgr.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\SIX_FileSystem.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\SIX_GlobalMgr.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\SIX_Logger.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\SIX_MusicMgr.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\SIX_UIMgr.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\SIX_UIScene.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\SIX_Utility.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\SIX_XMLParser.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\SmartRes.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\tinyxml\tinystr.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\tinyxml\tinyxml.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_Console.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_CountDown.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_Cursor.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_DisconnectBox.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_EditBox.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_EffectBatchNode.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_EffectPopWnd.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_ExpandLayer.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_ListView.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_ListViewCell.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_MsgBox.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_NumberBatchNode.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_PopWnd.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_Scissor.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_ScrollBar.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_Slider.h" />
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_UILayer.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\cocos2dx\proj.win32\cocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\CocosDenshion\proj.win32\CocosDenshion.vcxproj">
+      <Project>{f8edd7fa-9a51-4e80-baeb-860825d2eac6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="HelloFish.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

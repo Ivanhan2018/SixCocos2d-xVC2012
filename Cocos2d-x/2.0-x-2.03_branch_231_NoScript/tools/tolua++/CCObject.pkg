@@ -1,0 +1,23 @@
+
+class CCObject
+{
+    void release(void);
+    void retain(void);
+    bool isSingleReference(void);
+    unsigned int retainCount(void);
+    bool isEqual(const CCObject* pObject);
+	CCObject* copy();
+	CCObject* autorelease();
+	
+	// Add by Cool.Cat
+	void setObjName(const char *name)
+	{
+		m_Name.clear();
+		m_Name.append(name);
+	}
+	const char *getObjName()
+	{
+		return m_Name.c_str();
+	}
+	std::string m_Name;	
+};

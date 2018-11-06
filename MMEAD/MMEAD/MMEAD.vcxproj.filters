@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Miracl">
+      <UniqueIdentifier>{73f3ccfb-24a8-4d9b-85d4-11a2d065c770}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="big.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="blowfish.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CRC32.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ECC.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ecn.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ElGamal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MD5.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MMEAD.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MMEAD_Config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MMUtility.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RSA.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SHA.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TDEA.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Miracl\miracl.h">
+      <Filter>Miracl</Filter>
+    </ClInclude>
+    <ClInclude Include="Miracl\mirdef.h">
+      <Filter>Miracl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="big.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="blowfish.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CRC32.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ECC.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ecn.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ElGamal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MD5.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MMEAD.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MMUtility.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RSA.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SHA.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TDEA.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mraes.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mralloc.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrarth0.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrarth1.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrarth2.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrarth3.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrbits.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrbrick.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrbuild.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrcore.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrcrt.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrcurve.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrdouble.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrebrick.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrec2m.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrecn2.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrfast.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrflash.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrflsh1.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrflsh2.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrflsh3.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrflsh4.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrfrnd.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrgcd.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrgcm.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrgf2m.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrio1.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrio2.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrjack.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrlucas.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrmonty.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrpi.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrpower.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrprime.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrrand.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrround.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrscrt.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrshs.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrshs256.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrshs512.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrsmall.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrsroot.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrstrong.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrxgcd.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrzzn2.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrzzn2b.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+    <ClCompile Include="Miracl\mrzzn3.c">
+      <Filter>Miracl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="blowfish.h2">
+      <Filter>头文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>

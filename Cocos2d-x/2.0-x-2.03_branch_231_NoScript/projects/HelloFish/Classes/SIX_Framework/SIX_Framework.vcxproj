@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Base_Interface\SIX_DSTPL.h" />
+    <ClInclude Include="Base_Interface\SIX_EntityMgr.h" />
+    <ClInclude Include="Base_Interface\SIX_IInterface.h" />
+    <ClInclude Include="Base_Interface\SIX_Interface.h" />
+    <ClInclude Include="Base_Interface\SIX_Lock.h" />
+    <ClInclude Include="Base_Interface\SIX_TList.h" />
+    <ClInclude Include="Base_Interface\SIX_TMap.h" />
+    <ClInclude Include="Base_Interface\SIX_TRBuffer.h" />
+    <ClInclude Include="Base_Interface\SIX_Typedef.h" />
+    <ClInclude Include="Base_Interface\TSingleton.h" />
+    <ClInclude Include="Base_Interface\xorstr.h" />
+    <ClInclude Include="Net_Interface\SIX_ClientBase.h" />
+    <ClInclude Include="Net_Interface\SIX_Http.h" />
+    <ClInclude Include="Net_Interface\SIX_PackageMgr.h" />
+    <ClInclude Include="Net_Interface\SIX_Proxy.h" />
+    <ClInclude Include="Net_Interface\SIX_Socket.h" />
+    <ClInclude Include="Net_Interface\SIX_SocketClient.h" />
+    <ClInclude Include="Net_Interface\SIX_Thread.h" />
+    <ClInclude Include="Shared_Interface\collisionLib.h" />
+    <ClInclude Include="Shared_Interface\MiniDumper.h" />
+    <ClInclude Include="Shared_Interface\polygon.h" />
+    <ClInclude Include="Shared_Interface\SIX_CacheMgr.h" />
+    <ClInclude Include="Shared_Interface\SIX_FileSystem.h" />
+    <ClInclude Include="Shared_Interface\SIX_GlobalMgr.h" />
+    <ClInclude Include="Shared_Interface\SIX_Logger.h" />
+    <ClInclude Include="Shared_Interface\SIX_MusicMgr.h" />
+    <ClInclude Include="Shared_Interface\SIX_UIMgr.h" />
+    <ClInclude Include="Shared_Interface\SIX_UIScene.h" />
+    <ClInclude Include="Shared_Interface\SIX_Utility.h" />
+    <ClInclude Include="Shared_Interface\SIX_XMLParser.h" />
+    <ClInclude Include="Shared_Interface\SmartRes.h" />
+    <ClInclude Include="tinyxml\tinystr.h" />
+    <ClInclude Include="tinyxml\tinyxml.h" />
+    <ClInclude Include="UI_Interface\SIX_Console.h" />
+    <ClInclude Include="UI_Interface\SIX_CountDown.h" />
+    <ClInclude Include="UI_Interface\SIX_Cursor.h" />
+    <ClInclude Include="UI_Interface\SIX_DisconnectBox.h" />
+    <ClInclude Include="UI_Interface\SIX_EditBox.h" />
+    <ClInclude Include="UI_Interface\SIX_EffectBatchNode.h" />
+    <ClInclude Include="UI_Interface\SIX_EffectPopWnd.h" />
+    <ClInclude Include="UI_Interface\SIX_ExpandLayer.h" />
+    <ClInclude Include="UI_Interface\SIX_ListView.h" />
+    <ClInclude Include="UI_Interface\SIX_ListViewCell.h" />
+    <ClInclude Include="UI_Interface\SIX_MsgBox.h" />
+    <ClInclude Include="UI_Interface\SIX_NumberBatchNode.h" />
+    <ClInclude Include="UI_Interface\SIX_PopWnd.h" />
+    <ClInclude Include="UI_Interface\SIX_Scissor.h" />
+    <ClInclude Include="UI_Interface\SIX_ScrollBar.h" />
+    <ClInclude Include="UI_Interface\SIX_Slider.h" />
+    <ClInclude Include="UI_Interface\SIX_UILayer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Net_Interface\SIX_ClientBase.cpp" />
+    <ClCompile Include="Net_Interface\SIX_Http.cpp" />
+    <ClCompile Include="Net_Interface\SIX_PackageMgr.cpp" />
+    <ClCompile Include="Net_Interface\SIX_Proxy.cpp" />
+    <ClCompile Include="Net_Interface\SIX_Socket.cpp" />
+    <ClCompile Include="Net_Interface\SIX_SocketClient.cpp" />
+    <ClCompile Include="Net_Interface\SIX_Thread.cpp" />
+    <ClCompile Include="Shared_Interface\MiniDumper.cpp" />
+    <ClCompile Include="Shared_Interface\SIX_CacheMgr.cpp" />
+    <ClCompile Include="Shared_Interface\SIX_FileSystem.cpp" />
+    <ClCompile Include="Shared_Interface\SIX_GlobalMgr.cpp" />
+    <ClCompile Include="Shared_Interface\SIX_Logger.cpp" />
+    <ClCompile Include="Shared_Interface\SIX_MusicMgr.cpp" />
+    <ClCompile Include="Shared_Interface\SIX_UIMgr.cpp" />
+    <ClCompile Include="Shared_Interface\SIX_UIScene.cpp" />
+    <ClCompile Include="Shared_Interface\SIX_Utility.cpp" />
+    <ClCompile Include="Shared_Interface\SIX_XMLParser.cpp" />
+    <ClCompile Include="Shared_Interface\SmartRes.cpp" />
+    <ClCompile Include="tinyxml\tinystr.cpp" />
+    <ClCompile Include="tinyxml\tinyxml.cpp" />
+    <ClCompile Include="tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="UI_Interface\SIX_Console.cpp" />
+    <ClCompile Include="UI_Interface\SIX_CountDown.cpp" />
+    <ClCompile Include="UI_Interface\SIX_Cursor.cpp" />
+    <ClCompile Include="UI_Interface\SIX_DisconnectBox.cpp" />
+    <ClCompile Include="UI_Interface\SIX_EditBox.cpp" />
+    <ClCompile Include="UI_Interface\SIX_EffectBatchNode.cpp" />
+    <ClCompile Include="UI_Interface\SIX_EffectPopWnd.cpp" />
+    <ClCompile Include="UI_Interface\SIX_ExpandLayer.cpp" />
+    <ClCompile Include="UI_Interface\SIX_ListView.cpp" />
+    <ClCompile Include="UI_Interface\SIX_ListViewCell.cpp" />
+    <ClCompile Include="UI_Interface\SIX_MsgBox.cpp" />
+    <ClCompile Include="UI_Interface\SIX_NumberBatchNode.cpp" />
+    <ClCompile Include="UI_Interface\SIX_PopWnd.cpp" />
+    <ClCompile Include="UI_Interface\SIX_Scissor.cpp" />
+    <ClCompile Include="UI_Interface\SIX_ScrollBar.cpp" />
+    <ClCompile Include="UI_Interface\SIX_Slider.cpp" />
+    <ClCompile Include="UI_Interface\SIX_UILayer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI_Interface\SIX_UIMgr解析说明.txt" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5BF128D7-B590-4134-9494-BC60A1C83B66}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SIX_Framework</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_USRLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <AdditionalIncludeDirectories>$(SolutionDir)cocos2dx;$(SolutionDir)cocos2dx\include;$(SolutionDir)cocos2dx\kazmath\include;$(SolutionDir)cocos2dx\platform\win32;$(SolutionDir)cocos2dx\platform\third_party\win32\OGLES;$(SolutionDir)cocos2dx\platform\third_party\win32\pthread;$(SolutionDir)cocos2dx\platform\third_party\win32\MMEAD;$(SolutionDir)CocosDenshion;$(SolutionDir)CocosDenshion\include;$(SolutionDir)extensions;$(SolutionDir)scripting\lua\cocos2dx_support;$(SolutionDir)scripting\lua\lua;$(SolutionDir)scripting\lua\tolua;$(SolutionDir)scripting\lua\src;$(SolutionDir)SIX_Framework;$(SolutionDir)SIX_Framework\Base_Interface;$(SolutionDir)SIX_Framework\Net_Interface;$(SolutionDir)SIX_Framework\Shared_Interface;$(SolutionDir)SIX_Framework\tinyxml;$(SolutionDir)SIX_Framework\UI_Interface;$(SolutionDir)..\..\GoodFrame\PUBLIC_H</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_USRLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <AdditionalIncludeDirectories>$(SolutionDir)cocos2dx;$(SolutionDir)cocos2dx\include;$(SolutionDir)cocos2dx\kazmath\include;$(SolutionDir)cocos2dx\platform\win32;$(SolutionDir)cocos2dx\platform\third_party\win32\OGLES;$(SolutionDir)cocos2dx\platform\third_party\win32\pthread;$(SolutionDir)cocos2dx\platform\third_party\win32\MMEAD;$(SolutionDir)CocosDenshion;$(SolutionDir)CocosDenshion\include;$(SolutionDir)extensions;$(SolutionDir)scripting\lua\cocos2dx_support;$(SolutionDir)scripting\lua\lua;$(SolutionDir)scripting\lua\tolua;$(SolutionDir)scripting\lua\src;$(SolutionDir)SIX_Framework;$(SolutionDir)SIX_Framework\Base_Interface;$(SolutionDir)SIX_Framework\Net_Interface;$(SolutionDir)SIX_Framework\Shared_Interface;$(SolutionDir)SIX_Framework\tinyxml;$(SolutionDir)SIX_Framework\UI_Interface;$(SolutionDir)..\..\GoodFrame\PUBLIC_H</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

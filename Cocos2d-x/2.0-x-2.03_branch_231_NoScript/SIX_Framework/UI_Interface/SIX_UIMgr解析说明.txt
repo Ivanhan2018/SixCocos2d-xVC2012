@@ -1,0 +1,31 @@
+-----------------------------------------------------------
+【已经实现通过SIX_UIMgr解析的原生控件】
+-----------------------------------------------------------
+Cool.Cat@2013/4/5 12:45:50
+-----------------------------------------------------------
+1、CCNode
+2、CCProgressTimer
+3、CCSprite
+4、CCLabelTTF
+5、CCMenuItem
+6、CCMenuItemToggle
+7、CCMenuItemSprite
+8、CCMenuItemImage
+9、CCMenuItemLabel
+10、CCMenuItemAtlasFont
+11、CCMenuItemFont
+12、CCLayer
+13、CCMenu
+14、CCLayerMultiplex
+15、CCLayerColor
+16、CCLayerGradient
+17、CCControl
+18、CCControlButton
+
+说明：
+1、CCControlButton、CCProgressTimer为比较复杂的组合控件，具体实现有别于其他控件；
+2、CCControlButton=CCLabelTTF+CCScale9Sprite；
+3、CCProgressTimer=CCSprite x N；
+4、xml布局文件只使用比较简单的UI控件，例如：Button、LabelTTF、ProgressTimer等；
+5、复杂的UI控件，例如需要回调脚本的，尽量放脚本onEnter()中去初始化。
+6、其他关于纹理或者粒子的控件未解析，过于复杂，待以后再实现；

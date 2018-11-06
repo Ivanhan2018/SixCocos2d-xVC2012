@@ -1,0 +1,35 @@
+/*********************************************************
+Name：SIX_ClientLogic
+Desc：SOCKET交互接口，所有网络消息丢到SIX_Proxy代理中，
+      由UI线程处理。
+Auth：Cool.Cat@2013-05-08
+*********************************************************/
+class SIX_ClientLogic : public IBaseTableClient
+{
+public:
+	SIX_ClientLogic(void);
+	~SIX_ClientLogic(void);
+
+public:
+	virtual void OnConnect(bool bIsReconnect, sockaddr_in addrConnect);
+	virtual void OnConnectFail(bool bIsReconnect, int iError, sockaddr_in addrConnect);
+	virtual void OnCommError(char* pszError);
+	virtual void OnSend(int iMainCode, int iSubCode, const BYTE* pData, int iDataLen);
+	virtual void OnSendFailed(int iMainCode, int iSubCode, const BYTE* pData, int iDataLen);
+	virtual void OnClose(bool bClientClose);
+	// 桌子消息
+	virtual void OnTableMsg(int iMainCode, int iSubCode, const BYTE* pData, int iDataLen);
+
+	bool IsNeedExit();
+	int stop();
+
+	//--- 游戏逻辑部分 ---------------------------------
+
+	// 测试
+	int test();
+
+	// 开火
+	int fire();
+	
+	int RandomUser(char* pszName);
+};

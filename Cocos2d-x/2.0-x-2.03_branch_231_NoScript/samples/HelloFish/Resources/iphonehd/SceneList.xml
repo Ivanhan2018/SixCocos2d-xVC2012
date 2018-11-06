@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+	<SceneList>
+		<Scene id="0" path="Scene/SceneRoom.lua" />
+		<Scene id="1" path="Scene/SceneLoading.lua" />
+		<Scene id="2" path="Scene/SceneGame.lua" />
+	</SceneList>
+</Root>

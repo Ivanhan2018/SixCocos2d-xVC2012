@@ -1,0 +1,17 @@
+F:\cocos2d-x-2.2.5\tools\project-creator>python create_project.py -project HelloUI -package org.cocos2dx.helloui -language cpp
+
+setViewName改为setWindowTitle
+
+
+预链接事件删除
+xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutDir)"
+附加依赖项删除
+websockets.lib
+运行库
+多线程调试 DLL (/MDd)改为多线程调试 (/MTd)
+预处理器定义
+使用静态链接库，加上_USRLIB;
+
+预链接事件删除
+libcocos2d
+xcopy /Y /Q "$(SolutionDir)cocos2dx\platform\third_party\win32\libraries\*.*" "$(OutDir)"

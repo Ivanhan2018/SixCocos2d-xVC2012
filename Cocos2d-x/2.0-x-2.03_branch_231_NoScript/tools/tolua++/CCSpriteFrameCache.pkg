@@ -1,0 +1,25 @@
+
+class CCSpriteFrameCache : public CCObject
+{
+	// 外部插入plist路径
+	// Cool.Cat
+	void insertPlist(const char *pszPlist);
+	void addSpriteFramesWithDictionary(CCDictionary* pobDictionary, CCTexture2D *pobTexture);
+	
+    void addSpriteFramesWithFile(const char *pszPlist);
+    void addSpriteFramesWithFile(const char* plist, const char* textureFileName);
+    void addSpriteFramesWithFile(const char *pszPlist, CCTexture2D *pobTexture);
+    void addSpriteFrame(CCSpriteFrame *pobFrame, const char *pszFrameName);
+
+    void removeSpriteFrames(void);
+    void removeUnusedSpriteFrames(void);
+    void removeSpriteFrameByName(const char *pszName);
+    void removeSpriteFramesFromFile(const char* plist);
+    //void removeSpriteFramesFromDictionary(CCDictionary<std::string, CCSpriteFrame*> *dictionary);
+    void removeSpriteFramesFromTexture(CCTexture2D* texture);
+
+    CCSpriteFrame* spriteFrameByName(const char *pszName);
+
+    static CCSpriteFrameCache* sharedSpriteFrameCache(void);
+    static void purgeSharedSpriteFrameCache(void);
+};

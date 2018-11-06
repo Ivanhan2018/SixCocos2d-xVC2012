@@ -1,0 +1,88 @@
+/********************************************************************
+	created:	2013/05/17
+	created:	17:5:2013   17:18
+	filename: 	E:\SixDivisions\GoodFRame\PUBLIC_H\GameSkeletonMsgCode.h
+	file path:	E:\SixDivisions\GoodFRame\PUBLIC_H
+	file base:	SkeletonMsgCode
+	file ext:	h
+	author:		侯国江
+	
+	purpose:	骨架消息码
+*********************************************************************/
+enum MAIN_MSG_CODE	// 注消息码
+{
+	ROOM_MAIN							= 10,	// 房间消息
+	ROOM_MAIN_DB						= 15,	// 房间涉及写数据库的消息
+
+	MANAGER_MAIN						= 20,	// 管理员消息
+	MATCH_MAIN							= 40,	// 比赛消息
+	TASK_MAIN							= 50,	// 游戏任务消息
+	PROP_MAIN							= 60,	// 道具消息
+
+	TABLE_MAIN							= 1000,	// 桌子消息
+};
+
+enum ROOM_SUB_MSG_CODE	// 房间辅助消息码
+{
+
+	ROOM_SUB_MY_TEST					= 10,	// 测试用
+	ROOM_SUB_LOGIN						= 100,	// 房间登录
+	ROOM_SUB_PASS_VERIFY				= 110,	// 用户名与密码效验
+	ROOM_SUB_LOGIN_SUCC					= 115,	// 登录房间成功
+	ROOM_SUB_LOGIN_FAIL					= 120,	// 用户登录失败
+	ROOM_SUB_USER_INFO					= 126,	// 用户信息
+	ROOM_SUB_TABLE_LIST					= 127,	// 获取桌子列表
+	ROOM_SUB_TABLE_LIST_OVER			= 128,	// 获取桌子列表结束
+	ROOM_SUB_USER_LIST					= 130,	// 房间内的用户列表
+	ROOM_SUB_USER_LIST_OVER				= 132,	// 用户列表结束
+	ROOM_SUB_LEAVE_ROOM					= 180,	// 离房
+
+	ROOM_SUB_RECOME						= 190,	// 断线重入
+
+	ROOM_SUB_WRITE_SCORE				= 200,	// 写分
+	ROOM_SUB_WRITE_SCORE_RESULT			= 210,	// 写分结束
+};
+
+enum MANAGER_SUB_MSG_CODE	// 管理员辅助消息码
+{
+	MANAGER_SUB_POWER_ERR				= 100,	// 无此管理权限
+	MANAGER_SUB_SET_ROOM_STATE			= 150,	// 设置房间状态
+	MANAGER_SUB_TICK_ONE_LEAVE_SEAT		= 300,	// 踢一个玩家离座
+	MANAGER_SUB_TICK_TABLE_LEAVE_SEAT	= 310,	// 踢一桌玩家离座
+	MANAGER_SUB_TICK_ALL_LEAVE_SEAT		= 320,	// 踢所有在座的玩家离座
+	MANAGER_SUB_TICK_USER_OUT_ROOM		= 350,	// 踢玩家离房
+};
+
+enum MATCH_SUB_MSG_CODE	// 比赛辅助消息码
+{
+	MATCH_SUB_TEST = 10,	// 测试用
+};
+
+enum TASK_SUB_MSG_CODE	// 游戏任务辅助消息码
+{
+	TASK_SUB_TEST = 10,	// 测试用
+};
+
+enum PROP_SUB_MSG_CODE	// 道具辅助消息码
+{
+	PROP_SUB_TEST = 10,	// 测试用
+};
+
+//--- 桌子部分 -----------------------------------------------------
+
+enum TABLE_SUB_MSG_CODE	// 桌子辅助消息码
+{
+	//TABLE_SUB_LOGIN = 100,	// 桌子登录
+	//TABLE_SUB_PASS_VERIFY = 110,	// 用户名与密码效验
+	//TABLE_SUB_LOGIN_FAIL = 120,	// 用户登录失败
+	//TABLE_SUB_USER_INFO = 126,	// 用户信息
+	//TABLE_SUB_USER_LIST = 130,	// 用户列表
+	//TABLE_SUB_USER_LIST_OVER = 132,	// 用户列表结束
+
+	TABLE_SUB_SITDOWN					= 140,	// 入座
+	TABLE_SUB_FIRE						= 150,	// 开火
+	TABLE_SUB_WRITE_SCORE				= 160,	// 写分
+	TABLE_SUB_LEAVE_SEAT				= 170,	// 离座
+
+	TABLE_SUB_RAISE_HAND			= 200,	// 举手，坐下后的消息，客户端要等到初始化完毕后，发此消息，服务端才发鱼
+};

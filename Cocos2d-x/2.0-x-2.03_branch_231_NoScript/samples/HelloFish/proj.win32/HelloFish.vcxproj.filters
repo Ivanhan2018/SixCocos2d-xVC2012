@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{bb69dcd5-2ab5-4d7e-8be1-8bc900dccf57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SIX_Classes">
+      <UniqueIdentifier>{090588e0-fb9e-43cb-bd53-d08c3241a734}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SIX_Framework">
+      <UniqueIdentifier>{8e1311dd-c6a0-45f6-adc1-50085ac19c19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SIX_Framework\Game_Interface">
+      <UniqueIdentifier>{2768d3b3-619f-4695-9dd6-8a84fefc8b84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SIX_Framework\JNI_Interface">
+      <UniqueIdentifier>{d1c50a10-1a69-4b6f-be4b-e3c1c1e5e380}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SIX_Framework\Net_Interface">
+      <UniqueIdentifier>{26f90c8e-eb74-4206-915d-9a8732018947}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SIX_Framework\Shared_Interface">
+      <UniqueIdentifier>{a5c01fad-7ce9-4948-94a0-5772a24427c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SIX_Framework\tinyxml">
+      <UniqueIdentifier>{c603db6d-82d5-4a47-828e-5fd10f260058}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SIX_Framework\UI_Interface">
+      <UniqueIdentifier>{c9d69f21-f0f5-440f-8fb3-d04a557f1139}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_World.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_SceneGame.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\FishManage.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\Gold.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\Ship.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\Curve.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\BulletAndNetMgr.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_SceneGate.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_RippleGrid3D.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_PopWndSetting.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_PopWndBuyBullet.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_PopWndSellFish.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_RoomList.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_ClientLogin.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_ClientRoom.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_PlayerMgr.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_MatchList.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_MatchEnd.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_ConsoleGM.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_PopWndRank.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_LoginPanel.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_RoomMgr.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_ClientLogic.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\CCActionEx.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\JNI_Interface\SIX_CCJNIHelper.cpp">
+      <Filter>Classes\SIX_Framework\JNI_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\Net_Interface\SIX_ClientBase.cpp">
+      <Filter>Classes\SIX_Framework\Net_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\Net_Interface\SIX_Http.cpp">
+      <Filter>Classes\SIX_Framework\Net_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\Net_Interface\SIX_PackageMgr.cpp">
+      <Filter>Classes\SIX_Framework\Net_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\Net_Interface\SIX_Proxy.cpp">
+      <Filter>Classes\SIX_Framework\Net_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\Net_Interface\SIX_Socket.cpp">
+      <Filter>Classes\SIX_Framework\Net_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\Net_Interface\SIX_SocketClient.cpp">
+      <Filter>Classes\SIX_Framework\Net_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\Net_Interface\SIX_Thread.cpp">
+      <Filter>Classes\SIX_Framework\Net_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\Shared_Interface\MiniDumper.cpp">
+      <Filter>Classes\SIX_Framework\Shared_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\Shared_Interface\SIX_CacheMgr.cpp">
+      <Filter>Classes\SIX_Framework\Shared_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\Shared_Interface\SIX_FileSystem.cpp">
+      <Filter>Classes\SIX_Framework\Shared_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\Shared_Interface\SIX_GlobalMgr.cpp">
+      <Filter>Classes\SIX_Framework\Shared_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\Shared_Interface\SIX_Logger.cpp">
+      <Filter>Classes\SIX_Framework\Shared_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\Shared_Interface\SIX_MusicMgr.cpp">
+      <Filter>Classes\SIX_Framework\Shared_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\Shared_Interface\SIX_UIMgr.cpp">
+      <Filter>Classes\SIX_Framework\Shared_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\Shared_Interface\SIX_UIScene.cpp">
+      <Filter>Classes\SIX_Framework\Shared_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\Shared_Interface\SIX_Utility.cpp">
+      <Filter>Classes\SIX_Framework\Shared_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\Shared_Interface\SIX_XMLParser.cpp">
+      <Filter>Classes\SIX_Framework\Shared_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\Shared_Interface\SmartRes.cpp">
+      <Filter>Classes\SIX_Framework\Shared_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\tinyxml\tinystr.cpp">
+      <Filter>Classes\SIX_Framework\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\tinyxml\tinyxml.cpp">
+      <Filter>Classes\SIX_Framework\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\tinyxml\tinyxmlerror.cpp">
+      <Filter>Classes\SIX_Framework\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\tinyxml\tinyxmlparser.cpp">
+      <Filter>Classes\SIX_Framework\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_Console.cpp">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_CountDown.cpp">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_Cursor.cpp">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_DisconnectBox.cpp">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_EditBox.cpp">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_EffectBatchNode.cpp">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_EffectPopWnd.cpp">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_ExpandLayer.cpp">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_ListView.cpp">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_ListViewCell.cpp">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_MsgBox.cpp">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_NumberBatchNode.cpp">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_PopWnd.cpp">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_Scissor.cpp">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_ScrollBar.cpp">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_Slider.cpp">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Framework\UI_Interface\SIX_UILayer.cpp">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_World.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_Common.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_SceneGame.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\FishManage.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\Gold.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\Ship.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\Curve.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\BulletAndNetMgr.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_SceneGate.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_RippleGrid3D.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_PopWndSetting.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_PopWndBuyBullet.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_PopWndSellFish.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_RoomList.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_ClientLogin.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_ClientRoom.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_PlayerMgr.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_MatchList.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_MatchEnd.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_ConsoleGM.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_PopWndRank.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_LoginPanel.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_RoomMgr.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_ClientLogic.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\CCActionEx.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\JNI_Interface\SIX_CCJNIHelper.h">
+      <Filter>Classes\SIX_Framework\JNI_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\Net_Interface\SIX_ClientBase.h">
+      <Filter>Classes\SIX_Framework\Net_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\Net_Interface\SIX_Http.h">
+      <Filter>Classes\SIX_Framework\Net_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\Net_Interface\SIX_PackageMgr.h">
+      <Filter>Classes\SIX_Framework\Net_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\Net_Interface\SIX_Proxy.h">
+      <Filter>Classes\SIX_Framework\Net_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\Net_Interface\SIX_Socket.h">
+      <Filter>Classes\SIX_Framework\Net_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\Net_Interface\SIX_SocketClient.h">
+      <Filter>Classes\SIX_Framework\Net_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\Net_Interface\SIX_Thread.h">
+      <Filter>Classes\SIX_Framework\Net_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\collisionLib.h">
+      <Filter>Classes\SIX_Framework\Shared_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\MiniDumper.h">
+      <Filter>Classes\SIX_Framework\Shared_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\polygon.h">
+      <Filter>Classes\SIX_Framework\Shared_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\SIX_CacheMgr.h">
+      <Filter>Classes\SIX_Framework\Shared_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\SIX_FileSystem.h">
+      <Filter>Classes\SIX_Framework\Shared_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\SIX_GlobalMgr.h">
+      <Filter>Classes\SIX_Framework\Shared_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\SIX_Logger.h">
+      <Filter>Classes\SIX_Framework\Shared_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\SIX_MusicMgr.h">
+      <Filter>Classes\SIX_Framework\Shared_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\SIX_UIMgr.h">
+      <Filter>Classes\SIX_Framework\Shared_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\SIX_UIScene.h">
+      <Filter>Classes\SIX_Framework\Shared_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\SIX_Utility.h">
+      <Filter>Classes\SIX_Framework\Shared_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\SIX_XMLParser.h">
+      <Filter>Classes\SIX_Framework\Shared_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\Shared_Interface\SmartRes.h">
+      <Filter>Classes\SIX_Framework\Shared_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\tinyxml\tinystr.h">
+      <Filter>Classes\SIX_Framework\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\tinyxml\tinyxml.h">
+      <Filter>Classes\SIX_Framework\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_Console.h">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_CountDown.h">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_Cursor.h">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_DisconnectBox.h">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_EditBox.h">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_EffectBatchNode.h">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_EffectPopWnd.h">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_ExpandLayer.h">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_ListView.h">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_ListViewCell.h">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_MsgBox.h">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_NumberBatchNode.h">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_PopWnd.h">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_Scissor.h">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_ScrollBar.h">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_Slider.h">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Framework\UI_Interface\SIX_UILayer.h">
+      <Filter>Classes\SIX_Framework\UI_Interface</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="HelloFish.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+</Project>

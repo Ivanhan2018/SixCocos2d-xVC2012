@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<!--
+	<address ip="112.124.39.86" port="5150" />
+	-->
+	<address ip="192.168.1.101" port="2000" />
+	<debug_number number1="0.01f" number2="10f" comment="值越小精度越高" />
+</root>

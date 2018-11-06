@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="text_size_0">18</integer>
+    <integer name="text_size_1">24</integer>
+    <integer name="text_size_2"> 32</integer>
+    <integer name="cutbar_size_0"> 14</integer>
+    <integer name="cutbar_size_1"> 16</integer>
+    <integer name="cutbar_size_2"> 16</integer>
+    <integer name="server_size_0"> 14</integer>
+    <integer name="server_size_1"> 18</integer>
+    <integer name="server_size_2"> 20</integer>
+    <integer name="tip_size_0">16</integer>
+    <integer name="tip_size_1"> 16</integer>
+    <integer name="tip_size_2"> 24</integer>
+
+</resources>

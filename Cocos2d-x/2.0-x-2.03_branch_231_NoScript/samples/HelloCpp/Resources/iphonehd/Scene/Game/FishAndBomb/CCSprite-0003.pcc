@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pcc version="1">
+    <Scene bg="" />
+    <Sprite name="CCSprite-0001" path="C:\Users\Administrator\Desktop\Art\鱼类级别排序\__fishAndBomb调整过的大小\Fish_03\3">
+        <Frames name="Fish_03_00000.png">
+            <Pos idx="1" x="8.5" y="31.5" />
+            <Pos idx="2" x="20.5" y="50.5" />
+            <Pos idx="3" x="55.5" y="58.5" />
+            <Pos idx="4" x="82.5" y="41.5" />
+            <Pos idx="5" x="82.5" y="34.5" />
+            <Pos idx="6" x="88.5" y="34.5" />
+            <Pos idx="7" x="89.5" y="16.5" />
+            <Pos idx="8" x="80.5" y="16.5" />
+            <Pos idx="9" x="73.5" y="10.5" />
+            <Pos idx="10" x="45.5" y="14.5" />
+            <Pos idx="11" x="31.5" y="12.5" />
+            <Pos idx="12" x="24.5" y="20.5" />
+        </Frames>
+        <Frames name="Fish_03_00001.png">
+            <Pos idx="1" x="7.5" y="31.5" />
+            <Pos idx="2" x="17.5" y="48.5" />
+            <Pos idx="3" x="54.5" y="59.5" />
+            <Pos idx="4" x="78.5" y="48.5" />
+            <Pos idx="5" x="84.5" y="35.5" />
+            <Pos idx="6" x="92.5" y="36.5" />
+            <Pos idx="7" x="91.5" y="17.5" />
+            <Pos idx="8" x="83.5" y="19.5" />
+            <Pos idx="9" x="78.5" y="9.5" />
+            <Pos idx="10" x="44.5" y="14.5" />
+            <Pos idx="11" x="35.5" y="7.5" />
+            <Pos idx="12" x="27.5" y="17.5" />
+        </Frames>
+        <Frames name="Fish_03_00002.png">
+            <Pos idx="1" x="8.5" y="32.5" />
+            <Pos idx="2" x="18.5" y="48.5" />
+            <Pos idx="3" x="31.5" y="50.5" />
+            <Pos idx="4" x="44.5" y="58.5" />
+            <Pos idx="5" x="78.5" y="50.5" />
+            <Pos idx="6" x="84.5" y="40.5" />
+            <Pos idx="7" x="93.5" y="40.5" />
+            <Pos idx="8" x="93.5" y="20.5" />
+            <Pos idx="9" x="88.5" y="21.5" />
+            <Pos idx="10" x="74.5" y="11.5" />
+            <Pos idx="11" x="39.5" y="15.5" />
+            <Pos idx="12" x="37.5" y="7.5" />
+            <Pos idx="13" x="30.5" y="10.5" />
+            <Pos idx="14" x="27.5" y="16.5" />
+            <Pos idx="15" x="13.5" y="24.5" />
+        </Frames>
+        <Frames name="Fish_03_00003.png">
+            <Pos idx="1" x="8.5" y="30.5" />
+            <Pos idx="2" x="19.5" y="49.5" />
+            <Pos idx="3" x="57.5" y="58.5" />
+            <Pos idx="4" x="93.5" y="42.5" />
+            <Pos idx="5" x="93.5" y="26.5" />
+            <Pos idx="7" x="86.5" y="24.5" />
+            <Pos idx="8" x="72.5" y="11.5" />
+            <Pos idx="9" x="28.5" y="17.5" />
+        </Frames>
+        <Frames name="Fish_03_00004.png">
+            <Pos idx="1" x="7.5" y="31.5" />
+            <Pos idx="2" x="16.5" y="46.5" />
+            <Pos idx="3" x="50.5" y="58.5" />
+            <Pos idx="4" x="90.5" y="47.5" />
+            <Pos idx="5" x="91.5" y="30.5" />
+            <Pos idx="6" x="84.5" y="29.5" />
+            <Pos idx="7" x="78.5" y="16.5" />
+            <Pos idx="8" x="58.5" y="11.5" />
+            <Pos idx="9" x="34.5" y="15.5" />
+            <Pos idx="10" x="25.5" y="1.5" />
+            <Pos idx="11" x="20.5" y="9.5" />
+            <Pos idx="12" x="22.5" y="16.5" />
+        </Frames>
+        <Frames name="Fish_03_00005.png">
+            <Pos idx="1" x="7.5" y="30.5" />
+            <Pos idx="2" x="18.5" y="50.5" />
+            <Pos idx="3" x="30.5" y="49.5" />
+            <Pos idx="4" x="47.5" y="58.5" />
+            <Pos idx="5" x="89.5" y="49.5" />
+            <Pos idx="6" x="89.5" y="30.5" />
+            <Pos idx="7" x="82.5" y="29.5" />
+            <Pos idx="8" x="79.5" y="13.5" />
+            <Pos idx="9" x="35.5" y="13.5" />
+            <Pos idx="10" x="27.5" y="1.5" />
+            <Pos idx="11" x="18.5" y="7.5" />
+            <Pos idx="12" x="22.5" y="18.5" />
+        </Frames>
+        <Frames name="Fish_03_00006.png">
+            <Pos idx="1" x="9.5" y="30.5" />
+            <Pos idx="2" x="17.5" y="47.5" />
+            <Pos idx="3" x="55.5" y="58.5" />
+            <Pos idx="4" x="89.5" y="45.5" />
+            <Pos idx="5" x="91.5" y="31.5" />
+            <Pos idx="6" x="83.5" y="29.5" />
+            <Pos idx="7" x="78.5" y="16.5" />
+            <Pos idx="8" x="61.5" y="11.5" />
+            <Pos idx="9" x="35.5" y="16.5" />
+            <Pos idx="10" x="28.5" y="2.5" />
+            <Pos idx="11" x="20.5" y="7.5" />
+            <Pos idx="12" x="23.5" y="18.5" />
+        </Frames>
+        <Frames name="Fish_03_00007.png">
+            <Pos idx="1" x="8.5" y="31.5" />
+            <Pos idx="2" x="17.5" y="49.5" />
+            <Pos idx="3" x="60.5" y="58.5" />
+            <Pos idx="4" x="93.5" y="43.5" />
+            <Pos idx="5" x="96.5" y="25.5" />
+            <Pos idx="6" x="85.5" y="25.5" />
+            <Pos idx="7" x="78.5" y="14.5" />
+            <Pos idx="8" x="46.5" y="13.5" />
+            <Pos idx="9" x="24.5" y="17.5" />
+        </Frames>
+        <Frames name="Fish_03_00008.png">
+            <Pos idx="1" x="9.5" y="31.5" />
+            <Pos idx="2" x="20.5" y="50.5" />
+            <Pos idx="3" x="30.5" y="50.5" />
+            <Pos idx="4" x="39.5" y="56.5" />
+            <Pos idx="5" x="63.5" y="57.5" />
+            <Pos idx="6" x="92.5" y="37.5" />
+            <Pos idx="7" x="93.5" y="21.5" />
+            <Pos idx="8" x="85.5" y="21.5" />
+            <Pos idx="9" x="72.5" y="11.5" />
+            <Pos idx="11" x="41.5" y="15.5" />
+            <Pos idx="12" x="37.5" y="5.5" />
+            <Pos idx="13" x="27.5" y="11.5" />
+            <Pos idx="14" x="25.5" y="19.5" />
+            <Pos idx="15" x="16.5" y="23.5" />
+        </Frames>
+        <Frames name="Fish_03_00009.png">
+            <Pos idx="1" x="8.5" y="32.5" />
+            <Pos idx="2" x="20.5" y="51.5" />
+            <Pos idx="3" x="60.5" y="58.5" />
+            <Pos idx="4" x="92.5" y="33.5" />
+            <Pos idx="5" x="89.5" y="16.5" />
+            <Pos idx="6" x="84.5" y="17.5" />
+            <Pos idx="7" x="71.5" y="11.5" />
+            <Pos idx="8" x="45.5" y="14.5" />
+            <Pos idx="9" x="34.5" y="9.5" />
+            <Pos idx="10" x="12.5" y="26.5" />
+        </Frames>
+        <Frames name="Fish_03_00010.png">
+            <Pos idx="1" x="8.5" y="31.5" />
+            <Pos idx="2" x="20.5" y="51.5" />
+            <Pos idx="3" x="52.5" y="58.5" />
+            <Pos idx="4" x="77.5" y="46.5" />
+            <Pos idx="5" x="88.5" y="34.5" />
+            <Pos idx="6" x="88.5" y="16.5" />
+            <Pos idx="7" x="81.5" y="17.5" />
+            <Pos idx="8" x="73.5" y="8.5" />
+            <Pos idx="9" x="46.5" y="13.5" />
+            <Pos idx="10" x="31.5" y="12.5" />
+        </Frames>
+    </Sprite>
+</pcc>

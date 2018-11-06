@@ -1,0 +1,79 @@
+2.2.5/2.2.6工程移植到2.0.3
+
+1、error C2039: “init”: 不是“cocos2d::CCNode”的成员
+
+2、error C2664: “cocos2d::CCRepeatForever::create”: 不能将参数 1 从“cocos2d::CCFiniteTimeAction *”转换为“cocos2d::CCActionInterval *”	
+class CC_DLL CCFiniteTimeAction : public CCAction
+class CC_DLL CCActionInterval : public CCFiniteTimeAction
+re:(cocos2d::CCActionInterval *)
+error C2440: “初始化”: 无法从“cocos2d::CCFiniteTimeAction *”转换为“cocos2d::CCSequence *”
+
+3、class "cocos2d::CCNode" 没有成员 "removeFromParent"
+error C2039: “removeFromParent”: 不是“cocos2d::CCSprite”的成员
+re:removeFromParentAndCleanup(true);
+error C2660: “cocos2d::CCNode::removeChild”: 函数不接受 1 个参数
+re:加一个参数,true
+error C2039: “removeAllChildren”: 不是“cocos2d::extension::CCTableViewCell”的成员
+error C2039: “removeAllChildren”: 不是“cocos2d::CCSprite”的成员
+re:removeAllChildrenWithCleanup(true);
+
+4、error C2676: 二进制“/”:“cocos2d::CCSize”不定义该运算符或到预定义运算符可接收的类型的转换
+
+5、error C2039: “setRotationY”: 不是“cocos2d::CCSprite”的成员
+error C2039: “setRotationX”: 不是“cocos2d::CCSprite”的成员
+
+6、error C2039: “getWritablePath”: 不是“cocos2d::CCFileUtils”的成员
+
+7、error C2039: “setTouchPriority”: 不是“cocos2d::CCMenu”的成员
+
+8、error C2664: “cocos2d::CCNode::setContentSize”: 不能将参数 1 从“cocos2d::CCPoint”转换为“const cocos2d::CCSize &”
+
+9、error C2248: “cocos2d::CCNode::setZOrder”: 无法访问 private 成员(在“cocos2d::CCNode”类中声明)
+
+10、error C2039: “setOpacity”: 不是“cocos2d::CCMenuItem”的成员
+
+11、error C2039: “getStartLocation”: 不是“cocos2d::CCTouch”的成员
+re:getPreviousLocation
+
+12、error C2039: “setFontSize”: 不是“cocos2d::extension::CCEditBox”的成员
+error C2039: “setPlaceholderFont”: 不是“cocos2d::extension::CCEditBox”的成员
+
+				
+13、error C3861: “snprintf”: 找不到标识符
+re:_snprintf
+#if _MSC_VER
+#define strcasecmp _stricmp  //strcasecmp 找不到标识符
+#endif
+
+#if _MSC_VER
+#define snprintf _snprintf   //snprintf 找不到标识符
+#endif
+
+14、error C2039: “setViewName”: 不是“cocos2d::CCEGLView”的成员
+
+15、error C1083: 无法打开包括文件:“support/tinyxml2/tinyxml2.h”: No such file or directory
+error LNK2019: 无法解析的外部符号 "public: char const * __thiscall tinyxml2::StrPair::GetStr(void)" (?GetStr@StrPair@tinyxml2@@QAEPBDXZ)，该符号在函数 "public: char const * __thiscall tinyxml2::XMLNode::Value(void)const " (?Value@XMLNode@tinyxml2@@QBEPBDXZ) 中被引用	F:\SixCocos2d-xVC2012\Cocos2d-x\2.0-x-2.03_branch_231_NoScript\projects\BJL\proj.win32\ConfigMgr.obj	DDZClient
+re:将tinyxml2.h、tinyxml2.cpp添加到工程即可
+
+16、
+error C2065: “kCCTouchesOneByOne”: 未声明的标识符
+error C3861: “setTouchMode”: 找不到标识符
+
+17、
+error C2011: “WSAData”:“struct”类型重定义	c:\program files (x86)\microsoft sdks\windows\v7.1a\include\winsock2.h	360	1	DDZClient
+re:
+在预处理器添加一个宏定义WIN32_LEAN_AND_MEAN就可以了。
+将#include <windows.h>放在#include<winsock2.h>之后
+
+18、
+error C2061: 语法错误: 标识符“CCDouble”
+error C2065: “m_obContentSize”: 未声明的标识符
+
+19、
+if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutDir)"
+
+20、
+error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: static class CocosDenshion::SimpleAudioEngine * __cdecl CocosDenshion::SimpleAudioEngine::sharedEngine(void)" (__imp_?sharedEngine@SimpleAudioEngine@CocosDenshion@@SAPAV12@XZ)
+re:
+_USRLIB;

@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<!-- 帧精灵缓存，全场景通用，重名的plist只会添加一次 -->
+	<SpriteFrameCache file="card.plist" autorelease="false"/>
+	<SpriteFrameCache file="dot.plist" autorelease="false"/>
+
+	<!-- 背景层 -->
+	<LayerColor name="bg" tag="0" color="255,255,255,255" dirty="0">
+		<!-- 背景 -->
+		<!--
+		<Sprite file="Common/tiled_bg.png" tiledrect="0,0,800,480" anchorpoint="0,0"/>
+		-->
+		<Sprite file="game_rug.jpg" anchorpoint="0,0"/>
+		<Sprite tag="995" file="game_table.png" pos="13,0" anchorpoint="0,0">
+
+			<!-- 左上玩家 -->
+			<Node tag="100" posRatio="0.2625,0.65625">
+				<Button tag="100" pos="0,25" PreferredSize="97,129" norScale9Sprite="file='game_bg_logo.png' rect='0,0,97,129'" Events="32" IgnoreAnchorPoint="true" ZoomOnTouchDown="false" visible="false">
+					<!-- 昵称 -->
+					<LabelTTF tag="1" string="" pos="6,109" Dimensions="85,18" HorizontalAlignment="1" VerticalAlignment="1" fontname="微软雅黑" fontsize="12" color="224,169,89,255" visible="true" />
+					<!-- 头像(85x85) -->
+					<Sprite tag="2" file="face_medium.jpg" pos="6,22" anchorpoint="0,0" visible="true" />
+					<!-- 金币 -->
+					<LabelTTF tag="3" string="" pos="6,2" Dimensions="85,18" HorizontalAlignment="1" VerticalAlignment="1" fontname="thoma" fontsize="14" color="255,255,255,255" visible="true" />
+					<!-- 庄家 -->
+					<Sprite tag="4" file="game_banker.png" pos="80,100" anchorpoint="0,0" visible="false"/>
+				</Button>
+				<!-- 牌区 -->
+				<Node tag="2" pos="0,0" visible="true">
+					<!-- 牌堆 -->
+					<CardSuit tag="1" CardPopAll="false" CardActivedAll="false" CardFrontShowAll="false" IgnoreAnchorPoint="true" visible="false">
+						<!-- 牌1 -->
+						<CardItem tag="1" pos="2,47" Rotation="0.0" PreferredSize="43,58" batchFile="file='card.png'" frontSprite="frame='S_card_front.png'" reverseSprite="frame='S_card_reverse.png'" pointSprite="frame='S_R1.png'" faceSmallSprite="frame='S_HS.png'" faceBigSprite="frame='S_HB.png'" CardPop="false" CardActived="false" CardFrontShow="false" CardPointShow="false" CardSmallFaceShow="false" CardBigFaceShow="false" IgnoreAnchorPoint="true"/>
+						<!-- 牌2 -->
+						<CardItem tag="2" pos="27,47" Rotation="0.0" PreferredSize="43,58" batchFile="file='card.png'" frontSprite="frame='S_card_front.png'" reverseSprite="frame='S_card_reverse.png'" pointSprite="frame='S_B2.png'" faceSmallSprite="frame='S_SS.png'" faceBigSprite="frame='S_SB.png'" CardPop="false" CardActived="false" CardFrontShow="false" CardPointShow="false" CardSmallFaceShow="false" CardBigFaceShow="false" IgnoreAnchorPoint="true"/>
+						<!-- 牌3 -->
+						<CardItem tag="3" pos="52,47" Rotation="0.0" PreferredSize="43,58" batchFile="file='card.png'" frontSprite="frame='S_card_front.png'" reverseSprite="frame='S_card_reverse.png'" pointSprite="frame='S_B12.png'" faceSmallSprite="frame='S_CS.png'" faceBigSprite="frame='S_Queen.png'" CardPop="false" CardActived="false" CardFrontShow="false" CardPointShow="false" CardSmallFaceShow="false" CardBigFaceShow="false" IgnoreAnchorPoint="true"/>
+					</CardSuit>
+					<!-- 统计面板 -->
+					<Node tag="2" visible="false">
+						<!-- 点数 -->
+						<Sprite tag="1" frame="s_1.png" pos="0,-45" visible="false"/>
+						<Sprite tag="2" frame="s_sdot.png" pos="25,-45" visible="false"/>
+						<!-- 三公 -->
+						<Sprite tag="3" frame="s_3gong.png" pos="-10,-45" visible="false"/>
+						<!-- 炸弹 -->
+						<Sprite tag="4" frame="s_bomb.png" pos="-15,-50" visible="false"/>
+					</Node>
+				</Node>
+				<!-- 筹码 -->
+				<Sprite tag="3" file="game_bg_chip.png" pos="6,0" IgnoreAnchorPoint="true" visible="false">
+					<Sprite tag="1" file="game_chip.png" pos="6,10" anchorpoint="0.5,0.5" visible="false"/>
+					<LabelTTF tag="2" string="" pos="20,2" Dimensions="64,16" HorizontalAlignment="1" VerticalAlignment="1" fontname="thoma" fontsize="14" color="255,251,4,255" />
+				</Sprite>
+			</Node>
+
+			<!-- 右上玩家 -->
+			<Node tag="200" posRatio="0.56875,0.65625">
+				<Button tag="200" pos="0,25" PreferredSize="97,129" norScale9Sprite="file='game_bg_logo.png' rect='0,0,97,129'" Events="32" IgnoreAnchorPoint="true" ZoomOnTouchDown="false" visible="false">
+					<!-- 昵称 -->
+					<LabelTTF tag="1" string="" pos="6,109" Dimensions="85,18" HorizontalAlignment="1" VerticalAlignment="1" fontname="微软雅黑" fontsize="12" color="224,169,89,255" visible="true" />
+					<!-- 头像(85x85) -->
+					<Sprite tag="2" file="face_medium.jpg" pos="6,22" anchorpoint="0,0" visible="true" />
+					<!-- 金币 -->
+					<LabelTTF tag="3" string="" pos="6,2" Dimensions="85,18" HorizontalAlignment="1" VerticalAlignment="1" fontname="thoma" fontsize="14" color="255,255,255,255" visible="true" />
+					<!-- 庄家 -->
+					<Sprite tag="4" file="game_banker.png" pos="80,100" anchorpoint="0,0" visible="false"/>
+				</Button>
+				<!-- 牌区 -->
+				<Node tag="2" pos="0,0" visible="true">
+					<!-- 牌堆 -->
+					<CardSuit tag="1" CardPopAll="false" CardActivedAll="false" CardFrontShowAll="false" IgnoreAnchorPoint="true" visible="false">
+						<!-- 牌1 -->
+						<CardItem tag="1" pos="2,47" Rotation="0.0" PreferredSize="43,58" batchFile="file='card.png'" frontSprite="frame='S_card_front.png'" reverseSprite="frame='S_card_reverse.png'" pointSprite="frame='S_R1.png'" faceSmallSprite="frame='S_HS.png'" faceBigSprite="frame='S_HB.png'" CardPop="false" CardActived="false" CardFrontShow="false" CardPointShow="false" CardSmallFaceShow="false" CardBigFaceShow="false" IgnoreAnchorPoint="true"/>
+						<!-- 牌2 -->
+						<CardItem tag="2" pos="27,47" Rotation="0.0" PreferredSize="43,58" batchFile="file='card.png'" frontSprite="frame='S_card_front.png'" reverseSprite="frame='S_card_reverse.png'" pointSprite="frame='S_R1.png'" faceSmallSprite="frame='S_HS.png'" faceBigSprite="frame='S_HB.png'" CardPop="false" CardActived="false" CardFrontShow="false" CardPointShow="false" CardSmallFaceShow="false" CardBigFaceShow="false" IgnoreAnchorPoint="true"/>
+						<!-- 牌3 -->
+						<CardItem tag="3" pos="52,47" Rotation="0.0" PreferredSize="43,58" batchFile="file='card.png'" frontSprite="frame='S_card_front.png'" reverseSprite="frame='S_card_reverse.png'" pointSprite="frame='S_R1.png'" faceSmallSprite="frame='S_HS.png'" faceBigSprite="frame='S_HB.png'" CardPop="false" CardActived="false" CardFrontShow="false" CardPointShow="false" CardSmallFaceShow="false" CardBigFaceShow="false" IgnoreAnchorPoint="true"/>
+					</CardSuit>
+					<!-- 统计面板 -->
+					<Node tag="2" visible="false">
+						<!-- 点数 -->
+						<Sprite tag="1" frame="s_1.png" pos="20,-45" visible="false"/>
+						<Sprite tag="2" frame="s_sdot.png" pos="45,-45" visible="false"/>
+						<!-- 三公 -->
+						<Sprite tag="3" frame="s_3gong.png" pos="10,-45" visible="false"/>
+						<!-- 炸弹 -->
+						<Sprite tag="4" frame="s_bomb.png" pos="5,-50" visible="false"/>
+					</Node>
+				</Node>
+				<!-- 筹码 -->
+				<Sprite tag="3" file="game_bg_chip.png" pos="6,0" IgnoreAnchorPoint="true" visible="false">
+					<Sprite tag="1" file="game_chip.png" pos="6,10" anchorpoint="0.5,0.5"/>
+					<LabelTTF tag="2"string="" pos="20,2" Dimensions="64,16" HorizontalAlignment="1" VerticalAlignment="1" fontname="thoma" fontsize="14" color="255,251,4,255" />
+				</Sprite>
+			</Node>
+			
+			<!-- 右玩家 -->
+			<Node tag="300" posRatio="0.84125,0.21">
+				<Button tag="300" pos="0,25" PreferredSize="97,129" norScale9Sprite="file='game_bg_logo.png' rect='0,0,97,129'" Events="32" IgnoreAnchorPoint="true" ZoomOnTouchDown="false" visible="false">
+					<!-- 昵称 -->
+					<LabelTTF tag="1" string="" pos="6,109" Dimensions="85,18" HorizontalAlignment="1" VerticalAlignment="1" fontname="微软雅黑" fontsize="12" color="224,169,89,255" visible="true" />
+					<!-- 头像(85x85) -->
+					<Sprite tag="2" file="face_medium.jpg" pos="6,22" anchorpoint="0,0" visible="true" />
+					<!-- 金币 -->
+					<LabelTTF tag="3" string="" pos="6,2" Dimensions="85,18" HorizontalAlignment="1" fontname="thoma" fontsize="14" color="255,255,255,255" visible="true" />
+					<!-- 庄家 -->
+					<Sprite tag="4" file="game_banker.png" pos="80,100" anchorpoint="0,0" visible="false"/>
+				</Button>
+				<!-- 牌区 -->
+				<Node tag="2" pos="0,0" visible="true">
+					<!-- 牌堆 -->
+					<CardSuit tag="1" CardPopAll="false" CardActivedAll="false" CardFrontShowAll="false" IgnoreAnchorPoint="true" visible="false">
+						<!-- 牌1 -->
+						<CardItem tag="1" pos="2,47" Rotation="0.0" PreferredSize="43,58" batchFile="file='card.png'" frontSprite="frame='S_card_front.png'" reverseSprite="frame='S_card_reverse.png'" pointSprite="frame='S_R1.png'" faceSmallSprite="frame='S_HS.png'" faceBigSprite="frame='S_HB.png'" CardPop="false" CardActived="false" CardFrontShow="false" CardPointShow="false" CardSmallFaceShow="false" CardBigFaceShow="false" IgnoreAnchorPoint="true"/>
+						<!-- 牌2 -->
+						<CardItem tag="2" pos="27,47" Rotation="0.0" PreferredSize="43,58" batchFile="file='card.png'" frontSprite="frame='S_card_front.png'" reverseSprite="frame='S_card_reverse.png'" pointSprite="frame='S_R1.png'" faceSmallSprite="frame='S_HS.png'" faceBigSprite="frame='S_HB.png'" CardPop="false" CardActived="false" CardFrontShow="false" CardPointShow="false" CardSmallFaceShow="false" CardBigFaceShow="false" IgnoreAnchorPoint="true"/>
+						<!-- 牌3 -->
+						<CardItem tag="3" pos="52,47" Rotation="0.0" PreferredSize="43,58" batchFile="file='card.png'" frontSprite="frame='S_card_front.png'" reverseSprite="frame='S_card_reverse.png'" pointSprite="frame='S_R1.png'" faceSmallSprite="frame='S_HS.png'" faceBigSprite="frame='S_HB.png'" CardPop="false" CardActived="false" CardFrontShow="false" CardPointShow="false" CardSmallFaceShow="false" CardBigFaceShow="false" IgnoreAnchorPoint="true"/>
+					</CardSuit>
+					<!-- 统计面板 -->
+					<Node tag="2" visible="false">
+						<!-- 点数 -->
+						<Sprite tag="1" frame="s_1.png" pos="-80,105" visible="false"/>
+						<Sprite tag="2" frame="s_sdot.png" pos="-55,105" visible="false"/>
+						<!-- 三公 -->
+						<Sprite tag="3" frame="s_3gong.png" pos="-90,105" visible="false"/>
+						<!-- 炸弹 -->
+						<Sprite tag="4" frame="s_bomb.png" pos="-95,100" visible="false"/>
+					</Node>
+				</Node>
+				<!-- 筹码 -->
+				<Sprite tag="3" file="game_bg_chip.png" pos="-96,70" IgnoreAnchorPoint="true" visible="false">
+					<Sprite tag="1" file="game_chip.png" pos="6,10" anchorpoint="0.5,0.5" visible="false"/>
+					<LabelTTF tag="2" string="" pos="20,2" Dimensions="64,16" HorizontalAlignment="1" VerticalAlignment="1" fontname="thoma" fontsize="14" color="255,251,4,255" />
+				</Sprite>
+			</Node>
+			
+			<!-- 自己 -->
+			<Node tag="400" posRatio="0.41875,0.1458">
+				<Button tag="400" pos="0,0" PreferredSize="97,129" norScale9Sprite="file='game_bg_logo.png' rect='0,0,97,129'" Events="32" IgnoreAnchorPoint="true" ZoomOnTouchDown="false" visible="false">
+					<!-- 昵称 -->
+					<LabelTTF tag="1" string="" pos="6,109" Dimensions="85,18" HorizontalAlignment="1" VerticalAlignment="1" fontname="微软雅黑" fontsize="12" color="224,169,89,255" visible="true" />
+					<!-- 头像(85x85) -->
+					<Sprite tag="2" file="face_medium.jpg" pos="6,22" anchorpoint="0,0" visible="true" />
+					<!-- 金币 -->
+					<LabelTTF tag="3" string="" pos="6,2" Dimensions="85,18" HorizontalAlignment="1" VerticalAlignment="1" fontname="thoma" fontsize="14" color="255,255,255,255" visible="true" />
+					<!-- 庄家 -->
+					<Sprite tag="4" file="game_banker.png" pos="80,100" anchorpoint="0,0" visible="false"/>
+				</Button>
+				<!-- 牌区 -->
+				<Node tag="2" pos="80,-45" visible="true">
+					<!-- 牌堆 -->
+					<CardSuit tag="1" CardPopAll="false" CardActivedAll="false" CardFrontShowAll="false" IgnoreAnchorPoint="true" visible="false">
+						<!-- 牌1 -->
+						<CardItem tag="1" pos="5,20" Rotation="-16.0" PreferredSize="82,112" batchFile="file='card.png'" frontSprite="frame='B_card_front.png'" reverseSprite="frame='B_card_reverse.png'" pointSprite="frame='B_B1.png'" faceSmallSprite="frame='B_SS.png'" faceBigSprite="frame='B_SB.png'" CardPop="false" CardActived="false" CardFrontShow="false" CardPointShow="false" CardSmallFaceShow="false" CardBigFaceShow="false" IgnoreAnchorPoint="true"/>
+						<!-- 牌2 -->
+						<CardItem tag="2" pos="33,22" Rotation="-6.0" PreferredSize="82,112" batchFile="file='card.png'" frontSprite="frame='B_card_front.png'" reverseSprite="frame='B_card_reverse.png'" pointSprite="frame='B_BJ.png'" faceSmallSprite="frame='B_CS.png'" faceBigSprite="frame='B_BlackJoker.png'" CardPop="false" CardActived="false" CardFrontShow="false" CardPointShow="false" CardSmallFaceShow="false" CardBigFaceShow="false" IgnoreAnchorPoint="true"/>
+						<!-- 牌3 -->
+						<CardItem tag="3" pos="61,15" Rotation="11.0" PreferredSize="82,112" batchFile="file='card.png'" frontSprite="frame='B_card_front.png'" reverseSprite="frame='B_card_reverse.png'" pointSprite="frame='B_B11.png'" faceSmallSprite="frame='B_CS.png'" faceBigSprite="frame='B_Jack.png'" CardPop="false" CardActived="false" CardFrontShow="false" CardPointShow="false" CardSmallFaceShow="false" CardBigFaceShow="false" IgnoreAnchorPoint="true"/>
+					</CardSuit>
+					<!-- 统计面板 -->
+					<Node tag="2" visible="false">
+						<!-- 点数 -->
+						<Sprite tag="1" frame="b_1.png" pos="-70,210" visible="false"/>
+						<Sprite tag="2" frame="b_sdot.png" pos="-30,210" visible="false"/>
+						<!-- 三公 -->
+						<Sprite tag="3" frame="b_3gong.png" pos="-88,210" visible="false"/>
+						<!-- 炸弹 -->
+						<Sprite tag="4" frame="b_bomb.png" pos="-95,205" visible="false"/>
+					</Node>
+				</Node>
+				<!-- 筹码 -->
+				<Sprite tag="3" file="game_bg_chip.png" pos="6,135" IgnoreAnchorPoint="true" visible="false">
+					<Sprite tag="1" file="game_chip.png" pos="6,10" anchorpoint="0.5,0.5" visible="false"/>
+					<LabelTTF tag="2" string="" pos="20,2" Dimensions="64,16" HorizontalAlignment="1" VerticalAlignment="1" fontname="thoma" fontsize="14" color="255,251,4,255" />
+				</Sprite>
+			</Node>
+			
+			<!-- 左玩家 -->
+			<Node tag="500" posRatio="0.025,0.21">
+				<Button tag="500" pos="0,25" PreferredSize="97,129" norScale9Sprite="file='game_bg_logo.png' rect='0,0,97,129'" Events="32" IgnoreAnchorPoint="true" ZoomOnTouchDown="false" visible="false">
+					<!-- 昵称 -->
+					<LabelTTF tag="1" string="" pos="6,109" Dimensions="85,18" HorizontalAlignment="1" VerticalAlignment="1" fontname="微软雅黑" fontsize="12" color="224,169,89,255" visible="true" />
+					<!-- 头像(85x85) -->
+					<Sprite tag="2" file="face_medium.jpg" pos="6,22" anchorpoint="0,0" visible="true" />
+					<!-- 金币 -->
+					<LabelTTF tag="3" string="" pos="6,2" Dimensions="85,18" HorizontalAlignment="1" VerticalAlignment="1" fontname="thoma" fontsize="14" color="255,255,255,255" visible="true" />
+					<!-- 庄家 -->
+					<Sprite tag="4" file="game_banker.png" pos="80,100" anchorpoint="0,0" visible="false"/>
+				</Button>
+				<!-- 牌区 -->
+				<Node tag="2" pos="0,0" visible="true">
+					<!-- 牌堆 -->
+					<CardSuit tag="1" CardPopAll="false" CardActivedAll="false" CardFrontShowAll="false" IgnoreAnchorPoint="true" visible="false">
+						<!-- 牌1 -->
+						<CardItem tag="1" pos="2,47" Rotation="0.0" PreferredSize="43,58" batchFile="file='card.png'" frontSprite="frame='S_card_front.png'" reverseSprite="frame='S_card_reverse.png'" pointSprite="frame='S_R1.png'" faceSmallSprite="frame='S_HS.png'" faceBigSprite="frame='S_HB.png'" CardPop="false" CardActived="false" CardFrontShow="false" CardPointShow="false" CardSmallFaceShow="false" CardBigFaceShow="false" IgnoreAnchorPoint="true"/>
+						<!-- 牌2 -->
+						<CardItem tag="2" pos="27,47" Rotation="0.0" PreferredSize="43,58" batchFile="file='card.png'" frontSprite="frame='S_card_front.png'" reverseSprite="frame='S_card_reverse.png'" pointSprite="frame='S_R1.png'" faceSmallSprite="frame='S_HS.png'" faceBigSprite="frame='S_HB.png'" CardPop="false" CardActived="false" CardFrontShow="false" CardPointShow="false" CardSmallFaceShow="false" CardBigFaceShow="false" IgnoreAnchorPoint="true"/>
+						<!-- 牌3 -->
+						<CardItem tag="3" pos="52,47" Rotation="0.0" PreferredSize="43,58" batchFile="file='card.png'" frontSprite="frame='S_card_front.png'" reverseSprite="frame='S_card_reverse.png'" pointSprite="frame='S_R1.png'" faceSmallSprite="frame='S_HS.png'" faceBigSprite="frame='S_HB.png'" CardPop="false" CardActived="false" CardFrontShow="false" CardPointShow="false" CardSmallFaceShow="false" CardBigFaceShow="false" IgnoreAnchorPoint="true"/>
+					</CardSuit>
+					<!-- 统计面板 -->
+					<Node tag="2" visible="false">
+						<!-- 点数 -->
+						<Sprite tag="1" frame="s_1.png" pos="110,105" visible="false"/>
+						<Sprite tag="2" frame="s_sdot.png" pos="135,105" visible="false"/>
+						<!-- 三公 -->
+						<Sprite tag="3" frame="s_3gong.png" pos="100,105" visible="false"/>
+						<!-- 炸弹 -->
+						<Sprite tag="4" frame="s_bomb.png" pos="95,100" visible="false"/>
+					</Node>
+				</Node>
+				<!-- 筹码 -->
+				<Sprite tag="3" file="game_bg_chip.png" pos="110,70" IgnoreAnchorPoint="true" visible="false">
+					<Sprite tag="1" file="game_chip.png" pos="6,10" anchorpoint="0.5,0.5" visible="false"/>
+					<LabelTTF tag="2" string="" pos="20,2" Dimensions="64,16" HorizontalAlignment="1" VerticalAlignment="1" fontname="thoma" fontsize="14" color="255,251,4,255" />
+				</Sprite>
+			</Node>
+
+			<!-- 洗牌区 -->
+			<Node tag="996" pos="316,250" size="138,58" visible="false">
+			</Node>
+			
+			<!-- 骰子区 -->
+			<Node tag="997" pos="335,220" size="100,100" visible="false">
+			</Node>
+			
+			<!-- 准备提示 -->
+			<!--
+			<Scale9Sprite tag="998" file="game_ready.png" posRatio="0.415,0.5" PreferredSize="103,30" anchorpoint="0,0" visible="false"/>
+			-->
+			
+			<!-- 等待闲家下注 -->
+			<Scale9Sprite tag="999" file="game_wait.png" posRatio="0.39125,0.05" PreferredSize="174,26" anchorpoint="0,0" visible="false"/>
+
+		</Sprite>		
+		
+		<!-- 准备按钮 -->
+		<Button tag="1000" posRatio="0.381875,0.0104" PreferredSize="202,70" norScale9Sprite="file='game_btn_ready.png' rect='0,0,202,70'" hovScale9Sprite="file='game_btn_ready.png' rect='202,0,202,70'" Events="32" IgnoreAnchorPoint="true" ZoomOnTouchDown="false" visible="false" />
+
+		<!-- 不抢庄按钮 -->
+		<Button tag="2000" posRatio="0.2125,0.0104" PreferredSize="202,70" norScale9Sprite="file='game_btn_cancel.png' rect='0,0,202,70'" hovScale9Sprite="file='game_btn_cancel.png' rect='202,0,202,70'" Events="32" IgnoreAnchorPoint="true" ZoomOnTouchDown="false" visible="false" />
+		<!-- 抢庄按钮 -->
+		<Button tag="3000" posRatio="0.55125,0.0104" PreferredSize="202,70" norScale9Sprite="file='game_btn_yes.png' rect='0,0,202,70'" hovScale9Sprite="file='game_btn_yes.png' rect='202,0,202,70'" Events="32" IgnoreAnchorPoint="true" ZoomOnTouchDown="false" visible="false" />
+		
+		<!-- 下注 -->
+		<Button tag="4000" posRatio="0.120625,0.0104" PreferredSize="202,70" norScale9Sprite="file='game_btn_chipin_on.png' rect='0,0,202,70'" hovScale9Sprite="file='game_btn_chipin_on.png' rect='202,0,202,70'" Events="32" IgnoreAnchorPoint="true" ZoomOnTouchDown="false" visible="false" />
+		<Button tag="5000" posRatio="0.381875,0.0104" PreferredSize="202,70" norScale9Sprite="file='game_btn_chipin_on.png' rect='0,0,202,70'" hovScale9Sprite="file='game_btn_chipin_on.png' rect='202,0,202,70'" Events="32" IgnoreAnchorPoint="true" ZoomOnTouchDown="false" visible="false" />
+		<Button tag="6000" posRatio="0.643125,0.0104" PreferredSize="202,70" norScale9Sprite="file='game_btn_chipin_on.png' rect='0,0,202,70'" hovScale9Sprite="file='game_btn_chipin_on.png' rect='202,0,202,70'" Events="32" IgnoreAnchorPoint="true" ZoomOnTouchDown="false" visible="false" />
+
+		<!-- 散仙杀大赔小 -->
+		<Button tag="7000" posRatio="0.46,0.0104" PreferredSize="56,57" norScale9Sprite="file='btn_close.png' rect='0,0,56,57'" hovScale9Sprite="file='btn_close.png' rect='56,0,56,57'" Events="32" IgnoreAnchorPoint="true" ZoomOnTouchDown="false" visible="false" />
+
+		<!-- 左上角菜单 -->
+		<Button tag="1" posRatio="0.0125,0.85" PreferredSize="56,60" norScale9Sprite="file='game_btn_menu.png' rect='0,0,56,60'" Events="32" IgnoreAnchorPoint="true" ZoomOnTouchDown="false"/>
+		<!-- 关闭菜单 -->
+		<!--
+		<Button tag="2" posRatio="0.0125,0.84" PreferredSize="176,67" norScale9Sprite="file='btn_menu_toggle.png' rect='0,0,176,67'" Events="49" IgnoreAnchorPoint="true" ZoomOnTouchDown="false" visible="false">
+			<Sprite tag="20" file="btn_menu_toggle_sel.png" pos="0,0" visible="false"/>
+			<LabelTTF string="关闭菜单" pos="47,15" fontname="微软雅黑" fontsize="20" color="255,255,255,255" visible="false" />
+		</Button>
+		-->
+		<!-- 返回大厅 -->
+		<!--
+		<Button tag="3" posRatio="0.0125,0.68375" PreferredSize="176,75" norScale9Sprite="file='btn_menu_toggle.png' rect='0,130,176,75'" Events="49" IgnoreAnchorPoint="true" ZoomOnTouchDown="false" visible="false">
+			<Sprite tag="30" file="btn_menu_toggle_sel.png" pos="0,10" visible="false"/>
+			<LabelTTF string="返回大厅" pos="47,28" fontname="微软雅黑" fontsize="20" color="255,255,255,255" visible="false" />
+		</Button>
+		-->
+		<!-- 换一桌 -->
+		<!--
+		<Button tag="4" posRatio="0.0125,0.5525" PreferredSize="176,75" norScale9Sprite="file='btn_menu_toggle.png' rect='0,130,176,75'" Events="49" IgnoreAnchorPoint="true" ZoomOnTouchDown="false" visible="false">
+			<Sprite tag="40" file="btn_menu_toggle_sel.png" pos="0,10" visible="false"/>
+			<LabelTTF string="换一桌" pos="57,28" fontname="微软雅黑" fontsize="20" color="255,255,255,255" visible="false" />
+		</Button>
+		-->
+		<!-- 版型说明 按钮 -->
+		<Button tag="5" posRatio="0.0125,0.0208" PreferredSize="57,56" norScale9Sprite="file='CardTypeBTN.png' rect='0,0,57,56'" hovScale9Sprite="file='CardTypeBTN.png' rect='57,0,57,56'" Events="49" IgnoreAnchorPoint="true" ZoomOnTouchDown="false" >
+			<Sprite tag="50" file="CardTypeExplanation.png" pos="-17,50" visible="false"/>
+		</Button>
+		<!-- 聊天窗口开启按钮 -->
+		<Button tag="6" posRatio="0.9125,0.85416" PreferredSize="56,60" norScale9Sprite="file='chat_BT.png' rect='0,0,56,60'" Events="49" IgnoreAnchorPoint="true" ZoomOnTouchDown="false" />
+		<!-- 聊天，系统信息(即时显示) -->
+		<Sprite tag="7" file="chat_msgBG.png" posRatio="0.09375,0.90833" visible="false">
+			<Sprite tag="70" file="Chat_Sign.png" pos="10,8" />
+			<LabelTTF tag="71" string="" pos="40,0" Dimensions="610,40" fontname="微软雅黑" fontsize="20" color="255,255,255,255" HorizontalAlignment="0" VerticalAlignment="1"/>
+		</Sprite>
+	</LayerColor>
+</root>

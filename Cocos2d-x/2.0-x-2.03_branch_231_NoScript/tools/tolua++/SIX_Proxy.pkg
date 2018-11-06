@@ -1,0 +1,24 @@
+/***********************************************
+Name£ºSIX_Proxy
+Desc£ºMultithreading and UI interaction
+Auth£ºCool.Cat@2013-04-16
+***********************************************/
+#pragma once
+#include "cocos2d.h"
+#include <SIX_Typedef.h>
+#include <SIX_TList.h>
+#include <SIX_PackageMgr.h>
+
+class SIX_Proxy:public CCNode,public TSingleton<SIX_Proxy>
+{
+public:
+	SIX_Proxy();
+	~SIX_Proxy();
+public:
+	static SIX_Proxy *GetInstance();
+	void PushEvent(MSG_INFO *pEvent);
+	MSG_INFO *PopEvent();
+	MSG_INFO *FrontEvent();
+	unsigned int GetEventCount();
+	void WaitForExit();
+};

@@ -1,0 +1,287 @@
+//--- 枚举 ---------------------------------------------------------
+enum ROOM_STATE	// 房间状态，二进制掩码
+{
+	RS_CAN_LOGIN	= 0x0000000000000001,	// 登录房间
+	RS_CAN_SIT		= 0x0000000000000002,	// 入座
+};
+
+//--- 结构 ---------------------------------------------------------
+
+struct MY_TEST
+{
+	int a;
+	int b;
+};
+
+// 桌子的框架参数
+struct CLIENT_FRAME_PARAM:public DATA_BASE<CLIENT_FRAME_PARAM>
+{
+	CLIENT_FRAME_PARAM()
+	{
+		iMsgBlockSize = 2048;
+		iSendHeartbeatTime = 30*1000;	// 30 秒，标准默认值;
+		iShrinkPoolsTime = 3*60*1000;	// 标准默认值的（5分钟）
+
+		bAutoReConnect = true;
+		iAutoReConnectTime = 2*1000;
+	}
+
+	int iMsgBlockSize;				// 内核消息块的长度
+	long long iSendHeartbeatTime;	// 发送心跳包的时间，单位是 ms
+	long long iShrinkPoolsTime;		// 收缩各种池的时间，单位是 ms
+
+	bool bAutoReConnect;			// TRUE 表示断线后自动重连，FALSE 表示断线后不再重连
+	int  iAutoReConnectTime;		// 断线重连的间隔时间，单位ms
+};
+
+// 连接房管服务器 RMS（RoomMgrServer ）的参数
+struct CLIENT_TO_RMS_PARAM:public DATA_BASE<CLIENT_TO_RMS_PARAM>
+{
+	CLIENT_TO_RMS_PARAM(char *IP="127.0.0.1",int Port=6150,int MsgBlockSize=2048,int SendHeartbeatTime=30*1000,int ShrinkPoolsTime=3*60*1000,bool AutoReConnect=true,int AutoReConnectTime=2*1000)
+	{ 
+		sprintf_s(szIP, sizeof(szIP)-1, IP);
+		iPort = Port;
+
+		iMsgBlockSize = MsgBlockSize;
+		iSendHeartbeatTime = SendHeartbeatTime;	// 30 秒，标准默认值;
+		iShrinkPoolsTime = ShrinkPoolsTime;	// 标准默认值的（5分钟）
+
+		bAutoReConnect = AutoReConnect;
+		iAutoReConnectTime = AutoReConnectTime;
+	}
+
+	char szIP[24];			// 房间服的IP
+	int	 iPort;				// 房间服的端口
+
+	int iMsgBlockSize;				// 内核消息块的长度
+	long long iSendHeartbeatTime;	// 发送心跳包的时间，单位是 ms
+	long long iShrinkPoolsTime;		// 收缩各种池的时间，单位是 ms
+
+	bool bAutoReConnect;			// TRUE 表示断线后自动重连，FALSE 表示断线后不再重连
+	int  iAutoReConnectTime;		// 断线重连的间隔时间，单位ms
+};
+
+// 服务端的房间信息
+struct SERVER_ROOM_INFO:public DATA_BASE<SERVER_ROOM_INFO>
+{
+	SERVER_ROOM_INFO() 
+	{ 
+		memset(this, 0, sizeof(*this)); 
+		
+		sprintf_s(szIP, sizeof(szIP), "127.0.0.1");
+		iPort = 5150;
+		iTables = 10;
+		iSeatNum = 4;
+	}
+
+	unsigned int uRoomID;	// 游戏房间ID
+
+	char szIP[24];			// 房间服的IP
+	int	 iPort;				// 房间服的端口
+
+	int iTables;			// 房间的桌子数
+	int iSeatNum;			// 每桌座位数
+
+	int iRoomPeopleCount;			// 房间的在线人数
+
+	char szGameTable[GAME_TABLE_NAME_LEN];	// 游戏表名
+
+	long long lUserPower;			// 用户游戏权限
+	int iGameType;					// 游戏类型
+	int iMoneyPoint;				// 游戏房间泡分点
+};
+
+// 客户端的房间信息
+struct CLIENT_ROOM_INFO:public DATA_BASE<CLIENT_ROOM_INFO>
+{
+	CLIENT_ROOM_INFO(char *IP="",int Port=0,char *Name="",char *Password="") 
+	{ 
+		//memset(this, 0, sizeof(*this)); 
+		sprintf_s(szIP,sizeof(szIP)-1,IP);
+		iPort = Port;
+
+		sprintf_s(szName,sizeof(szName)-1,Name);
+		sprintf_s(szPassword,sizeof(szPassword)-1,Password);
+	}
+
+	char szIP[24];			// 房间服的IP
+	int	 iPort;				// 房间服的端口
+
+	char szName[USER_NAME_LEN];			// 用户名
+	char szPassword[USER_PASSWORD_LEN];	// 加密后的密码，例如用 MD5 加密后不可逆的密码
+
+	
+};
+
+// 登录房间
+struct LOGIN_ROOM:public DATA_BASE<LOGIN_ROOM>
+{
+	LOGIN_ROOM(char *pszName=0,char *pszPassword=0)
+	{ 
+		memset(this, 0, sizeof(*this)); 
+		if(pszName)
+		{
+			sprintf_s(szName,USER_NAME_LEN-1,pszName);
+			szName[USER_NAME_LEN] = 0;
+		}
+
+		if(pszPassword)
+		{
+			sprintf_s(szPassword,USER_PASSWORD_LEN-1,pszPassword);
+			szPassword[USER_PASSWORD_LEN] = 0;
+		}
+	}
+
+	char szName[USER_NAME_LEN];			// 用户名
+	char szPassword[USER_PASSWORD_LEN];	// 加密后的密码，例如用 MD5 加密后不可逆的密码
+};
+
+// 登录房间成功
+struct LOGIN_ROOM_SUCC
+{
+	LOGIN_ROOM_SUCC() 
+	{ 
+		memset(this, 0, sizeof(*this)); 
+		bAlreadyInRoom = FALSE;
+	}
+
+	// 可以安排一些房间的信息
+
+	char szIP[24];			// 房间服的IP
+	int	 iPort;				// 房间服的端口
+	bool bAlreadyInRoom;	// 已经在房间里啦
+
+	USER_INFO userInfo;	// 用户信
+};
+
+struct RECOME_AFTER_CUT	// 断线重入
+{
+	RECOME_AFTER_CUT()
+	{
+		memset(this, 0, sizeof(*this)); 
+
+		iTableNo = INVAL_TABLE_NO;
+		iSeatNo = INVAL_SEAT_NO;
+		bAlreadyInRoom = TRUE;
+	}
+
+	int	 iErrCode;	// 若登录是成功，返回0值。
+					// 若是登录失败，返回非0值的错误码如下：
+
+	char szIP[24];			// 房间服的IP
+	int	 iPort;				// 房间服的端口
+
+	bool bAlreadyInRoom;	// 已经在房间里啦
+	int iTableNo;	// 桌号
+	int iSeatNo;	// 座位号
+
+	char szName[USER_NAME_LEN];			// 用户名
+};
+
+// 登录房间失败
+struct LOGIN_ROOM_FAIL:public DATA_BASE<LOGIN_ROOM_FAIL>
+{
+	enum
+	{
+		ERR_CAN_NOT_LOGIN = 10,	// 房间禁止登录状态
+		ERR_01 = 20,				// 用户名与密码不符，或不存在该用户
+		ERR_02 = 30,				// 用户名不唯一
+		ERR_30 = 40,				// 服务骨骼增加用户失败
+	};
+
+	LOGIN_ROOM_FAIL() { memset(this, 0, sizeof(*this)); }
+
+	int	 iErrCode;	// 若登录是成功，返回0值。
+					// 若是登录失败，返回非0值的错误码如下：
+};
+
+// 离开房间的结果
+struct LEAVE_ROOM_RESULT:public DATA_BASE<LEAVE_ROOM_RESULT>
+{
+	LEAVE_ROOM_RESULT() { memset(this, 0, sizeof(*this)); }
+
+	USER_INFO userInfo;
+	int	 iErrCode;	// 若登录是成功，返回0值。
+					// 若是登录失败，返回非0值的错误码如下：
+};
+
+struct MANAGER_POWER_ERR:public DATA_BASE<MANAGER_POWER_ERR>	// 无此管理权限
+{
+	MANAGER_POWER_ERR()
+	{
+		iWantPower = 0;
+	}
+	int iWantPower;		// 想施加的权限
+};
+
+
+// 踢玩家离房
+struct TICK_USER_OUT_ROOM:public DATA_BASE<TICK_USER_OUT_ROOM>
+{
+	enum
+	{
+		TUOR_NO_FIND = 10,			// 房内无此玩家，可能他还没登录房间
+		TUOR_TABLE_ERR = 15,		// 桌号非法
+		TUOR_SEAT_NO_USER = 20,		// 座号上没有人
+	};
+
+	enum
+	{
+		TICK_BY_TABLE_SEAT = 10,	// 按桌号、座号踢
+		TICK_BY_NAME = 20,			// 按名字踢
+		TICK_BY_TABLE = 30,			// 按桌号踢，踢一整桌人离房
+		TICK_BY_ALL = 40,			// 踢所有的人离房
+	};
+
+	TICK_USER_OUT_ROOM()
+	{
+		iRes = 0;
+		iTickMode = TICK_BY_TABLE_SEAT;
+		bWriteScore = false;	
+		iTableNo = INVAL_TABLE_NO;
+		iSeatNo = INVAL_SEAT_NO;
+		memset(szName, 0, sizeof(szName));
+	}
+
+	int iRes;			// 踢的结果
+	int iTickMode;		// 踢的方式，参考 TICK_BY_TABLE_SEAT 等
+	bool bWriteScore;	// 踢完后是否写分
+	int	iTableNo;		// 被踢的桌号
+	int	iSeatNo;		// 被踢的座号
+	
+	char szName[USER_NAME_LEN];			// 用户名
+};
+
+// 写分
+struct WRITE_SCORE:public DATA_BASE<WRITE_SCORE>
+{
+	WRITE_SCORE(long long ScoreChange=0,int Type=0,long long UserId=INVALID_USER_ID,long long ChannelNo=INVALID_CHANNEL_NO) 
+	{ 
+		memset(this, 0, sizeof(*this)); 
+		iScoreChange = ScoreChange;
+		iType = Type;
+		lUserId = UserId;
+		lChannelNo = ChannelNo;
+	}
+
+	int			iType;			// 类型：积分表、金币表
+	long long	lUserId;		// 房管需要这个进行用户操作，房管并不能用通道号去操作数据库
+	long long	lChannelNo;		// 踢玩家后消息会从房管服回来，那时 CSingleUser* 早已经不存在啦，所以必需要从房管传回玩家的通道
+	long long	iScoreChange;	// 分值的变化量
+};
+
+// 写分结果
+struct WRITE_SCORE_RESULT:public DATA_BASE<WRITE_SCORE_RESULT>
+{
+	WRITE_SCORE_RESULT()
+	{	
+		memset(this, 0, sizeof(*this)); 
+		lUserId = INVALID_USER_ID;
+		lChannelNo = INVALID_CHANNEL_NO;
+	}
+
+	int			iRes;
+	LONGLONG	lUserId;		// 房管需要这个进行用户操作，房管并不能用通道号去操作数据库
+	LONGLONG	lChannelNo;		// 踢玩家后消息会从房管服回来，那时 CSingleUser* 早已经不存在啦，所以必需要从房管传回玩家的通道
+	LONGLONG	lScore;	// 当前的分值
+};

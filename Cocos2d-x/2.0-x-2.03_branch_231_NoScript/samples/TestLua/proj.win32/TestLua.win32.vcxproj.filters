@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{fc5cb953-2953-4968-83b3-39e3ff951754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{037a9a02-b906-4cc5-ad98-304acd4e25ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{7fcdad9c-b76c-4ddb-ac21-b6e9e934eb1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\tinyxml">
+      <UniqueIdentifier>{027f5703-b939-44fb-8034-383038165782}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\cocos2dx_support">
+      <UniqueIdentifier>{c125566e-a283-47a3-ab64-ab122aad7b02}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\scripting\lua\cocos2dx_support\CCLuaEngine.h">
+      <Filter>Utility\cocos2dx_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\scripting\lua\cocos2dx_support\Cocos2dxLuaLoader.h">
+      <Filter>Utility\cocos2dx_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\scripting\lua\cocos2dx_support\LuaCocos2d.h">
+      <Filter>Utility\cocos2dx_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\scripting\lua\cocos2dx_support\tolua_fix.h">
+      <Filter>Utility\cocos2dx_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Utility\tinyxml\tinystr.h">
+      <Filter>Utility\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Utility\tinyxml\tinyxml.h">
+      <Filter>Utility\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Utility\SIX_Func.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Utility\SIX_GlobalMgr.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Utility\SIX_MusicMgr.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Utility\SIX_SceneMgr.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Utility\SIX_UIMgr.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Utility\SIX_Utility.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Utility\SIX_XMLParser.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Utility\TSingleton.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Utility\xorstr.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Utility\SIX_Http.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Utility\SIX_UIScene.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\scripting\lua\cocos2dx_support\CCLuaEngine.cpp">
+      <Filter>Utility\cocos2dx_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\scripting\lua\cocos2dx_support\Cocos2dxLuaLoader.cpp">
+      <Filter>Utility\cocos2dx_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\scripting\lua\cocos2dx_support\LuaCocos2d.cpp">
+      <Filter>Utility\cocos2dx_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\scripting\lua\cocos2dx_support\tolua_fix.c">
+      <Filter>Utility\cocos2dx_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Utility\tinyxml\tinystr.cpp">
+      <Filter>Utility\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Utility\tinyxml\tinyxml.cpp">
+      <Filter>Utility\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Utility\tinyxml\tinyxmlerror.cpp">
+      <Filter>Utility\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Utility\tinyxml\tinyxmlparser.cpp">
+      <Filter>Utility\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Utility\SIX_GlobalMgr.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Utility\SIX_MusicMgr.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Utility\SIX_SceneMgr.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Utility\SIX_UIMgr.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Utility\SIX_Utility.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Utility\SIX_XMLParser.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Utility\SIX_Http.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Utility\SIX_UIScene.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cocos_Partical_Editor_MFC", "Cocos_Partical_Editor_MFC.vcxproj", "{633D7747-6F92-4C14-9F89-7926578EE493}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{633D7747-6F92-4C14-9F89-7926578EE493}.Debug|Win32.ActiveCfg = Debug|Win32
+		{633D7747-6F92-4C14-9F89-7926578EE493}.Debug|Win32.Build.0 = Debug|Win32
+		{633D7747-6F92-4C14-9F89-7926578EE493}.Release|Win32.ActiveCfg = Release|Win32
+		{633D7747-6F92-4C14-9F89-7926578EE493}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

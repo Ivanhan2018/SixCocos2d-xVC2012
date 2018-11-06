@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<!-- 帧精灵缓存，全场景通用，重名的plist只会添加一次 -->
+	<SpriteFrameCache file="Scene/Room/room.plist" />
+	
+	<!-- 背景层 -->
+	<LayerColor name="bg" tag="0" color="0,255,0,255" dirty="false">
+		<!-- 背景 -->
+		<Sprite file="Scene/Room/hall.jpg" anchorpoint="0,0"/>
+	 	
+	 	<!-- 桌子背景容器 -->
+	 	<ListView name="TableContainer" tag="1" color="0,0,0,0" offset="100,150" size="1049,400" cellSize="1049,300" ViewDirection="1" dirty="false" Visible="false">
+	 		<!-- 下面是XML里面创建cell的示范，真正动态创建是在lua脚本中实现
+	 		<!-- 第一行 -->
+	 		<ListViewCell name="TableCell-01" tag="1000">
+	 			<!-- 桌子1 -->
+	 			<Node name="Table-01" tag="1001" dirty="false">
+	 				<Scale9Sprite frame="table.png" AnchorPoint="0,0" pos="75,95" PreferredSize="168,111"/>
+	 				<Button tag="10011" pos="104,257.5" PreferredSize="58,65" norScale9Sprite="frame='empty.png'" Events="32"/>
+	 				<Button tag="10012" pos="214,257.5" PreferredSize="58,65" norScale9Sprite="frame='empty.png'" Events="32"/>
+	 				<Button tag="10013" pos="104,42.5" PreferredSize="58,65" norScale9Sprite="frame='empty.png'" Events="32"/>
+	 				<Button tag="10014" pos="214,42.5" PreferredSize="58,65" norScale9Sprite="frame='empty.png'" Events="32"/>
+	 			</Node>
+
+	 			<!-- 桌子2 -->
+	 			<Node name="Table-02" tag="1002" dirty="false">
+	 				<Scale9Sprite frame="table.png" AnchorPoint="0,0" pos="318,95" PreferredSize="168,111"/>
+	 				<Button tag="10021" pos="347,257.5" PreferredSize="58,65" norScale9Sprite="frame='empty.png'" Events="32"/>
+	 				<Button tag="10022" pos="457,257.5" PreferredSize="58,65" norScale9Sprite="frame='empty.png'" Events="32"/>
+	 				<Button tag="10023" pos="347,42.5" PreferredSize="58,65" norScale9Sprite="frame='empty.png'" Events="32"/>
+	 				<Button tag="10024" pos="457,42.5" PreferredSize="58,65" norScale9Sprite="frame='empty.png'" Events="32"/>
+	 			</Node>
+
+	 			<!-- 桌子3 -->
+	 			<Node name="Table-03" tag="1003" dirty="false">
+	 				<Scale9Sprite frame="table.png" AnchorPoint="0,0" pos="561,95" PreferredSize="168,111"/>
+	 				<Button tag="10031" pos="590,257.5" PreferredSize="58,65" norScale9Sprite="frame='empty.png'" Events="32"/>
+	 				<Button tag="10032" pos="700,257.5" PreferredSize="58,65" norScale9Sprite="frame='empty.png'" Events="32"/>
+	 				<Button tag="10033" pos="590,42.5" PreferredSize="58,65" norScale9Sprite="frame='empty.png'" Events="32"/>
+	 				<Button tag="10034" pos="700,42.5" PreferredSize="58,65" norScale9Sprite="frame='empty.png'" Events="32"/>
+	 			</Node>
+	 			
+	 			<!-- 桌子4 -->
+	 			<Node name="Table-04" tag="1004" dirty="false">
+	 				<Scale9Sprite frame="table.png" AnchorPoint="0,0" pos="804,95" PreferredSize="168,111"/>
+	 				<Button tag="10041" pos="833,257.5" PreferredSize="58,65" norScale9Sprite="frame='empty.png'" Events="32"/>
+	 				<Button tag="10042" pos="900,257.5" PreferredSize="58,65" norScale9Sprite="frame='empty.png'" Events="32"/>
+	 				<Button tag="10043" pos="833,42.5" PreferredSize="58,65" norScale9Sprite="frame='empty.png'" Events="32"/>
+	 				<Button tag="10044" pos="900,42.5" PreferredSize="58,65" norScale9Sprite="frame='empty.png'" Events="32"/>
+	 			</Node>
+	 		</ListViewCell>
+	 	</ListView>
+	 	
+	 	<!-- Loading -->
+	 	<LayerColor tag="2" color="0,0,0,0" Visible="true">
+			<LabelTTF string="正在登录..." pos="600,350" fontname="Tahoma" fontsize="14" color="0,255,0,255"/>
+		</LayerColor>
+
+	</LayerColor>
+</root>

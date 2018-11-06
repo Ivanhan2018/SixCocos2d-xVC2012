@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<!-- 登录服务器参数控制 -->
+	<address ip1="120.76.216.167" ip="192.168.0.111" port1="2000" port="6100"/>
+
+	<!-- 牌动画参数控制 -->
+	<AnimationParams>
+		<!-- 抢庄动画总延迟=A1+A2+A3 -->
+		<!-- 骰子掉落延迟(A1) -->
+		<Parameter name="DELAY_DICE_FALLDOWN" floatValue="0.5" />
+		<!-- 骰子自身动画延迟(A2) -->
+		<Parameter name="DELAY_DICE_ANIMATION" floatValue="1.5" />
+		<!-- 庄家从骰子区移到庄家区延迟(A3) -->
+		<Parameter name="DELAY_BANKER_FROM_DICE" floatValue="1.0" />
+		<!-- 骰子自身动画帧间隔(A4) -->
+		<Parameter name="DELAY_DICE_FRAME" floatValue="0.2" />
+		
+		<!-- 洗牌动画总延迟=B1*B2 -->
+		<!-- 洗牌区每张牌动画延迟(B1) -->
+		<Parameter name="DELAY_SHUFFLE_PER_CARD" floatValue="0.05" />
+		<!-- 洗牌区显示总牌数(B2) -->
+		<Parameter name="MOUNT_SHUFFLE_CARD" intValue="20" />
+		<!-- 洗牌区每张牌偏移间隔 -->
+		<Parameter name="OFFSET_SHUFFLE_PER_CARD" floatValue="5.0" />
+		
+		<!-- 发牌动画总延迟=有效总牌数*C1+C2 -->
+		<!-- 发牌时每张牌间隔延迟(C1) -->
+		<Parameter name="DELAY_DEAL_PER_CARD" floatValue="0.15" />
+		<!-- 发牌时每张牌移动延迟(C2) -->
+		<Parameter name="DELAY_DEAL_CARD_MOVE" floatValue="0.5" />
+		<!-- 发牌时每张牌旋转延迟(C3) -->
+		<Parameter name="DELAY_DEAL_CARD_SPIN" floatValue="0.5" />
+	</AnimationParams>
+	
+	<!-- 倒计时参数控制 -->
+	<CountDownParams>
+		<!-- 准备等待时间(单位：秒) -->
+		<Parameter name="DELAY_READY" intValue="7" />
+		<!-- 抢庄等待时间(单位：秒) -->
+		<Parameter name="DELAY_RUBBANKER" intValue="6" />
+		<!-- 第一把下注等待时间(单位：秒) -->
+		<Parameter name="DELAY_CHIPIN_FIRST" intValue="11" />
+		<!-- 下注等待时间(单位：秒) -->
+		<Parameter name="DELAY_CHIPIN" intValue="10" />
+	</CountDownParams>
+	
+	<!-- 结算时间参数控制 -->
+	<SettleAccountsParams>
+		<!-- 开始依次亮牌移动时间(单位：秒) -->
+		<Parameter name="DELAY_SHOWCARD_MOVE" floatValue="1.0" />
+		<!-- 开始依次亮牌停留时间(单位：秒) -->
+		<Parameter name="DELAY_SHOWCARD_HOLDON" floatValue="1.0" />
+		<!-- 庄家亮牌显示牌点时间(单位：秒) -->
+		<Parameter name="DELAY_SHOWCARD_BANKER" floatValue="1.0" />
+		<!-- 闲家亮牌显示牌点时间(单位：秒) -->
+		<Parameter name="DELAY_SHOWCARD_CUSTOM" floatValue="1.0" />
+		<!-- 下注筹码换算结算筹码时间(单位：秒) -->
+		<Parameter name="DELAY_CHIP_EXCHANGE" floatValue="0.5" />
+		<!-- 筹码移动到赢家头像中心时间(单位：秒) -->
+		<Parameter name="DELAY_CHIP_MOVE" floatValue="1.0" />
+	</SettleAccountsParams>
+</root>

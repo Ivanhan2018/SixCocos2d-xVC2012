@@ -1,0 +1,16 @@
+#pragma once
+
+class  CircleAction : public CCActionInterval 
+{ 
+    /** creates the action */
+    static CircleAction* create(float duration, const CCPoint& position,int direction); 
+};
+
+class  myAction : public CCActionInterval 
+{ 
+    /** creates the action */
+    static myAction* create(float duration,const char *func);
+    static myAction* createCircle(float duration,const char *func,const CCPoint& startP,const CCPoint& centerP,float direction);
+    static myAction* createCycloid(float duration,const char *func,const CCPoint& startP,const CCPoint& rdeltArg,float direction,const CCPoint& reserved);
+};
+

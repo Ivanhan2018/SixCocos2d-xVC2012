@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<!-- 帧精灵缓存，全场景通用，重名的plist只会添加一次 -->
+	<SpriteFrameCache file="Scene/Room/room.plist" />
+	<SpriteFrameCache file="Common/Effect/loading/loading.plist" autorelease="false" />
+
+	<!-- 背景层 -->
+	<LayerColor name="bg" tag="0" color="0,0,0,255" dirty="false">
+		<!-- 背景 -->
+		<Sprite file="Scene/Gate/bg.png" anchorpoint="0,0"/>
+	 	
+	 	<!-- TTF内部默认设置描点为(0,0) ,字体为12号，样式为Helvetica-->			 
+		<LabelTTF string="老九捕鱼" pos="10,710" fontname="Tahoma" fontsize="14" color="0,255,0,255"/>
+	 	<LabelTTF string="Version：1.1.0.820 (beta 1.0)" pos="10,695" fontname="Tahoma" />
+	 	<LabelTTF string="Cocos2d-2.0-x-2.0.3" pos="10,680" fontname="Tahoma"/>
+		
+		<!-- 积分场 -->
+		<Sprite tag="10" file="Scene/Gate/tips.png" pos="265,275" visible="false">
+			<LabelTTF string="积分场" pos="60,55" fontname="微软雅黑" fontsize="24" />
+			<LabelTTF string="渔币：积分 = 1:10" pos="30,30" fontname="微软雅黑" fontsize="18" />
+		</Sprite>
+		<Sprite pos="255,205" file="Scene/Gate/1.png"/>
+		<Button tag="1" pos="100,75" PreferredSize="400,210" IgnoreAnchorPoint="true" dirty="0"/>
+		
+		<!-- 初级积分场 -->
+		<Sprite tag="20" file="Scene/Gate/tips.png" pos="790,325" visible="false">
+			<LabelTTF string="初级积分场" pos="40,55" fontname="微软雅黑" fontsize="24" />
+			<LabelTTF string="渔币：积分 = 1:20" pos="30,30" fontname="微软雅黑" fontsize="18" />
+		</Sprite>
+		<Sprite pos="780,255" file="Scene/Gate/2.png"/>
+		<Button tag="2" pos="757,75" PreferredSize="425,250" IgnoreAnchorPoint="true" dirty="0"/>
+
+		<!-- 中级积分场 -->
+		<Sprite tag="30" file="Scene/Gate/tips.png" pos="540,450" visible="false">
+			<LabelTTF string="中级积分场" pos="40,55" fontname="微软雅黑" fontsize="24" />
+			<LabelTTF string="渔币：积分 = 1:30" pos="30,30" fontname="微软雅黑" fontsize="18" />
+		</Sprite>
+		<Sprite pos="525,380" file="Scene/Gate/3.png"/>
+		<Button tag="3" pos="455,285" PreferredSize="300,150" IgnoreAnchorPoint="true" dirty="0"/>
+		
+		<!-- 高级金币场 -->
+		<Sprite tag="40" file="Scene/Gate/tips.png" pos="300,575" visible="false">
+			<LabelTTF string="高级积分场" pos="40,55" fontname="微软雅黑" fontsize="24" />
+			<LabelTTF string="渔币：积分 = 1:40" pos="30,30" fontname="微软雅黑" fontsize="18" />
+		</Sprite>
+		<Sprite pos="290,505" file="Scene/Gate/4.png"/>
+		<Button tag="4" pos="130,405" PreferredSize="320,190" IgnoreAnchorPoint="true" dirty="0"/>
+		
+		<!-- 未开放 -->
+		<Sprite tag="50" file="Scene/Gate/tips.png" pos="720,570" visible="false">
+			<LabelTTF string="未开放" pos="60,55" fontname="微软雅黑" fontsize="24" />
+		</Sprite>
+		<Sprite pos="715,505" file="Scene/Gate/5.png"/>
+		<Button tag="5" pos="757,405" PreferredSize="400,190" IgnoreAnchorPoint="true" dirty="0"/>
+		
+		<Button tag="6" pos="1200,670" PreferredSize="80.5,77" norScale9Sprite="file='Scene/Gate/rank.png' rect='0,0,80.5,77'"/>
+		
+	 	<!-- 底部边框 -->
+	 	<Sprite pos="0,0" file="Scene/Gate/bottom.png" IgnoreAnchorPoint="true" />
+
+	</LayerColor>
+</root>

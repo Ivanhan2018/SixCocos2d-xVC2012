@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+	<!-- 背景音乐 -->
+	<BackgroundMusic>
+		<Music Id="0" path="Bg/0.wav"/>
+		<Music Id="1" path="Bg/1.wav"/>
+		<Music Id="2" path="Bg/2.wav"/>
+		<Music Id="3" path="Bg/3.wav"/>
+		<Music Id="4" path="Bg/4.wav"/>
+		<Music Id="5" path="Bg/5.wav"/>
+		<Music Id="6" path="Bg/6.wav"/>
+		<Music Id="7" path="Bg/fishScene.wav"/>
+	</BackgroundMusic>
+	<!-- 特效音乐 -->
+	<EffectMusic>
+		<!-- 击中鱼特效 -->
+		<Music id="8" path="Fish/hitfish01.wav"/>
+		<Music id="9" path="Fish/hitfish02.wav"/>
+		<Music Id="10" path="Fish/hitfish03.wav"/>
+		<Music Id="11" path="Fish/hitfish04.wav"/>
+		<Music Id="12" path="Fish/hitfish05.wav"/>
+		<Music Id="13" path="Fish/hitfish06.wav"/>
+		<Music Id="14" path="Fish/hitfish07.wav"/>
+		<Music Id="15" path="Fish/hitfish08.wav"/>
+		<Music Id="16" path="Fish/hitfish09.wav"/>
+		<Music Id="17" path="Fish/hitfish10.wav"/>
+		<Music Id="18" path="Fish/hitfish11.wav"/>
+		<Music Id="19" path="Fish/hitfish12.wav"/>
+		<Music Id="20" path="Fish/hitfish13.wav"/>
+		<Music Id="21" path="Fish/hitfish14.wav"/>
+		<Music Id="22" path="Fish/hitfish15.wav"/>
+		<Music Id="23" path="Fish/hitfish16.wav"/>
+		<Music Id="24" path="Fish/hitfish17.wav"/>
+		<!-- 场景切换 -->
+		<Music Id="25" path="Event/changeScene.mp3"/>
+		<!-- 幸运大转盘 -->
+		<Music Id="26" path="FortuneWheel/Go.wav"/>
+		<Music Id="27" path="FortuneWheel/Setup.wav"/>
+	</EffectMusic>
+</Root>

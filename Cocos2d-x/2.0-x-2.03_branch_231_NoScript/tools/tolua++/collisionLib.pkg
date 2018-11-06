@@ -1,0 +1,3 @@
+CCPoint segment_cross_Rect(CCPoint v1,CCPoint v2,CCPoint v3,CCPoint v4,CCPoint pt1,CCPoint pt2,float error);
+
+CCPoint getReflex(CCPoint v1,CCPoint v2,CCPoint v3,CCPoint v4,CCPoint pt1,CCPoint pt2,float error);

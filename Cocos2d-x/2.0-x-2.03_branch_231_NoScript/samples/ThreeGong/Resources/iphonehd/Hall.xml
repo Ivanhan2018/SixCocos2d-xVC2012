@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<!-- 背景层 -->
+	<LayerColor name="bg" tag="0" color="255,255,255,255" dirty="0">
+		<!-- 背景 -->
+		<!--
+		<Sprite file="Common/tiled_bg.png" tiledrect="0,0,800,480" anchorpoint="0,0"/>
+		-->
+		<Sprite file="login_bg.jpg" anchorpoint="0,0"/>
+		<Sprite file="lady.png" posRatio="0.0,0.0" anchorpoint="0,0"/>
+		<!-- 左上角版本区域 -->
+		<Node tag="1" PosRatio="0,0.9375" IgnoreAnchorPoint="true" dirty="0">
+			<LabelTTF tag="11" string="" PosRatio="0.015,0" fontname="Tahoma" fontsize="12" color="255,0,0,255" />
+			<LabelTTF tag="12" string="" PosRatio="0.05,0" fontname="Tahoma" fontsize="12" color="255,255,255,255" />
+			<LabelTTF tag="13" string="" PosRatio="0.1125,0" fontname="Tahoma" fontsize="12" color="255,255,255,255" />
+		</Node>
+		<!-- 右上角按钮区域  -->
+		<Node PosRatio="0.7225,0.8475" IgnoreAnchorPoint="true" dirty="0">
+			<!-- 排行 -->
+			<Button tag="20" pos="0,0" PreferredSize="50,57" norScale9Sprite="file='hall_btn_rank.png' rect='0,0,50,57'" hovScale9Sprite="file='hall_btn_rank.png' rect='50,0,50,57'" Events="32" IgnoreAnchorPoint="true" />
+			<!-- 帮助 -->
+			<Button tag="21" pos="80,0" PreferredSize="40,57" norScale9Sprite="file='hall_btn_help.png' rect='0,0,40,57'" hovScale9Sprite="file='hall_btn_help.png' rect='40,0,40,57'" Events="32" IgnoreAnchorPoint="true" />
+			<!-- 设置 -->
+			<Button tag="22" pos="150,0" PreferredSize="43,60" norScale9Sprite="file='hall_btn_setting.png' rect='0,0,43,60'" hovScale9Sprite="file='hall_btn_setting.png' rect='43,0,43,60'" Events="32" IgnoreAnchorPoint="true" />
+		</Node>
+		<!-- 首购礼包 -->
+		<Button tag="23" posRatio="0.05625,0.71875" PreferredSize="165,93" norScale9Sprite="file='hall_btn_gift.png' rect='0,0,165,93'" hovScale9Sprite="file='hall_btn_gift.png' rect='165,0,165,93'" Events="32" IgnoreAnchorPoint="true" />
+		<!-- 中间按钮区域 -->
+		<Node posRatio="0.06,0.34" IgnoreAnchorPoint="true" dirty="0">
+			<!-- 快速游戏 -->
+			<Button tag="30" pos="0,0" PreferredSize="161,145" norScale9Sprite="file='hall_btn_quickstart.png' rect='0,0,161,145'" hovScale9Sprite="file='hall_btn_quickstart.png' rect='161,0,161,145'" Events="32" IgnoreAnchorPoint="true" />
+			<!-- 游戏大厅 -->
+			<Button tag="31" pos="181,0" PreferredSize="161,145" norScale9Sprite="file='hall_btn_hall.png' rect='0,0,161,145'" hovScale9Sprite="file='hall_btn_hall.png' rect='161,0,161,145'" Events="32" IgnoreAnchorPoint="true" />
+			<!-- 通比竞技 -->
+			<Button tag="32" pos="362,0" PreferredSize="161,145" norScale9Sprite="file='hall_btn_arena.png' rect='0,0,161,145'" hovScale9Sprite="file='hall_btn_arena.png' rect='161,0,161,145'" Events="32" IgnoreAnchorPoint="true" />
+			<!-- 领取奖品 -->
+			<Button tag="33" pos="543,0" PreferredSize="161,145" norScale9Sprite="file='hall_btn_reward.png' rect='0,0,161,145'" hovScale9Sprite="file='hall_btn_reward.png' rect='161,0,161,145'" Events="32" IgnoreAnchorPoint="true" />
+		</Node>
+		<!-- 左下角用户信息区域 -->
+		<Button tag="40" posRatio="0.015,0.012" PreferredSize="182,56" norScale9Sprite="file='hall_btn_bg_user.png' rect='0,0,182,56'" hovScale9Sprite="file='hall_btn_bg_user.png' rect='182,0,182,56'" Events="32" IgnoreAnchorPoint="true" ZoomOnTouchDown="false" >
+			<!-- 头像 -->
+			<Sprite tag="41" pos="5,5" file="face_small.jpg" />
+			<!-- 昵称 -->
+			<LabelTTF tag="42" pos="53,30" string="" Dimensions="125,20" fontname="微软雅黑" fontsize="14" color="255,255,255,255" />
+			<!-- 等级 -->
+			<Sprite tag="43" pos="53,5" file="lv1.png" anchorpoint="0,0"/>
+			<!-- Lv -->
+			<LabelTTF tag="44" pos="81,5" string="" Dimensions="18,20" fontname="Tahoma" HorizontalAlignment="1" VerticalAlignment="1" fontsize="12" color="255,197,0,255" />
+			<!-- 经验槽 -->
+			<Sprite file="lv_progress_s_bg.png" pos="101,5" anchorpoint="0,0"/>
+			<ProgressTimer tag="45" anchorpoint="0,0" Midpoint="0,0" BarChangeRate="1,0" type="1" Percentage="10.0" pos="100,5" Sprite="file='lv_progress_s.png'\r\ndirty='true'" />
+		</Button>
+		<!-- 右下角按钮区域 -->
+		<!-- 获得筹码 -->
+		<Button tag="50" posRatio="0.247,0.012" PreferredSize="270,57" norScale9Sprite="file='hall_btn_bg_getchip.png' rect='0,0,270,57'" hovScale9Sprite="file='hall_btn_bg_getchip.png' rect='270,0,270,57'" Events="32" IgnoreAnchorPoint="true" ZoomOnTouchDown="false" >
+			<Sprite pos="10,10" file="hall_ico_chip.png" anchorpoint="0,0"/>
+			<LabelTTF tag="51" pos="55,20" string="" fontname="Tahoma" fontsize="14" color="240,206,0,255" />
+		</Button>
+		<!-- 活动 -->
+		<Button tag="52" posRatio="0.5875,0.012" PreferredSize="161,56" norScale9Sprite="file='hall_btn_bg_task.png' rect='0,0,161,56'" hovScale9Sprite="file='hall_btn_bg_task.png' rect='161,0,161,56'" Events="32" IgnoreAnchorPoint="true" ZoomOnTouchDown="false" >
+			<Sprite pos="40,10" file="hall_ico_activity.png" anchorpoint="0,0"/>
+			<LabelTTF pos="80,15" string="活 动" fontname="微软雅黑" fontsize="18" color="255,255,255,255" />
+		</Button>
+		<!-- 任务 -->
+		<Button tag="53" posRatio="0.79375,0.012" PreferredSize="161,56" norScale9Sprite="file='hall_btn_bg_task.png' rect='0,0,161,56'" hovScale9Sprite="file='hall_btn_bg_task.png' rect='161,0,161,56'" Events="32" IgnoreAnchorPoint="true" ZoomOnTouchDown="false" >
+			<Sprite pos="40,10" file="hall_ico_task.png" anchorpoint="0,0"/>
+			<LabelTTF pos="80,15" string="任 务" fontname="微软雅黑" fontsize="18" color="255,255,255,255" />
+			<!-- 已完成任务提示 -->
+			<Sprite tag="54" pos="121,40" file="hall_task_active.png" anchorpoint="0,0" visible="false">
+				<LabelTTF tag="55" pos="5,5" string="0" fontname="Tahoma" fontsize="16" color="255,255,255,255" />
+			</Sprite>
+		</Button>
+	</LayerColor>
+</root>

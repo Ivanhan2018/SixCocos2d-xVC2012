@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{bb69dcd5-2ab5-4d7e-8be1-8bc900dccf57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SIX_Classes">
+      <UniqueIdentifier>{090588e0-fb9e-43cb-bd53-d08c3241a734}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_World.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_SceneGame.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\FishManage.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\Gold.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\Ship.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\Curve.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\BulletAndNetMgr.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_SceneGate.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_RippleGrid3D.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_PopWndSetting.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_PopWndBuyBullet.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_PopWndSellFish.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_RoomList.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_ClientLogin.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_ClientRoom.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_PlayerMgr.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_MatchList.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_MatchEnd.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_ConsoleGM.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_PopWndRank.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_LoginPanel.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_RoomMgr.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\SIX_ClientLogic.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_Classes\CCActionEx.cpp">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_World.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_Common.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_SceneGame.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\FishManage.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\Gold.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\Ship.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\Curve.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\BulletAndNetMgr.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_SceneGate.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_RippleGrid3D.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_PopWndSetting.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_PopWndBuyBullet.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_PopWndSellFish.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_RoomList.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_ClientLogin.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_ClientRoom.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_PlayerMgr.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_MatchList.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_MatchEnd.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_ConsoleGM.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_PopWndRank.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_LoginPanel.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_RoomMgr.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\SIX_ClientLogic.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Classes\CCActionEx.h">
+      <Filter>Classes\SIX_Classes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="L9Fish.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+</Project>

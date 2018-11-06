@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7897956E-4CBA-4BFE-AB84-397B5E15E4C7}</ProjectGuid>
+    <ProjectName>L9ThreeGong</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)cocos2dx;$(SolutionDir)cocos2dx\include;$(SolutionDir)cocos2dx\kazmath\include;$(SolutionDir)cocos2dx\platform\win32;$(SolutionDir)cocos2dx\platform\third_party\win32\OGLES;$(SolutionDir)cocos2dx\platform\third_party\win32\pthread;$(SolutionDir)cocos2dx\platform\third_party\win32\MMEAD;$(SolutionDir)CocosDenshion;$(SolutionDir)CocosDenshion\include;$(SolutionDir)extensions;$(SolutionDir)scripting\lua\cocos2dx_support;$(SolutionDir)scripting\lua\lua;$(SolutionDir)scripting\lua\tolua;$(SolutionDir)scripting\lua\src;$(SolutionDir)SIX_Framework;$(SolutionDir)SIX_Framework\Base_Interface;$(SolutionDir)SIX_Framework\Net_Interface;$(SolutionDir)SIX_Framework\Shared_Interface;$(SolutionDir)SIX_Framework\tinyxml;$(SolutionDir)SIX_Framework\UI_Interface;$(SolutionDir)SIX_Framework\JNI_Interface;$(SolutionDir)SIX_Framework\Game_Interface;.\;..\Classes;..\Classes\SIX_Classes;$(SolutionDir)..\..\GoodFrame\PUBLIC_H;$(SolutionDir)..\..\GoodFrame\common;$(SolutionDir)..\..\GoodFrame\GameApp\SanGong\GameMsg;$(SolutionDir)..\..\GoodFrame\APP_HEAD;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_USRLIB;TIXML_USE_STL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;iconv.lib;Winmm.lib;user32.lib;pthreadVCE2.lib;liblua.lib;libcurl_imp.lib;libBox2d.lib;libchipmunk.lib;libcocos2d.lib;libExtensions.lib;libCocosDenshion.lib;MMEAD.lib;SIX_Framework.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateMapFile>false</GenerateMapFile>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>L9ThreeGong.h</HeaderFileName>
+      <InterfaceIdentifierFileName>L9ThreeGong_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>L9ThreeGong_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/L9ThreeGong.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)cocos2dx;$(SolutionDir)cocos2dx\include;$(SolutionDir)cocos2dx\kazmath\include;$(SolutionDir)cocos2dx\platform\win32;$(SolutionDir)cocos2dx\platform\third_party\win32\OGLES;$(SolutionDir)cocos2dx\platform\third_party\win32\pthread;$(SolutionDir)cocos2dx\platform\third_party\win32\MMEAD;$(SolutionDir)CocosDenshion;$(SolutionDir)CocosDenshion\include;$(SolutionDir)extensions;$(SolutionDir)scripting\lua\cocos2dx_support;$(SolutionDir)scripting\lua\lua;$(SolutionDir)scripting\lua\tolua;$(SolutionDir)scripting\lua\src;$(SolutionDir)SIX_Framework;$(SolutionDir)SIX_Framework\Base_Interface;$(SolutionDir)SIX_Framework\Net_Interface;$(SolutionDir)SIX_Framework\Shared_Interface;$(SolutionDir)SIX_Framework\tinyxml;$(SolutionDir)SIX_Framework\UI_Interface;$(SolutionDir)SIX_Framework\JNI_Interface;$(SolutionDir)SIX_Framework\Game_Interface;.\;..\Classes;..\Classes\SIX_Classes;$(SolutionDir)..\..\GoodFrame\PUBLIC_H;$(SolutionDir)..\..\GoodFrame\common;$(SolutionDir)..\..\GoodFrame\GameApp\SanGong\GameMsg;$(SolutionDir)..\..\GoodFrame\APP_HEAD;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_USRLIB;TIXML_USE_STL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;iconv.lib;Winmm.lib;user32.lib;pthreadVCE2.lib;liblua.lib;libcurl_imp.lib;libBox2d.lib;libchipmunk.lib;libcocos2d.lib;libExtensions.lib;libCocosDenshion.lib;MMEAD.lib;SIX_Framework.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>L9ThreeGong.h</HeaderFileName>
+      <InterfaceIdentifierFileName>L9ThreeGong_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>L9ThreeGong_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/L9ThreeGong.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\SIX_ClientHall.h" />
+    <ClInclude Include="..\Classes\SIX_ClientLogic.h" />
+    <ClInclude Include="..\Classes\SIX_ClientLogin.h" />
+    <ClInclude Include="..\Classes\SIX_ClientRoom.h" />
+    <ClInclude Include="..\Classes\SIX_Common.h" />
+    <ClInclude Include="..\Classes\SIX_LoginPanel.h" />
+    <ClInclude Include="..\Classes\SIX_PlayerMgr.h" />
+    <ClInclude Include="..\Classes\SIX_PointCard.h" />
+    <ClInclude Include="..\Classes\SIX_PopWndActivity.h" />
+    <ClInclude Include="..\Classes\SIX_PopWndAntiddiction.h" />
+    <ClInclude Include="..\Classes\SIX_PopWndFirstBuy.h" />
+    <ClInclude Include="..\Classes\SIX_PopWndHelp.h" />
+    <ClInclude Include="..\Classes\SIX_PopWndMessage.h" />
+    <ClInclude Include="..\Classes\SIX_PopWndPersonalInfomation.h" />
+    <ClInclude Include="..\Classes\SIX_PopWndPlayerInfo.h" />
+    <ClInclude Include="..\Classes\SIX_PopWndResetPassWord.h" />
+    <ClInclude Include="..\Classes\SIX_PopWndRoomList.h" />
+    <ClInclude Include="..\Classes\SIX_PopWndSetting.h" />
+    <ClInclude Include="..\Classes\SIX_PopWndAward.h" />
+    <ClInclude Include="..\Classes\SIX_PopWndShop.h" />
+    <ClInclude Include="..\Classes\SIX_PopWndTask.h" />
+    <ClInclude Include="..\Classes\SIX_PopWndTopList.h" />
+    <ClInclude Include="..\Classes\SIX_RoomMgr.h" />
+    <ClInclude Include="..\Classes\SIX_SceneGame.h" />
+    <ClInclude Include="..\Classes\SIX_SceneLogin.h" />
+    <ClInclude Include="..\Classes\SIX_PopWndHaveListView.h" />
+    <ClInclude Include="..\Classes\SIX_SceneHall.h" />
+    <ClInclude Include="..\Classes\SIX_SceneIntro.h" />
+    <ClInclude Include="..\Classes\SIX_World.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\SIX_ClientHall.cpp" />
+    <ClCompile Include="..\Classes\SIX_ClientLogic.cpp" />
+    <ClCompile Include="..\Classes\SIX_ClientLogin.cpp" />
+    <ClCompile Include="..\Classes\SIX_ClientRoom.cpp" />
+    <ClCompile Include="..\Classes\SIX_LoginPanel.cpp" />
+    <ClCompile Include="..\Classes\SIX_PlayerMgr.cpp" />
+    <ClCompile Include="..\Classes\SIX_PointCard.cpp" />
+    <ClCompile Include="..\Classes\SIX_PopWndActivity.cpp" />
+    <ClCompile Include="..\Classes\SIX_PopWndAntiddiction.cpp" />
+    <ClCompile Include="..\Classes\SIX_PopWndFirstBuy.cpp" />
+    <ClCompile Include="..\Classes\SIX_PopWndHelp.cpp" />
+    <ClCompile Include="..\Classes\SIX_PopWndMessage.cpp" />
+    <ClCompile Include="..\Classes\SIX_PopWndPersonalInfomation.cpp" />
+    <ClCompile Include="..\Classes\SIX_PopWndPlayerInfo.cpp" />
+    <ClCompile Include="..\Classes\SIX_PopWndResetPassWord.cpp" />
+    <ClCompile Include="..\Classes\SIX_PopWndRoomList.cpp" />
+    <ClCompile Include="..\Classes\SIX_PopWndSetting.cpp" />
+    <ClCompile Include="..\Classes\SIX_PopWndAward.cpp" />
+    <ClCompile Include="..\Classes\SIX_PopWndShop.cpp" />
+    <ClCompile Include="..\Classes\SIX_PopWndTask.cpp" />
+    <ClCompile Include="..\Classes\SIX_PopWndTopList.cpp" />
+    <ClCompile Include="..\Classes\SIX_RoomMgr.cpp" />
+    <ClCompile Include="..\Classes\SIX_SceneGame.cpp" />
+    <ClCompile Include="..\Classes\SIX_SceneLogin.cpp" />
+    <ClCompile Include="..\Classes\SIX_PopWndHaveListView.cpp" />
+    <ClCompile Include="..\Classes\SIX_SceneHall.cpp" />
+    <ClCompile Include="..\Classes\SIX_SceneIntro.cpp" />
+    <ClCompile Include="..\Classes\SIX_World.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="L9ThreeGong.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

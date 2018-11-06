@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+	<!-- 背景音乐 -->
+	<BackgroundMusic>
+		<Music Id="0" path="bg.wav"/>
+	</BackgroundMusic>
+	<!-- 特效音乐 -->
+	<EffectMusic>
+		<!-- 按钮 -->
+		<Music Id="100" path="btn.wav"/>
+		<!-- 开牌 -->
+		<Music Id="200" path="c_show.wav"/>
+		<!-- 下注 -->
+		<Music Id="300" path="chip.wav"/>
+		<!-- 对话框隐藏 -->
+		<Music Id="400" path="d_hide.wav"/>
+		<!-- 对话框显示 -->
+		<Music Id="500" path="d_show.wav"/>
+		<!-- 发牌 -->
+		<Music Id="600" path="deal.wav"/>
+		<!-- 骰子 -->
+		<Music Id="700" path="dice.wav"/>
+		<!-- 输 -->
+		<Music Id="800" path="lose.wav"/>
+		<!-- 奖励 -->
+		<Music Id="900" path="reward.wav"/>
+		<!-- 抢庄 -->
+		<Music Id="1000" path="rub.wav"/>
+		<!-- 赢 -->
+		<Music Id="1100" path="win.wav"/>
+		<!-- 赢筹码 -->
+		<Music Id="1200" path="win_chip.wav"/>
+	</EffectMusic>
+</Root>

@@ -1,0 +1,57 @@
+/*********************************************************
+Name：Lua<=>C++测试类
+Desc：Lua调用本类测试
+Auth：Cool.Cat@2013-03-26
+*********************************************************/
+#pragma once
+#include <SIX_Typedef.h>
+
+#define TEST_COMMON	123
+
+class SIX_LONGLONG{
+public:
+	SIX_LONGLONG(LONGLONG ll){memcpy(this,&ll,sizeof(LONGLONG));}
+	~SIX_LONGLONG(){}
+	LONGLONG MakeLongLong(unsigned int LO32,unsigned int HI32)
+	{
+	   return LO32+(LONGLONG)HI32<<32;
+	}
+	unsigned int LO32;
+	unsigned int HI32;
+};
+
+class SIX_Data{
+public:
+	SIX_Data(){}
+	~SIX_Data(){}
+	int a;
+	float b;
+	CCString *c;
+};
+
+class SIX_Func{
+public:
+	SIX_Func(){}
+	~SIX_Func(){}
+	int Sum(int a,int b)
+	{
+		return a+b;
+	}
+	SIX_Data *GetData()
+	{
+		SIX_Data *pInfo = new SIX_Data();
+		pInfo->a = 1;
+		pInfo->b = 99.98;
+		pInfo->c = CCString::createWithFormat(SIX_Utility::GetInstance()->G2U("俺是：Cool.Cat").c_str());
+
+		return pInfo;
+	}
+	int SendData(SIX_Data *pInfo)
+	{
+		SIXLog("SendData.pInfo = { %d , %.2f , %s }",
+			pInfo->a,
+			pInfo->b,
+			pInfo->c->getCString());
+		return Sum(2,3);
+	}
+};

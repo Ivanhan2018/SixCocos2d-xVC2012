@@ -1,0 +1,735 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\NewFilter1">
+      <UniqueIdentifier>{08b770ca-44fa-43b6-9eac-7fe0e0065d14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\NewFilter2">
+      <UniqueIdentifier>{545bbcb9-97cc-4560-bc04-5b2a16d86a12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio">
+      <UniqueIdentifier>{d8e6e958-e8b0-4302-98d1-345b6b9a0b08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter1">
+      <UniqueIdentifier>{15e0fc73-f84f-42df-963e-11005e5999a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter2">
+      <UniqueIdentifier>{e7d39730-dced-47cf-87d8-c1ccd9ef176e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter3">
+      <UniqueIdentifier>{e511c36c-ec1f-4655-8339-7e3a2cd14400}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter4">
+      <UniqueIdentifier>{6abd591e-2cc1-41e1-b760-77cbb44da75c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter5">
+      <UniqueIdentifier>{1477cfd6-e01d-443a-8738-8b9c9a3486b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter6">
+      <UniqueIdentifier>{bbd97c5b-fa97-4e55-aca8-7828057b9572}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter7">
+      <UniqueIdentifier>{72f97871-1b7e-4fbd-ae3c-95c5727c20e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter8">
+      <UniqueIdentifier>{afb8e508-9ba0-4576-90c2-181e03370c98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter5\NewFilter1">
+      <UniqueIdentifier>{65893c6f-fc96-4008-baa8-6a6142ede60d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter5\NewFilter2">
+      <UniqueIdentifier>{701df1cd-13ff-464e-ad64-617c0ceb8e73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter5\NewFilter3">
+      <UniqueIdentifier>{b50025f7-fa19-46e3-8436-c968aec9ae01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter5\NewFilter4">
+      <UniqueIdentifier>{2468e272-e295-4f0a-b6a3-9c58777ac5df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter5\NewFilter4\NewFilter1">
+      <UniqueIdentifier>{d963e0b7-173a-443f-b0bf-e4f63c23fa15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter5\NewFilter4\NewFilter2">
+      <UniqueIdentifier>{dbbaf97e-2b90-496d-9b00-11be589afec6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter6\NewFilter1">
+      <UniqueIdentifier>{140a96d2-5545-4e7a-aa54-3dc73b986350}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter6\NewFilter1\NewFilter1">
+      <UniqueIdentifier>{e69b843b-7a64-4b5d-8204-e15404e07dd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter7\NewFilter1">
+      <UniqueIdentifier>{97486eab-7385-4187-a2dd-e3d09101e36f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter1">
+      <UniqueIdentifier>{0f713d07-b43f-4e5a-9f09-61006f403c30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter2">
+      <UniqueIdentifier>{e7f4f5a2-c682-4e8f-8243-48964c6ed0e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter3">
+      <UniqueIdentifier>{7f427c0c-10cd-4d4f-977e-f68c9d7e97df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter4">
+      <UniqueIdentifier>{cb0c712f-c86c-4895-a5b0-f5ee10751506}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter5">
+      <UniqueIdentifier>{7b31c4e5-e346-4b1b-ba44-517e462c5ba6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter6">
+      <UniqueIdentifier>{2133d11b-72e6-47b8-ba7e-95101a746927}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter7">
+      <UniqueIdentifier>{59cd9520-0bd2-4e5a-bd49-abf728feae63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter8">
+      <UniqueIdentifier>{afbc3261-0f8c-4751-80b5-2ae30ba8964a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter9">
+      <UniqueIdentifier>{a52ff4ae-6d43-4a81-9c3b-2cd8dbdea1a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter10">
+      <UniqueIdentifier>{96b672dd-fa79-4f17-bb5e-436d41134b0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter11">
+      <UniqueIdentifier>{f6381249-706a-4b0a-af11-d20e6023a168}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter12">
+      <UniqueIdentifier>{4b35f2bb-b7a7-475c-9027-065b746b5a12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter13">
+      <UniqueIdentifier>{6bc6937e-7014-48a2-bb75-296b3d88ebe5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FishDemo\BulletSprite.cpp">
+      <Filter>Classes\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FishDemo\FishSprite.cpp">
+      <Filter>Classes\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FishDemo\HallLayer.cpp">
+      <Filter>Classes\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FishDemo\HelloWorldScene.cpp">
+      <Filter>Classes\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FishDemo\LoadingLayer.cpp">
+      <Filter>Classes\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FishDemo\LoginLayer.cpp">
+      <Filter>Classes\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FishDemo\PlayerLayer.cpp">
+      <Filter>Classes\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FishDemo\RegisterLayer.cpp">
+      <Filter>Classes\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FishDemo\SkinControls.cpp">
+      <Filter>Classes\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SixUI\SIX_Cursor.cpp">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SixUI\SIX_EditBox.cpp">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SixUI\SIX_EffectBatchNode.cpp">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SixUI\SIX_FileSystem.cpp">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SixUI\SIX_GlobalMgr.cpp">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SixUI\SIX_ListView.cpp">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SixUI\SIX_ListViewCell.cpp">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SixUI\SIX_MusicMgr.cpp">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SixUI\SIX_PopWnd.cpp">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SixUI\SIX_PopWndBuyBullet.cpp">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SixUI\SIX_PopWndSetting.cpp">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SixUI\SIX_SceneMgr.cpp">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SixUI\SIX_ScrollBar.cpp">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SixUI\SIX_UILayer.cpp">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SixUI\SIX_UIMgr.cpp">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SixUI\SIX_UIScene.cpp">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SixUI\SIX_Utility.cpp">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SixUI\SIX_XMLParser.cpp">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SixUI\tinystr.cpp">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SixUI\tinyxml.cpp">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SixUI\tinyxmlerror.cpp">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SixUI\tinyxmlparser.cpp">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Action\CCActionEaseEx.cpp">
+      <Filter>Classes\CocoStudio\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Action\CCActionFrame.cpp">
+      <Filter>Classes\CocoStudio\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Action\CCActionFrameEasing.cpp">
+      <Filter>Classes\CocoStudio\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Action\CCActionManager.cpp">
+      <Filter>Classes\CocoStudio\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Action\CCActionNode.cpp">
+      <Filter>Classes\CocoStudio\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Action\CCActionObject.cpp">
+      <Filter>Classes\CocoStudio\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\ActionTimeline\CCActionTimeline.cpp">
+      <Filter>Classes\CocoStudio\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\ActionTimeline\CCActionTimelineCache.cpp">
+      <Filter>Classes\CocoStudio\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\ActionTimeline\CCFrame.cpp">
+      <Filter>Classes\CocoStudio\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\ActionTimeline\CCNodeReader.cpp">
+      <Filter>Classes\CocoStudio\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\ActionTimeline\CCTimeLine.cpp">
+      <Filter>Classes\CocoStudio\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Components\CCComAttribute.cpp">
+      <Filter>Classes\CocoStudio\NewFilter4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Components\CCComAudio.cpp">
+      <Filter>Classes\CocoStudio\NewFilter4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Components\CCComController.cpp">
+      <Filter>Classes\CocoStudio\NewFilter4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Components\CCComRender.cpp">
+      <Filter>Classes\CocoStudio\NewFilter4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Components\CCInputDelegate.cpp">
+      <Filter>Classes\CocoStudio\NewFilter4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\GUI\BaseClasses\UIWidget.cpp">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\GUI\Layouts\UILayout.cpp">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\GUI\Layouts\UILayoutDefine.cpp">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\GUI\Layouts\UILayoutParameter.cpp">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\GUI\System\CocosGUI.cpp">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\GUI\System\UIHelper.cpp">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\GUI\System\UITouchGroup.cpp">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\UIButton.cpp">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\UICheckBox.cpp">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\UIImageView.cpp">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\UILabel.cpp">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\UILabelAtlas.cpp">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\UILabelBMFont.cpp">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\UILoadingBar.cpp">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\UIRichText.cpp">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\UISlider.cpp">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\UITextField.cpp">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\ScrollWidget\UIListView.cpp">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\ScrollWidget\UIPageView.cpp">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\ScrollWidget\UIScrollView.cpp">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Json\CocoLoader.cpp">
+      <Filter>Classes\CocoStudio\NewFilter6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Json\DictionaryHelper.cpp">
+      <Filter>Classes\CocoStudio\NewFilter6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Reader\GUIReader.cpp">
+      <Filter>Classes\CocoStudio\NewFilter7</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Reader\SceneReader.cpp">
+      <Filter>Classes\CocoStudio\NewFilter7</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\WidgetReader.cpp">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Trigger\ObjectFactory.cpp">
+      <Filter>Classes\CocoStudio\NewFilter8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Trigger\TriggerBase.cpp">
+      <Filter>Classes\CocoStudio\NewFilter8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Trigger\TriggerMng.cpp">
+      <Filter>Classes\CocoStudio\NewFilter8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Trigger\TriggerObj.cpp">
+      <Filter>Classes\CocoStudio\NewFilter8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\ButtonReader\ButtonReader.cpp">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\CheckBoxReader\CheckBoxReader.cpp">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\ImageViewReader\ImageViewReader.cpp">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\LabelAtlasReader\LabelAtlasReader.cpp">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\LabelBMFontReader\LabelBMFontReader.cpp">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\LabelReader\LabelReader.cpp">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\LayoutReader\LayoutReader.cpp">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter7</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\ListViewReader\ListViewReader.cpp">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\LoadingBarReader\LoadingBarReader.cpp">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\PageViewReader\PageViewReader.cpp">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\ScrollViewReader\ScrollViewReader.cpp">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter11</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\SliderReader\SliderReader.cpp">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter12</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\TextFieldReader\TextFieldReader.cpp">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter13</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FishDemo\BulletSprite.h">
+      <Filter>Classes\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FishDemo\Common.h">
+      <Filter>Classes\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FishDemo\FishSprite.h">
+      <Filter>Classes\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FishDemo\HallLayer.h">
+      <Filter>Classes\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FishDemo\HelloWorldScene.h">
+      <Filter>Classes\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FishDemo\LoadingLayer.h">
+      <Filter>Classes\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FishDemo\LoginLayer.h">
+      <Filter>Classes\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FishDemo\PlayerLayer.h">
+      <Filter>Classes\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FishDemo\RegisterLayer.h">
+      <Filter>Classes\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FishDemo\SkinControls.h">
+      <Filter>Classes\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\SIX_Cursor.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\SIX_DSTPL.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\SIX_EditBox.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\SIX_EffectBatchNode.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\SIX_EntityMgr.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\SIX_FileSystem.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\SIX_GlobalMgr.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\SIX_IInterface.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\SIX_Interface.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\SIX_ListView.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\SIX_ListViewCell.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\SIX_MusicMgr.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\SIX_PopWnd.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\SIX_PopWndBuyBullet.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\SIX_PopWndSetting.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\SIX_SceneMgr.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\SIX_ScrollBar.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\SIX_TList.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\SIX_Typedef.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\SIX_UILayer.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\SIX_UIMgr.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\SIX_UIScene.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\SIX_Utility.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\SIX_XMLParser.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\tinystr.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\tinyxml.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\TSingleton.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SixUI\xorstr.h">
+      <Filter>Classes\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Action\CCActionEaseEx.h">
+      <Filter>Classes\CocoStudio\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Action\CCActionFrame.h">
+      <Filter>Classes\CocoStudio\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Action\CCActionFrameEasing.h">
+      <Filter>Classes\CocoStudio\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Action\CCActionManager.h">
+      <Filter>Classes\CocoStudio\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Action\CCActionNode.h">
+      <Filter>Classes\CocoStudio\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Action\CCActionObject.h">
+      <Filter>Classes\CocoStudio\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\ActionTimeline\CCActionTimeline.h">
+      <Filter>Classes\CocoStudio\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\ActionTimeline\CCActionTimelineCache.h">
+      <Filter>Classes\CocoStudio\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\ActionTimeline\CCFrame.h">
+      <Filter>Classes\CocoStudio\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\ActionTimeline\CCNodeReader.h">
+      <Filter>Classes\CocoStudio\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\ActionTimeline\CCTimeLine.h">
+      <Filter>Classes\CocoStudio\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\ActionTimeline\CCTimelineMacro.h">
+      <Filter>Classes\CocoStudio\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Components\CCComAttribute.h">
+      <Filter>Classes\CocoStudio\NewFilter4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Components\CCComAudio.h">
+      <Filter>Classes\CocoStudio\NewFilter4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Components\CCComBase.h">
+      <Filter>Classes\CocoStudio\NewFilter4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Components\CCComController.h">
+      <Filter>Classes\CocoStudio\NewFilter4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Components\CCComRender.h">
+      <Filter>Classes\CocoStudio\NewFilter4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Components\CCInputDelegate.h">
+      <Filter>Classes\CocoStudio\NewFilter4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\GUI\BaseClasses\UIWidget.h">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\GUI\Layouts\UILayout.h">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\GUI\Layouts\UILayoutDefine.h">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\GUI\Layouts\UILayoutParameter.h">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\GUI\System\CocosGUI.h">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\GUI\System\GUIDefine.h">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\GUI\System\UIHelper.h">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\GUI\System\UITouchGroup.h">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\UIButton.h">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\UICheckBox.h">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\UIImageView.h">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\UILabel.h">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\UILabelAtlas.h">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\UILabelBMFont.h">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\UILoadingBar.h">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\UIRichText.h">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\UISlider.h">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\UITextField.h">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\Compatible\CompatibleClasses.h">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\ScrollWidget\UIPageView.h">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\ScrollWidget\UIListView.h">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\ScrollWidget\UIScrollInterface.h">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\ScrollWidget\UIScrollView.h">
+      <Filter>Classes\CocoStudio\NewFilter5\NewFilter4\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Json\DictionaryHelper.h">
+      <Filter>Classes\CocoStudio\NewFilter6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Json\CocoLoader.h">
+      <Filter>Classes\CocoStudio\NewFilter6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Json\rapidjson\document.h">
+      <Filter>Classes\CocoStudio\NewFilter6\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Json\rapidjson\filestream.h">
+      <Filter>Classes\CocoStudio\NewFilter6\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Json\rapidjson\prettywriter.h">
+      <Filter>Classes\CocoStudio\NewFilter6\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Json\rapidjson\rapidjson.h">
+      <Filter>Classes\CocoStudio\NewFilter6\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Json\rapidjson\reader.h">
+      <Filter>Classes\CocoStudio\NewFilter6\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Json\rapidjson\stringbuffer.h">
+      <Filter>Classes\CocoStudio\NewFilter6\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Json\rapidjson\writer.h">
+      <Filter>Classes\CocoStudio\NewFilter6\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Json\rapidjson\internal\pow10.h">
+      <Filter>Classes\CocoStudio\NewFilter6\NewFilter1\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Json\rapidjson\internal\stack.h">
+      <Filter>Classes\CocoStudio\NewFilter6\NewFilter1\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Json\rapidjson\internal\strfunc.h">
+      <Filter>Classes\CocoStudio\NewFilter6\NewFilter1\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Reader\GUIReader.h">
+      <Filter>Classes\CocoStudio\NewFilter7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Reader\SceneReader.h">
+      <Filter>Classes\CocoStudio\NewFilter7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\WidgetReader.h">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\WidgetReaderProtocol.h">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Trigger\ObjectFactory.h">
+      <Filter>Classes\CocoStudio\NewFilter8</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Trigger\TriggerBase.h">
+      <Filter>Classes\CocoStudio\NewFilter8</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Trigger\TriggerMng.h">
+      <Filter>Classes\CocoStudio\NewFilter8</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Trigger\TriggerObj.h">
+      <Filter>Classes\CocoStudio\NewFilter8</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\ButtonReader\ButtonReader.h">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\CheckBoxReader\CheckBoxReader.h">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\ImageViewReader\ImageViewReader.h">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\LabelAtlasReader\LabelAtlasReader.h">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\LabelBMFontReader\LabelBMFontReader.h">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\LabelReader\LabelReader.h">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\LayoutReader\LayoutReader.h">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\ListViewReader\ListViewReader.h">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter8</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\LoadingBarReader\LoadingBarReader.h">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\PageViewReader\PageViewReader.h">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\ScrollViewReader\ScrollViewReader.h">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\SliderReader\SliderReader.h">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter12</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\TextFieldReader\TextFieldReader.h">
+      <Filter>Classes\CocoStudio\NewFilter7\NewFilter1\NewFilter13</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,871 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ans">
+      <UniqueIdentifier>{6178b273-9458-41bf-8a28-147cc6afc603}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\common">
+      <UniqueIdentifier>{83feb078-b550-462a-a107-5054ab5b4f48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\configMgr">
+      <UniqueIdentifier>{0c7424be-8b11-4bd6-b0ea-fc4d8248d75d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\controls">
+      <UniqueIdentifier>{d871e51f-3edd-44cd-bc59-a3170c326421}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ddz">
+      <UniqueIdentifier>{7c0c842b-1366-4167-8796-7d1bac4c7cda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\entity">
+      <UniqueIdentifier>{9097b89e-4db1-4dce-89e6-4b871fe1815b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\event">
+      <UniqueIdentifier>{95494c2e-1d8d-4613-b5bd-9f12eaaa4e71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\globalUnits">
+      <UniqueIdentifier>{d1ec1951-07d1-4b0c-9198-db9146bca92a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\gui">
+      <UniqueIdentifier>{ae48331e-3459-452d-a28d-c35352a24861}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\msgDispatch">
+      <UniqueIdentifier>{1c6f1353-c78e-434b-81ef-0667f7500abd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\net">
+      <UniqueIdentifier>{a870c6ac-66c1-4260-9a42-dd3d6e0a4c8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\serializers">
+      <UniqueIdentifier>{e23e5269-11f5-47ea-bb36-b76c61bc8cbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\PublicComponents">
+      <UniqueIdentifier>{36df9abe-8f99-4245-8579-3010737c8ad7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\PublicComponents\TableComponents">
+      <UniqueIdentifier>{278acedf-41e6-4adf-b0b7-9ea704de7122}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Json">
+      <UniqueIdentifier>{78cc92bb-f202-4d21-a411-69fef30870ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Json\lib_json">
+      <UniqueIdentifier>{0e522b4b-5ef1-4af8-b883-ef7a0fffc09f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\C2DXShareSDK">
+      <UniqueIdentifier>{e1f9974d-540f-4208-8ba6-79fe7ed5f6f2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ans\AnsIO.cpp">
+      <Filter>Classes\ans</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ans\AnsLog.cpp">
+      <Filter>Classes\ans</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ans\AnsNew.cpp">
+      <Filter>Classes\ans</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ans\AnsPath.cpp">
+      <Filter>Classes\ans</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ans\AnsString.cpp">
+      <Filter>Classes\ans</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ans\AnsThread.cpp">
+      <Filter>Classes\ans</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\common\Encrypt.cpp">
+      <Filter>Classes\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\configMgr\ConfigMgr.cpp">
+      <Filter>Classes\configMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\controls\tableViewLayer.cpp">
+      <Filter>Classes\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\controls\CCTouchSprite.cpp">
+      <Filter>Classes\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\CardTableLayer.cpp">
+      <Filter>Classes\ddz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\DDZLogic.cpp">
+      <Filter>Classes\ddz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\DialogLayer.cpp">
+      <Filter>Classes\ddz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\GameTaskCommon.cpp">
+      <Filter>Classes\ddz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\JniControl.cpp">
+      <Filter>Classes\ddz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\MyTools.cpp">
+      <Filter>Classes\ddz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\SceneControl.cpp">
+      <Filter>Classes\ddz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\SceneData.cpp">
+      <Filter>Classes\ddz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\SceneLogic.cpp">
+      <Filter>Classes\ddz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\SceneView.cpp">
+      <Filter>Classes\ddz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\Settlement.cpp">
+      <Filter>Classes\ddz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\SetUpLayer.cpp">
+      <Filter>Classes\ddz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\SoundControl.cpp">
+      <Filter>Classes\ddz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\Timer.cpp">
+      <Filter>Classes\ddz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\User.cpp">
+      <Filter>Classes\ddz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\ViewCardEffect.cpp">
+      <Filter>Classes\ddz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\ViewHandCard.cpp">
+      <Filter>Classes\ddz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\ViewMenuLayer.cpp">
+      <Filter>Classes\ddz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\ViewTask.cpp">
+      <Filter>Classes\ddz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\VoiceAndFace.cpp">
+      <Filter>Classes\ddz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\entity\EntityMgr.cpp">
+      <Filter>Classes\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\entity\Login.cpp">
+      <Filter>Classes\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\entity\RoomFrame.cpp">
+      <Filter>Classes\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\entity\UserItem.cpp">
+      <Filter>Classes\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\event\GBEvent.cpp">
+      <Filter>Classes\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\globalUnits\GlobalUnits.cpp">
+      <Filter>Classes\globalUnits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\ActivityLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\ActivitySprite.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\AgreementLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\AgreementScrollView.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\BaseLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\ChongCoinsLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\ChoosePhotoCell.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\ChoosephotoScrollLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\ChoosePlayerPhotoLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\CShaderSprite.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\CustomerServiceLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\CusTomTableViewCell.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\EmailCell.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\EmailLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\EmailScorllLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\ExitLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\FreeCell.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\FreeLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\FreeScrollLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\GetCharge.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\GroupSprite.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\HelpLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\HelpScrollView.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\LoadingLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\LoginLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\MenuLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\ModifyPassWord.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\MovingLabelLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\OverRegistLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\PlayerInfoLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\PromptBox.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\PropLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\RechargeLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\RegistLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\RoomLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\RoomOption.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\RuningBar.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\TaskInfo.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\WarningLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\msgDispatch\MsgDispatch.cpp">
+      <Filter>Classes\msgDispatch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\net\TcpNetwork.cpp">
+      <Filter>Classes\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\net\GC_Socket.cpp">
+      <Filter>Classes\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\serializers\TinyXmlReader.cpp">
+      <Filter>Classes\serializers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\serializers\geometry.cpp">
+      <Filter>Classes\serializers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\net\common.cpp">
+      <Filter>Classes\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\common\MyNSString.cpp">
+      <Filter>Classes\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PublicComponents\TableComponents\FrameScrollView.cpp">
+      <Filter>Classes\PublicComponents\TableComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PublicComponents\TableComponents\FrameOneDesk.cpp">
+      <Filter>Classes\PublicComponents\TableComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PublicComponents\TableComponents\FrameOneRoom.cpp">
+      <Filter>Classes\PublicComponents\TableComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\FMGameItemLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\FreeCoins.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\common\JsonHelper.cpp">
+      <Filter>Classes\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Json\lib_json\json_reader.cpp">
+      <Filter>Classes\Json\lib_json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Json\lib_json\json_value.cpp">
+      <Filter>Classes\Json\lib_json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Json\lib_json\json_writer.cpp">
+      <Filter>Classes\Json\lib_json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\MissionLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\TabLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\FriendSystemLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\ShopSystemLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\RankSystemLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\ExchangerLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\LuckyDraw.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gui\VIPSystemLayer.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\common\sqlite3.c">
+      <Filter>Classes\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\common\DBHandler.cpp">
+      <Filter>Classes\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\C2DXShareSDK\C2DXShareSDK.cpp">
+      <Filter>Classes\C2DXShareSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\SceneTableInterfaceLayer.cpp">
+      <Filter>Classes\ddz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\OperalayerBJL.cpp">
+      <Filter>Classes\ddz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\CardManager.cpp">
+      <Filter>Classes\ddz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\CardSprite.cpp">
+      <Filter>Classes\ddz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\Tools.cpp">
+      <Filter>Classes\ddz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ddz\ChipManager.cpp">
+      <Filter>Classes\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2dx\support\tinyxml2\tinyxml2.cpp">
+      <Filter>Classes\configMgr</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ans\AnsLog.h">
+      <Filter>Classes\ans</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ans\AnsMacros.h">
+      <Filter>Classes\ans</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ans\AnsNew.h">
+      <Filter>Classes\ans</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ans\AnsPath.h">
+      <Filter>Classes\ans</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ans\AnsSingleton.h">
+      <Filter>Classes\ans</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ans\AnsString.h">
+      <Filter>Classes\ans</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ans\AnsTaskPool.h">
+      <Filter>Classes\ans</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ans\AnsThread.h">
+      <Filter>Classes\ans</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ans\BaseObject.h">
+      <Filter>Classes\ans</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ans\utf-8.h">
+      <Filter>Classes\ans</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ans\AnsDebug.h">
+      <Filter>Classes\ans</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ans\AnsEvent.h">
+      <Filter>Classes\ans</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ans\AnsGeomethry.h">
+      <Filter>Classes\ans</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ans\AnsIO.h">
+      <Filter>Classes\ans</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\CocosUnits.h">
+      <Filter>Classes\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\Define.h">
+      <Filter>Classes\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\Encrypt.h">
+      <Filter>Classes\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\GlobalDef.h">
+      <Filter>Classes\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\GlobalField.h">
+      <Filter>Classes\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\GlobalFrame.h">
+      <Filter>Classes\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\IDataArchive.h">
+      <Filter>Classes\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\MacPlatformDef.h">
+      <Filter>Classes\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\CMD_Game.h">
+      <Filter>Classes\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\CMD_Plaza.h">
+      <Filter>Classes\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\controls\tableViewLayer.h">
+      <Filter>Classes\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\controls\CCTouchSprite.h">
+      <Filter>Classes\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\GameTaskCommon.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\JniControl.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\MyTools.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\SceneControl.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\SceneData.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\SceneLogic.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\SceneView.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\Settlement.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\SetUpLayer.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\SoundControl.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\Timer.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\User.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\ViewCardEffect.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\ViewHandCard.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\ViewMenuLayer.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\ViewTask.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\VoiceAndFace.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\CardTableLayer.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\CMD_DDZ.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\DDZLogic.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\DDZRes.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\DialogLayer.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\entity\UserItem.h">
+      <Filter>Classes\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\entity\EntityMgr.h">
+      <Filter>Classes\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\entity\IUserItem.h">
+      <Filter>Classes\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\entity\Login.h">
+      <Filter>Classes\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\entity\RoomFrame.h">
+      <Filter>Classes\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\event\GBEvent.h">
+      <Filter>Classes\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\event\GBEventIDs.h">
+      <Filter>Classes\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\globalUnits\GlobalUnits.h">
+      <Filter>Classes\globalUnits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\AgreementScrollView.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\BaseLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\ChongCoinsLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\ChoosePhotoCell.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\ChoosePhotoScrollLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\ChoosePlayerPhotoLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\CShaderSprite.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\CustomerServiceLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\CusTomTableViewCell.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\EmailCell.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\EmailLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\EmailScorllLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\ExitLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\FreeCell.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\FreeLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\FreeScrollLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\GetCharge.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\GroupSprite.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\HelpLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\HelpScrollView.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\LoadingLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\LoginLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\MenuLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\ModifyPassWord.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\MovingLabelLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\OverRegistLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\PlayerInfoLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\PromptBox.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\PropLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\RechargeLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\RegistLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\RoomLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\RoomOption.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\RuningBar.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\TaskInfo.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\WarningLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\ActivityLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\ActivitySprite.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\AgreementLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\msgDispatch\MsgDispatch.h">
+      <Filter>Classes\msgDispatch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\net\GC_Socket.h">
+      <Filter>Classes\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\net\TcpNetwork.h">
+      <Filter>Classes\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\serializers\TinyXmlReader.h">
+      <Filter>Classes\serializers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\serializers\geometry.h">
+      <Filter>Classes\serializers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\packet.h">
+      <Filter>Classes\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\net\common.h">
+      <Filter>Classes\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\CMD_Commom.h">
+      <Filter>Classes\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\CMD_GameServer.h">
+      <Filter>Classes\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\platform.h">
+      <Filter>Classes\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\MyNSString.h">
+      <Filter>Classes\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\CMD_LogonServer.h">
+      <Filter>Classes\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\struct.h">
+      <Filter>Classes\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\configMgr\ConfigMgr.h">
+      <Filter>Classes\configMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PublicComponents\TableComponents\FrameOneRoom.h">
+      <Filter>Classes\PublicComponents\TableComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PublicComponents\TableComponents\FrameScrollView.h">
+      <Filter>Classes\PublicComponents\TableComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PublicComponents\TableComponents\FrameOneDesk.h">
+      <Filter>Classes\PublicComponents\TableComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\CMD_DDZClient.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Resoucher.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\FMGameItemLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\FreeCoins.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\JsonHelper.h">
+      <Filter>Classes\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Json\features.h">
+      <Filter>Classes\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Json\forwards.h">
+      <Filter>Classes\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Json\json.h">
+      <Filter>Classes\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Json\reader.h">
+      <Filter>Classes\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Json\value.h">
+      <Filter>Classes\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Json\writer.h">
+      <Filter>Classes\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Json\autolink.h">
+      <Filter>Classes\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Json\config.h">
+      <Filter>Classes\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Json\lib_json\json_batchallocator.h">
+      <Filter>Classes\Json\lib_json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\MissionLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\TabLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\FriendSystemLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\ShopSystemLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\RankSystemLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\ExchangerLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\LuckyDraw.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gui\VIPSystemLayer.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\sqlite3ext.h">
+      <Filter>Classes\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\sqlite3.h">
+      <Filter>Classes\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\DBHandler.h">
+      <Filter>Classes\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\C2DXShareSDK\C2DXShareSDKTypeDef.h">
+      <Filter>Classes\C2DXShareSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\C2DXShareSDK\C2DXShareSDK.h">
+      <Filter>Classes\C2DXShareSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\SceneTableInterfaceLayer.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\OperalayerBJL.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\CardManager.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\CardSprite.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\Tools.h">
+      <Filter>Classes\ddz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ddz\ChipManager.h">
+      <Filter>Classes\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cocos2dx\support\tinyxml2\tinyxml2.h">
+      <Filter>Classes\configMgr</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Classes\ans\AnsString.ipp">
+      <Filter>Classes\ans</Filter>
+    </None>
+    <None Include="..\Classes\ans\AnsString.tpp">
+      <Filter>Classes\ans</Filter>
+    </None>
+    <None Include="..\Classes\Json\lib_json\json_valueiterator.inl">
+      <Filter>Classes\Json\lib_json</Filter>
+    </None>
+    <None Include="..\Classes\Json\lib_json\sconscript">
+      <Filter>Classes\Json\lib_json</Filter>
+    </None>
+    <None Include="..\Classes\Json\lib_json\json_internalarray.inl">
+      <Filter>Classes\Json\lib_json</Filter>
+    </None>
+    <None Include="..\Classes\Json\lib_json\json_internalmap.inl">
+      <Filter>Classes\Json\lib_json</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\Administrator\AppData\Roaming\Tencent\QQ\Temp\00BEC73B.gif">
+      <Filter>Classes\event</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

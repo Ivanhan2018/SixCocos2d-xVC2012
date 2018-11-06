@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{76A39BB2-9B84-4C65-98A5-654D86B86F2A}</ProjectGuid>
+    <RootNamespace>test_win32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\cocos2dx;$(ProjectDir)..\..\..\cocos2dx\include;$(ProjectDir)..\..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\..\..\external;$(ProjectDir)..\..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\..\CocosDenshion\include;$(ProjectDir)..\..\..\extensions;..\Classes\FishDemo;..\Classes\SixUI;..\Classes;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_USRLIB;WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libExtensions.lib;libcocos2d.lib;libCocosDenshion.lib;opengl32.lib;glew32.lib;libBox2d.lib;libchipmunk.lib;libcurl_imp.lib;pthreadVCE2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\cocos2dx;$(ProjectDir)..\..\..\cocos2dx\include;$(ProjectDir)..\..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\..\..\external;$(ProjectDir)..\..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\..\CocosDenshion\include;$(ProjectDir)..\..\..\extensions;..\Classes;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libExtensions.lib;libcocos2d.lib;libCocosDenshion.lib;opengl32.lib;glew32.lib;libBox2d.lib;libchipmunk.lib;libcurl_imp.lib;pthreadVCE2.lib;websockets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\ActionTimeline\CCActionTimeline.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\ActionTimeline\CCActionTimelineCache.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\ActionTimeline\CCFrame.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\ActionTimeline\CCNodeReader.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\ActionTimeline\CCTimeLine.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Action\CCActionEaseEx.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Action\CCActionFrame.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Action\CCActionFrameEasing.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Action\CCActionManager.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Action\CCActionNode.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Action\CCActionObject.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Components\CCComAttribute.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Components\CCComAudio.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Components\CCComController.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Components\CCComRender.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Components\CCInputDelegate.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\GUI\BaseClasses\UIWidget.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\GUI\Layouts\UILayout.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\GUI\Layouts\UILayoutDefine.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\GUI\Layouts\UILayoutParameter.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\GUI\System\CocosGUI.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\GUI\System\UIHelper.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\GUI\System\UITouchGroup.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\ScrollWidget\UIListView.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\ScrollWidget\UIPageView.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\ScrollWidget\UIScrollView.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\UIButton.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\UICheckBox.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\UIImageView.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\UILabel.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\UILabelAtlas.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\UILabelBMFont.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\UILoadingBar.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\UIRichText.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\UISlider.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\GUI\UIWidgets\UITextField.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Json\CocoLoader.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Json\DictionaryHelper.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Reader\GUIReader.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Reader\SceneReader.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\ButtonReader\ButtonReader.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\CheckBoxReader\CheckBoxReader.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\ImageViewReader\ImageViewReader.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\LabelAtlasReader\LabelAtlasReader.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\LabelBMFontReader\LabelBMFontReader.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\LabelReader\LabelReader.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\LayoutReader\LayoutReader.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\ListViewReader\ListViewReader.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\LoadingBarReader\LoadingBarReader.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\PageViewReader\PageViewReader.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\ScrollViewReader\ScrollViewReader.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\SliderReader\SliderReader.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\TextFieldReader\TextFieldReader.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Reader\WidgetReader\WidgetReader.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Trigger\ObjectFactory.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Trigger\TriggerBase.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Trigger\TriggerMng.cpp" />
+    <ClCompile Include="..\Classes\CocoStudio\Trigger\TriggerObj.cpp" />
+    <ClCompile Include="..\Classes\FishDemo\BulletSprite.cpp" />
+    <ClCompile Include="..\Classes\FishDemo\FishSprite.cpp" />
+    <ClCompile Include="..\Classes\FishDemo\HallLayer.cpp" />
+    <ClCompile Include="..\Classes\FishDemo\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\FishDemo\LoadingLayer.cpp" />
+    <ClCompile Include="..\Classes\FishDemo\LoginLayer.cpp" />
+    <ClCompile Include="..\Classes\FishDemo\PlayerLayer.cpp" />
+    <ClCompile Include="..\Classes\FishDemo\RegisterLayer.cpp" />
+    <ClCompile Include="..\Classes\FishDemo\SkinControls.cpp" />
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\SixUI\SIX_Cursor.cpp" />
+    <ClCompile Include="..\Classes\SixUI\SIX_EditBox.cpp" />
+    <ClCompile Include="..\Classes\SixUI\SIX_EffectBatchNode.cpp" />
+    <ClCompile Include="..\Classes\SixUI\SIX_FileSystem.cpp" />
+    <ClCompile Include="..\Classes\SixUI\SIX_GlobalMgr.cpp" />
+    <ClCompile Include="..\Classes\SixUI\SIX_ListView.cpp" />
+    <ClCompile Include="..\Classes\SixUI\SIX_ListViewCell.cpp" />
+    <ClCompile Include="..\Classes\SixUI\SIX_MusicMgr.cpp" />
+    <ClCompile Include="..\Classes\SixUI\SIX_PopWnd.cpp" />
+    <ClCompile Include="..\Classes\SixUI\SIX_PopWndBuyBullet.cpp" />
+    <ClCompile Include="..\Classes\SixUI\SIX_PopWndSetting.cpp" />
+    <ClCompile Include="..\Classes\SixUI\SIX_SceneMgr.cpp" />
+    <ClCompile Include="..\Classes\SixUI\SIX_ScrollBar.cpp" />
+    <ClCompile Include="..\Classes\SixUI\SIX_UILayer.cpp" />
+    <ClCompile Include="..\Classes\SixUI\SIX_UIMgr.cpp" />
+    <ClCompile Include="..\Classes\SixUI\SIX_UIScene.cpp" />
+    <ClCompile Include="..\Classes\SixUI\SIX_Utility.cpp" />
+    <ClCompile Include="..\Classes\SixUI\SIX_XMLParser.cpp" />
+    <ClCompile Include="..\Classes\SixUI\tinystr.cpp" />
+    <ClCompile Include="..\Classes\SixUI\tinyxml.cpp" />
+    <ClCompile Include="..\Classes\SixUI\tinyxmlerror.cpp" />
+    <ClCompile Include="..\Classes\SixUI\tinyxmlparser.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\CocoStudio\ActionTimeline\CCActionTimeline.h" />
+    <ClInclude Include="..\Classes\CocoStudio\ActionTimeline\CCActionTimelineCache.h" />
+    <ClInclude Include="..\Classes\CocoStudio\ActionTimeline\CCFrame.h" />
+    <ClInclude Include="..\Classes\CocoStudio\ActionTimeline\CCNodeReader.h" />
+    <ClInclude Include="..\Classes\CocoStudio\ActionTimeline\CCTimeLine.h" />
+    <ClInclude Include="..\Classes\CocoStudio\ActionTimeline\CCTimelineMacro.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Action\CCActionEaseEx.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Action\CCActionFrame.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Action\CCActionFrameEasing.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Action\CCActionManager.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Action\CCActionNode.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Action\CCActionObject.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Components\CCComAttribute.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Components\CCComAudio.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Components\CCComBase.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Components\CCComController.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Components\CCComRender.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Components\CCInputDelegate.h" />
+    <ClInclude Include="..\Classes\CocoStudio\GUI\BaseClasses\UIWidget.h" />
+    <ClInclude Include="..\Classes\CocoStudio\GUI\Layouts\UILayout.h" />
+    <ClInclude Include="..\Classes\CocoStudio\GUI\Layouts\UILayoutDefine.h" />
+    <ClInclude Include="..\Classes\CocoStudio\GUI\Layouts\UILayoutParameter.h" />
+    <ClInclude Include="..\Classes\CocoStudio\GUI\System\CocosGUI.h" />
+    <ClInclude Include="..\Classes\CocoStudio\GUI\System\GUIDefine.h" />
+    <ClInclude Include="..\Classes\CocoStudio\GUI\System\UIHelper.h" />
+    <ClInclude Include="..\Classes\CocoStudio\GUI\System\UITouchGroup.h" />
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\Compatible\CompatibleClasses.h" />
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\ScrollWidget\UIListView.h" />
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\ScrollWidget\UIPageView.h" />
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\ScrollWidget\UIScrollInterface.h" />
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\ScrollWidget\UIScrollView.h" />
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\UIButton.h" />
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\UICheckBox.h" />
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\UIImageView.h" />
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\UILabel.h" />
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\UILabelAtlas.h" />
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\UILabelBMFont.h" />
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\UILoadingBar.h" />
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\UIRichText.h" />
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\UISlider.h" />
+    <ClInclude Include="..\Classes\CocoStudio\GUI\UIWidgets\UITextField.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Json\CocoLoader.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Json\DictionaryHelper.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Json\rapidjson\document.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Json\rapidjson\filestream.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Json\rapidjson\internal\pow10.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Json\rapidjson\internal\stack.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Json\rapidjson\internal\strfunc.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Json\rapidjson\prettywriter.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Json\rapidjson\rapidjson.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Json\rapidjson\reader.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Json\rapidjson\stringbuffer.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Json\rapidjson\writer.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Reader\GUIReader.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Reader\SceneReader.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\ButtonReader\ButtonReader.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\CheckBoxReader\CheckBoxReader.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\ImageViewReader\ImageViewReader.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\LabelAtlasReader\LabelAtlasReader.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\LabelBMFontReader\LabelBMFontReader.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\LabelReader\LabelReader.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\LayoutReader\LayoutReader.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\ListViewReader\ListViewReader.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\LoadingBarReader\LoadingBarReader.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\PageViewReader\PageViewReader.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\ScrollViewReader\ScrollViewReader.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\SliderReader\SliderReader.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\TextFieldReader\TextFieldReader.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\WidgetReader.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Reader\WidgetReader\WidgetReaderProtocol.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Trigger\ObjectFactory.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Trigger\TriggerBase.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Trigger\TriggerMng.h" />
+    <ClInclude Include="..\Classes\CocoStudio\Trigger\TriggerObj.h" />
+    <ClInclude Include="..\Classes\FishDemo\BulletSprite.h" />
+    <ClInclude Include="..\Classes\FishDemo\Common.h" />
+    <ClInclude Include="..\Classes\FishDemo\FishSprite.h" />
+    <ClInclude Include="..\Classes\FishDemo\HallLayer.h" />
+    <ClInclude Include="..\Classes\FishDemo\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\FishDemo\LoadingLayer.h" />
+    <ClInclude Include="..\Classes\FishDemo\LoginLayer.h" />
+    <ClInclude Include="..\Classes\FishDemo\PlayerLayer.h" />
+    <ClInclude Include="..\Classes\FishDemo\RegisterLayer.h" />
+    <ClInclude Include="..\Classes\FishDemo\SkinControls.h" />
+    <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\SixUI\SIX_Cursor.h" />
+    <ClInclude Include="..\Classes\SixUI\SIX_DSTPL.h" />
+    <ClInclude Include="..\Classes\SixUI\SIX_EditBox.h" />
+    <ClInclude Include="..\Classes\SixUI\SIX_EffectBatchNode.h" />
+    <ClInclude Include="..\Classes\SixUI\SIX_EntityMgr.h" />
+    <ClInclude Include="..\Classes\SixUI\SIX_FileSystem.h" />
+    <ClInclude Include="..\Classes\SixUI\SIX_GlobalMgr.h" />
+    <ClInclude Include="..\Classes\SixUI\SIX_IInterface.h" />
+    <ClInclude Include="..\Classes\SixUI\SIX_Interface.h" />
+    <ClInclude Include="..\Classes\SixUI\SIX_ListView.h" />
+    <ClInclude Include="..\Classes\SixUI\SIX_ListViewCell.h" />
+    <ClInclude Include="..\Classes\SixUI\SIX_MusicMgr.h" />
+    <ClInclude Include="..\Classes\SixUI\SIX_PopWnd.h" />
+    <ClInclude Include="..\Classes\SixUI\SIX_PopWndBuyBullet.h" />
+    <ClInclude Include="..\Classes\SixUI\SIX_PopWndSetting.h" />
+    <ClInclude Include="..\Classes\SixUI\SIX_SceneMgr.h" />
+    <ClInclude Include="..\Classes\SixUI\SIX_ScrollBar.h" />
+    <ClInclude Include="..\Classes\SixUI\SIX_TList.h" />
+    <ClInclude Include="..\Classes\SixUI\SIX_Typedef.h" />
+    <ClInclude Include="..\Classes\SixUI\SIX_UILayer.h" />
+    <ClInclude Include="..\Classes\SixUI\SIX_UIMgr.h" />
+    <ClInclude Include="..\Classes\SixUI\SIX_UIScene.h" />
+    <ClInclude Include="..\Classes\SixUI\SIX_Utility.h" />
+    <ClInclude Include="..\Classes\SixUI\SIX_XMLParser.h" />
+    <ClInclude Include="..\Classes\SixUI\tinystr.h" />
+    <ClInclude Include="..\Classes\SixUI\tinyxml.h" />
+    <ClInclude Include="..\Classes\SixUI\TSingleton.h" />
+    <ClInclude Include="..\Classes\SixUI\xorstr.h" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\cocos2dx\proj.win32\cocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\CocosDenshion\proj.win32\CocosDenshion.vcxproj">
+      <Project>{f8edd7fa-9a51-4e80-baeb-860825d2eac6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\extensions\proj.win32\libExtensions.vcxproj">
+      <Project>{21b2c324-891f-48ea-ad1a-5ae13de12e28}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\external\Box2D\proj.win32\Box2D.vcxproj">
+      <Project>{929480e7-23c0-4df6-8456-096d71547116}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\external\chipmunk\proj.win32\chipmunk.vcxproj">
+      <Project>{207bc7a9-ccf1-4f2f-a04d-45f72242ae25}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

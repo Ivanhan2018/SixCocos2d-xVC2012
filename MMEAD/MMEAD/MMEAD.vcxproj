@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{92E1C1C0-CAAA-4DFB-BC1F-4FBEA20F9BDA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MMEAD</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.\Miracl</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.\Miracl</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="big.h" />
+    <ClInclude Include="blowfish.h" />
+    <ClInclude Include="CRC32.h" />
+    <ClInclude Include="ECC.h" />
+    <ClInclude Include="ecn.h" />
+    <ClInclude Include="ElGamal.h" />
+    <ClInclude Include="EntityBase.h" />
+    <ClInclude Include="MD5.h" />
+    <ClInclude Include="Miracl\miracl.h" />
+    <ClInclude Include="Miracl\mirdef.h" />
+    <ClInclude Include="MMEAD.h" />
+    <ClInclude Include="MMEAD_Config.h" />
+    <ClInclude Include="MMUtility.h" />
+    <ClInclude Include="RSA.h" />
+    <ClInclude Include="SHA.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TDEA.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="big.cpp" />
+    <ClCompile Include="blowfish.cpp" />
+    <ClCompile Include="CRC32.cpp" />
+    <ClCompile Include="ECC.cpp" />
+    <ClCompile Include="ecn.cpp" />
+    <ClCompile Include="ElGamal.cpp" />
+    <ClCompile Include="MD5.cpp" />
+    <ClCompile Include="Miracl\mraes.c" />
+    <ClCompile Include="Miracl\mralloc.c" />
+    <ClCompile Include="Miracl\mrarth0.c" />
+    <ClCompile Include="Miracl\mrarth1.c" />
+    <ClCompile Include="Miracl\mrarth2.c" />
+    <ClCompile Include="Miracl\mrarth3.c" />
+    <ClCompile Include="Miracl\mrbits.c" />
+    <ClCompile Include="Miracl\mrbrick.c" />
+    <ClCompile Include="Miracl\mrbuild.c" />
+    <ClCompile Include="Miracl\mrcore.c" />
+    <ClCompile Include="Miracl\mrcrt.c" />
+    <ClCompile Include="Miracl\mrcurve.c" />
+    <ClCompile Include="Miracl\mrdouble.c" />
+    <ClCompile Include="Miracl\mrebrick.c" />
+    <ClCompile Include="Miracl\mrec2m.c" />
+    <ClCompile Include="Miracl\mrecn2.c" />
+    <ClCompile Include="Miracl\mrfast.c" />
+    <ClCompile Include="Miracl\mrflash.c" />
+    <ClCompile Include="Miracl\mrflsh1.c" />
+    <ClCompile Include="Miracl\mrflsh2.c" />
+    <ClCompile Include="Miracl\mrflsh3.c" />
+    <ClCompile Include="Miracl\mrflsh4.c" />
+    <ClCompile Include="Miracl\mrfrnd.c" />
+    <ClCompile Include="Miracl\mrgcd.c" />
+    <ClCompile Include="Miracl\mrgcm.c" />
+    <ClCompile Include="Miracl\mrgf2m.c" />
+    <ClCompile Include="Miracl\mrio1.c" />
+    <ClCompile Include="Miracl\mrio2.c" />
+    <ClCompile Include="Miracl\mrjack.c" />
+    <ClCompile Include="Miracl\mrlucas.c" />
+    <ClCompile Include="Miracl\mrmonty.c" />
+    <ClCompile Include="Miracl\mrpi.c" />
+    <ClCompile Include="Miracl\mrpower.c" />
+    <ClCompile Include="Miracl\mrprime.c" />
+    <ClCompile Include="Miracl\mrrand.c" />
+    <ClCompile Include="Miracl\mrround.c" />
+    <ClCompile Include="Miracl\mrscrt.c" />
+    <ClCompile Include="Miracl\mrshs.c" />
+    <ClCompile Include="Miracl\mrshs256.c" />
+    <ClCompile Include="Miracl\mrshs512.c" />
+    <ClCompile Include="Miracl\mrsmall.c" />
+    <ClCompile Include="Miracl\mrsroot.c" />
+    <ClCompile Include="Miracl\mrstrong.c" />
+    <ClCompile Include="Miracl\mrxgcd.c" />
+    <ClCompile Include="Miracl\mrzzn2.c" />
+    <ClCompile Include="Miracl\mrzzn2b.c" />
+    <ClCompile Include="Miracl\mrzzn3.c" />
+    <ClCompile Include="MMEAD.cpp" />
+    <ClCompile Include="MMUtility.cpp" />
+    <ClCompile Include="RSA.cpp" />
+    <ClCompile Include="SHA.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="TDEA.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="blowfish.h2" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

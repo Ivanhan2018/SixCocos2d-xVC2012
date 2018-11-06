@@ -1,0 +1,45 @@
+enum USER_STATE	// 用户状态
+{
+	US_OFFLINE = 0,				// 离线，不在房间里
+	US_ONLINE_LEAVE_SIT,		// 在线，在房间里，但离座
+	US_ONLINE_SITDOWN,			// 在线，在房间里，在坐，但没举手
+	US_ONLINE_SITDOWN_RAISE,	// 在线,在房间里，在坐，已举手	
+	US_WAIT_RECONNECT,			// 断线后等待重入
+};
+
+// 客户端的用户信息
+struct USER_INFO:public DATA_BASE<USER_INFO>
+{
+	USER_INFO()
+	{
+		memset(this, 0, sizeof(*this));
+
+		lUserId = INVALID_USER_ID;
+		iTableNo = INVAL_TABLE_NO;
+		iSeatNo = INVAL_SEAT_NO;
+
+		lScore = 0;
+		lChangeScore = 0;
+	}
+
+	// 清除服务端的信息，通常在发给客户端时使用，也可以另立一个 USER_INFO_CLIENT 结构
+	void ClearServerInfo()
+	{
+		memset(szPassword, 0, sizeof(szPassword));
+	}
+
+	long long lUserId;
+
+	char szName[USER_NAME_LEN];			// 用户名
+	char szPassword[USER_PASSWORD_LEN];	// 加密后的密码，例如用 MD5 加密后不可逆的密码
+	char szNickname[USER_NAME_LEN];		// 昵称
+
+	EASY_DATA_TIME stRegistTime;			// 注册时间
+
+	USER_STATE	stUserState;	// 用户状态
+	int		iTableNo;		// 桌号
+	int		iSeatNo;		// 座位号
+
+	long long lScore;		// 进房间进的金币值
+	long long lChangeScore;	// 变化的金币值
+};

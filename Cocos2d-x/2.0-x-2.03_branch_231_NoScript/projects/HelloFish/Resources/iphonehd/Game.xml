@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<!-- 帧精灵缓存，全场景通用，重名的plist只会添加一次 -->
+	<SpriteFrameCache file="Scene/Game/UI.plist" />
+	<SpriteFrameCache file="Action/Cursor/Cursor.plist"/>
+
+	<Animation name="Cursor_frame" Loops="1" DelayPerUnit="0.1" RestoreOriginalFrame="false">
+		<SpriteFrame name="cursor_01.png"/>
+		<SpriteFrame name="cursor_02.png"/>
+		<SpriteFrame name="cursor_03.png"/>
+		<SpriteFrame name="cursor_04.png"/>
+	</Animation>
+	
+	<!--
+	<Animation name="Wave_Frame" Loops="1" DelayPerUnit="0.1" RestoreOriginalFrame="false">
+		<SpriteFrame name="Wave_01.png" file="Scene/Game/Wave/wave_00.png"/>
+		<SpriteFrame name="Wave_01.png" file="Scene/Game/Wave/wave_02.png"/>
+		<SpriteFrame name="Wave_01.png" file="Scene/Game/Wave/wave_04.png"/>
+		<SpriteFrame name="Wave_01.png" file="Scene/Game/Wave/wave_06.png"/>
+		<SpriteFrame name="Wave_01.png" file="Scene/Game/Wave/wave_08.png"/>
+		<SpriteFrame name="Wave_01.png" file="Scene/Game/Wave/wave_10.png"/>
+		<SpriteFrame name="Wave_01.png" file="Scene/Game/Wave/wave_12.png"/>
+		<SpriteFrame name="Wave_01.png" file="Scene/Game/Wave/wave_14.png"/>
+		<SpriteFrame name="Wave_01.png" file="Scene/Game/Wave/wave_16.png"/>
+		<SpriteFrame name="Wave_01.png" file="Scene/Game/Wave/wave_18.png"/>
+		<SpriteFrame name="Wave_01.png" file="Scene/Game/Wave/wave_20.png"/>
+		<SpriteFrame name="Wave_01.png" file="Scene/Game/Wave/wave_22.png"/>
+		<SpriteFrame name="Wave_01.png" file="Scene/Game/Wave/wave_24.png"/>
+		<SpriteFrame name="Wave_01.png" file="Scene/Game/Wave/wave_26.png"/>
+		<SpriteFrame name="Wave_01.png" file="Scene/Game/Wave/wave_28.png"/>
+		<SpriteFrame name="Wave_01.png" file="Scene/Game/Wave/wave_30.png"/>
+		<SpriteFrame name="Wave_01.png" file="Scene/Game/Wave/wave_32.png"/>
+		<SpriteFrame name="Wave_01.png" file="Scene/Game/Wave/wave_34.png"/>
+		<SpriteFrame name="Wave_01.png" file="Scene/Game/Wave/wave_36.png"/>
+		<SpriteFrame name="Wave_01.png" file="Scene/Game/Wave/wave_38.png"/>
+		<SpriteFrame name="Wave_01.png" file="Scene/Game/Wave/wave_40.png"/>
+		<SpriteFrame name="Wave_01.png" file="Scene/Game/Wave/wave_42.png"/>
+		<SpriteFrame name="Wave_01.png" file="Scene/Game/Wave/wave_44.png"/>
+		<SpriteFrame name="Wave_01.png" file="Scene/Game/Wave/wave_46.png"/>
+		<SpriteFrame name="Wave_01.png" file="Scene/Game/Wave/wave_48.png"/>
+	</Animation>
+	-->
+
+	<!-- 背景层 -->
+	<LayerColor name="bg-Game" touchenabled="true" tag="0" color="0,255,0,255" dirty="false">
+		<!-- 背景 -->
+		<Sprite file="Scene/Loading/Loading.png" anchorpoint="0,0" tag="997"/>
+		<!-- 波纹 -->
+		<!--
+		<Sprite pos="0,0" tag="998" Frame="Wave_01.png" Action="Wave_Frame" anchorpoint="0,0" scale="1.0" Opacity="90" visible="false"/>
+		-->
+		<!-- 过渡背景 -->
+		<Sprite file="Scene/Game/Scene01.jpg" tag="999" visible="false"/>
+		<LabelTTF string="" pos="30,300" tag="900" fontname="微软雅黑" fontsize="18" HorizontalAlignment="0" VerticalAlignment="1" Dimensions="186,0" color="255,255,0,255"/>
+
+		
+		<!-- 进度条 -->
+		<Layer name="ResProgress" tag="0">
+			<Sprite file="Scene/Loading/progress_bg.png" pos="331,260" anchorpoint="0,0"/>
+			<Sprite file="Scene/Loading/progress_border.png" pos="331,260" anchorpoint="0,0"/>
+			<ProgressTimer name="progress" tag="1" Percentage="0.0" anchorpoint="0,0" Midpoint="0,0" BarChangeRate="1,0" type="1" pos="331,260" Sprite="file='Scene/Loading/progress_rate.png'\r\ndirty='true'" />
+			<!-- 光标 -->
+			<Sprite name="halo" tag="2" file="Scene/Loading/halo.png" pos="331,260" anchorpoint="0.5,0" >
+				<!-- 光标拖尾.帧精灵动画 -->
+				<SpriteBatchNode file="Action/Cursor/Cursor.png" BlendFunc="1,771">
+					<Sprite pos="0,0" Frame="cursor_01.png" Action="Cursor_frame" anchorpoint="0.62,0.68" scale="0.5" Rotation="180"/>
+				</SpriteBatchNode>
+			</Sprite>
+		</Layer>
+		
+		<!-- 左上 -->
+		<Sprite pos="379,680.5" Frame="signal_01.png" tag="100" anchorpoint="0.5,0.5" zOrder="1000" Visible="false" FlipY="true">
+			<!-- 炮塔 -->
+			<Sprite tag="1" pos="110,52.5" Frame="signal_01.png" anchorpoint="0.5,0.7" FlipY="true"/>
+			<!-- ping -->
+			<Sprite tag="2" pos="233,80" Frame="signal_01.png"/>
+			<!-- 背景 -->
+			<Sprite tag="3" file="Scene/Gate/tips.png" Opacity="0" pos="-180,0">
+				<Sprite file="Scene/Game/PlayerInfo.png" pos="-18,72" />
+				<LabelTTF string="" pos="-16,74" tag="4" fontname="微软雅黑" fontsize="18" HorizontalAlignment="1" VerticalAlignment="1" Dimensions="186,28"/>
+				<Sprite file="FishCoin.png" pos="-8,41"/>
+				<Sprite file="Bullet.png" pos="-8,16"/>
+				<Sprite file="GoldCoin.png" pos="-8,-4"/>
+				<Sprite file="Common/Number/bulletandfish.png" rect="202,0,222,21" pos="17,46"/>
+				<NumberBatchNode tag="1" file="Common/Number/bulletandfish.png" effectType="3" effectValue="1.5" cell="11" alignstyle="left" bitcount="10" padding="-7.0" durtime="0.1" BlendFunc="1,771" pos="57,46"/>
+				<Sprite file="Common/Number/bulletandfish.png" rect="202,0,222,21" pos="17,21"/>
+				<NumberBatchNode tag="2" file="Common/Number/bulletandfish.png" effectType="3" effectValue="1.5" cell="11" alignstyle="left" bitcount="10" padding="-7.0" durtime="0.1" BlendFunc="1,771" pos="57,21"/>
+				<Sprite file="Common/Number/money.png" rect="202,0,222,21" pos="17,-4"/>
+				<NumberBatchNode tag="3" file="Common/Number/money.png" effectType="3" effectValue="1.5" cell="11" alignstyle="left" bitcount="10" padding="-7.0" durtime="0.1" BlendFunc="1,771" pos="57,-4"/>
+			</Sprite>
+		</Sprite>
+		<!-- 右上 -->
+		<Sprite pos="900,680.5" Frame="signal_01.png" tag="101" anchorpoint="0.5,0.5" zOrder="1000" Visible="false" FlipY="true">
+			<!-- 炮塔 -->
+			<Sprite tag="1" pos="110,52.5" Frame="signal_01.png" anchorpoint="0.5,0.7" FlipY="true"/>
+			<!-- ping -->
+			<Sprite tag="2" pos="-40,80" Frame="signal_01.png"/>			
+			<!-- 背景 -->
+			<Sprite tag="3" file="Scene/Gate/tips.png" Opacity="0" pos="200,0">
+				<Sprite file="Scene/Game/PlayerInfo.png" pos="25,72" />
+				<LabelTTF string="" pos="27,74" tag="4" fontname="微软雅黑" fontsize="18" HorizontalAlignment="1" VerticalAlignment="1" Dimensions="186,28"/>
+				<Sprite file="FishCoin.png" pos="35,41"/>
+				<Sprite file="Bullet.png" pos="35,16"/>
+				<Sprite file="GoldCoin.png" pos="35,-4"/>
+				<Sprite file="Common/Number/bulletandfish.png" rect="202,0,222,21" pos="60,46"/>
+				<NumberBatchNode tag="1" file="Common/Number/bulletandfish.png" effectType="3" effectValue="1.5" cell="11" alignstyle="left" bitcount="10" padding="-7.0" durtime="0.1" BlendFunc="1,771" pos="100,46"/>
+				<Sprite file="Common/Number/bulletandfish.png" rect="202,0,222,21" pos="60,21"/>
+				<NumberBatchNode tag="2" file="Common/Number/bulletandfish.png" effectType="3" effectValue="1.5" cell="11" alignstyle="left" bitcount="10" padding="-7.0" durtime="0.1" BlendFunc="1,771" pos="100,21"/>
+				<Sprite file="Common/Number/money.png" rect="202,0,222,21" pos="60,-4"/>
+				<NumberBatchNode tag="3" file="Common/Number/money.png" effectType="3" effectValue="1.5" cell="11" alignstyle="left" bitcount="10" padding="-7.0" durtime="0.1" BlendFunc="1,771" pos="100,-4"/>
+			</Sprite>
+		</Sprite>
+		<!-- 右下 -->
+		<Sprite pos="900,52.5" Frame="signal_01.png" tag="102" anchorpoint="0.5,0.5" zOrder="1000"  Visible="false" FlipY="false">
+			<!-- 炮塔 -->
+			<Sprite tag="1" pos="110,52.5" Frame="signal_01.png" anchorpoint="0.5,0.3"/>
+			<!-- ping -->
+			<Sprite tag="2" pos="-40,0" Frame="signal_01.png"/>
+			<!-- 背景 -->
+			<Sprite tag="3" file="Scene/Gate/tips.png" Opacity="0" pos="200,0">
+				<Sprite file="FishCoin.png" pos="35,83"/>
+				<Sprite file="Bullet.png" pos="35,58"/>
+				<Sprite file="GoldCoin.png" pos="35,38"/>
+				<Sprite file="Common/Number/bulletandfish.png" rect="202,0,222,21" pos="60,88"/>
+				<NumberBatchNode tag="1" file="Common/Number/bulletandfish.png" effectType="3" effectValue="1.5" cell="11" alignstyle="left" bitcount="10" padding="-7.0" durtime="0.1" BlendFunc="1,771" pos="100,88"/>
+				<Sprite file="Common/Number/bulletandfish.png" rect="202,0,222,21" pos="60,63"/>
+				<NumberBatchNode tag="2" file="Common/Number/bulletandfish.png" effectType="3" effectValue="1.5" cell="11" alignstyle="left" bitcount="10" padding="-7.0" durtime="0.1" BlendFunc="1,771" pos="100,63"/>
+				<Sprite file="Common/Number/money.png" rect="202,0,222,21" pos="60,38"/>
+				<NumberBatchNode tag="3" file="Common/Number/money.png" effectType="3" effectValue="1.5" cell="11" alignstyle="left" bitcount="10" padding="-7.0" durtime="0.1" BlendFunc="1,771" pos="100,38"/>
+				<Sprite file="Scene/Game/PlayerInfo.png" pos="25,1" />
+				<LabelTTF string="" pos="27,3" tag="4" fontname="微软雅黑" fontsize="18" HorizontalAlignment="1" VerticalAlignment="1" Dimensions="186,28"/>
+			</Sprite>
+		</Sprite>		
+		<!-- 左下 -->
+		<Sprite pos="379,52.5" Frame="ship_01.png" tag="103" anchorpoint="0.5,0.5" zOrder="1000"  Visible="false" FlipY="false">
+			<!-- 炮塔 -->
+			<Sprite tag="1" pos="110,52.5" Frame="signal_01.png" anchorpoint="0.5,0.3"/>
+			<!-- ping -->
+			<Sprite tag="2" pos="233,0" Frame="signal_01.png"/>
+			<!-- 背景 -->
+			<Sprite tag="3" file="Scene/Gate/tips.png" Opacity="0" pos="-180,0">
+				<Sprite file="FishCoin.png" pos="-8,83"/>
+				<Sprite file="Bullet.png" pos="-8,58"/>
+				<Sprite file="GoldCoin.png" pos="-8,38"/>
+				<Sprite file="Common/Number/bulletandfish.png" rect="202,0,222,21" pos="17,88"/>
+				<NumberBatchNode tag="1" file="Common/Number/bulletandfish.png" effectType="3" effectValue="1.5" cell="11" alignstyle="left" bitcount="10" padding="-7.0" durtime="0.1" BlendFunc="1,771" pos="57,88"/>
+				<Sprite file="Common/Number/bulletandfish.png" rect="202,0,222,21" pos="17,63"/>
+				<NumberBatchNode tag="2" file="Common/Number/bulletandfish.png" effectType="3" effectValue="1.5" cell="11" alignstyle="left" bitcount="10" padding="-7.0" durtime="0.1" BlendFunc="1,771" pos="57,63"/>
+				<Sprite file="Common/Number/money.png" rect="202,0,222,21" pos="17,38"/>
+				<NumberBatchNode tag="3" file="Common/Number/money.png" effectType="3" effectValue="1.5" cell="11" alignstyle="left" bitcount="10" padding="-7.0" durtime="0.1" BlendFunc="1,771" pos="57,38"/>
+				<Sprite file="Scene/Game/PlayerInfo.png" pos="-18,1" />
+				<LabelTTF string="" pos="-16,3" tag="4" fontname="微软雅黑" fontsize="18" HorizontalAlignment="1" VerticalAlignment="1" Dimensions="186,28"/>
+			</Sprite>
+		</Sprite>
+	
+		<!-- 比赛倒计时 -->
+		<Sprite file="Scene/Game/CountdownBG.png" tag="200" pos="1106,345" visible="false">
+				<!-- 分 -->
+				<NumberBatchNode tag="1" file="Scene/Game/CountdownNum.png" number="0" digit="2" cell="10" alignstyle="right" bitcount="10" padding="-1.0" durtime="0.1" BlendFunc="1,771" pos="-145,9"/>
+				<Sprite tag="2" file="Scene/Game/CountdownColon.png" pos="70,10"/>
+				<!-- 秒 -->
+				<NumberBatchNode tag="3" file="Scene/Game/CountdownNum.png" number="0" digit="2" cell="10" alignstyle="left" bitcount="10" padding="-1.0" durtime="0.1" BlendFunc="1,771" pos="118,9"/>
+		</Sprite>
+	</LayerColor>
+</root>

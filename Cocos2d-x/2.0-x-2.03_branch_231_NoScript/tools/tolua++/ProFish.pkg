@@ -1,0 +1,164 @@
+#include <string.h>
+//////////////////////////////////////////////////////////////////////////
+//相关宏定义
+#define MAX_HIT_FISH_COUNT    5//单发炮弹最大射中鱼的个数
+//////////////////////////////////////////////////////////////////////////////////
+typedef unsigned int TSeaSceneKind;    //海底场景号
+typedef unsigned int TGunGrade;  //炮的等级，也称为几号炮
+typedef unsigned int TFishKind;    //鱼号1-99
+typedef unsigned int TFishMulti;    //鱼的倍率
+typedef unsigned int TBulletID;	 //一发炮弹标识
+typedef unsigned int TFishID;    //一条鱼标识
+typedef unsigned int TTableID;   //桌子号
+typedef unsigned int TChairID;   //椅子号
+typedef float TAngle; //发射角度
+typedef unsigned int TFishPathType;    //鱼轨迹类型
+typedef unsigned int TFishGroupType;    //鱼阵类型
+typedef unsigned int TFishMoveSecs;//鱼轨迹时长，也就是鱼的最长存活时间
+
+struct qcPoint
+{
+	float x, y;
+	qcPoint() : x(0), y(0) {}
+	qcPoint(float _x, float _y) : x(_x), y(_y) {}
+	qcPoint& operator= (const qcPoint& point) {x = point.x; y = point.y; return *this;}
+};
+
+typedef qcPoint TPoint;
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+/**************************************************************************
+//捕鱼房间服务器
+**************************************************************************/
+enum PROTOCOL_FISH
+{
+	REQ_BUY_BULLET=400,									//购买子弹
+	REQ_USER_SHOOT,									//发射炮弹
+	REQ_CAPTURE_FISH,									//捕获几条鱼
+	REQ_GET_SCORE_INFO,								//分数信息
+	REQ_SET_PROPABILITY,								//设置概率
+	REQ_CALC_SCORE,									//计算分数
+	REQ_SET_CELL_SCORE,								//单元积分
+	REQ_HIT_FISH,										//捕获鱼群
+	REQ_OPEN_BOSSBOX,                                 //打开宝箱
+	REQ_SHOOT_FORCECANNON,                            //使用能量炮
+
+	RSP_GAME_SCENE=500,									//场景消息
+	RSP_ADD_ONE_FISH,                                    //添加一条鱼轨迹
+	//RSP_ADD_ONE_GROUP_FISH,								//添加一个鱼轨迹阵
+	RSP_ADD_ONE_FISH_ARR,								//添加一个鱼轨迹阵
+	RSP_ADD_ONE_FISH_LIST,								//添加一个鱼轨迹阵
+	RSP_USER_SHOOT,									//发射炮弹
+	RSP_CAPTURE_FISH,									//捕获鱼群
+	RSP_BULLET_COUNT,									//子弹数目
+	RSP_COIN_COUNT,									//金币数目
+	RSP_FISH_COUNT,									//鱼群数目
+	RSP_CHANGE_SCENE,									//切换场景
+	RSP_SCORE_INFO,									//分数信息
+	RSP_SET_CELL_SCORE,								//单元积分
+	RSP_BONUS_INFO,									//彩金信息
+	RSP_GAME_MESSAGE,									//游戏消息
+	RSP_GET_PROP,                                     //获得道具
+	RSP_OPEN_BOSSBOX,                                 //打开宝箱
+	RSP_SHOOT_FORCECANNON,                            //使用能量炮
+};
+
+
+//发一条指定轨迹的鱼,参见FishManage:addOneFish
+struct Rsp_AddOneFish
+{
+    Rsp_AddOneFish(){memset(this, 0, sizeof(*this));}
+	TTableID TableID;
+	TFishKind FishKind;
+	TFishPathType FishPathType;
+	TFishMoveSecs FishMoveSecs;
+	TFishID FishID;
+	TPoint	startP;
+	TPoint  arg1;
+	TPoint  arg2;
+};
+
+////发一批指定轨迹的鱼,参见FishManage:addOneGroupFish
+//struct Rsp_AddOneGroupFish
+//{
+//    Rsp_AddOneGroupFish(){memset(this, 0, sizeof(*this));}
+//	TTableID TableID;
+//	TFishGroupType FishGroupType;
+//	TFishMoveSecs FishMoveSecs;
+//	unsigned int nFishCount;
+//	TFishID FishIDs[20];
+//};
+
+//发一批指定轨迹的鱼,参见FishManage:addOneGroupFish
+struct Rsp_AddOneFish_Arr
+{
+	Rsp_AddOneFish_Arr(){memset(this, 0, sizeof(*this));}
+	TTableID TableID;
+	TFishGroupType FishGroupType;//不是必须的字段，暂时加上
+	unsigned int nFishCount;
+	Rsp_AddOneFish Arr[20];
+};
+
+//发一批指定轨迹的鱼,参见FishManage:addOneGroupFish
+struct Rsp_AddOneFish_List
+{
+	Rsp_AddOneFish_List(){memset(this, 0, sizeof(*this));}
+	TTableID TableID;
+	TFishGroupType FishGroupType;//不是必须的字段，暂时加上
+	unsigned int nFishCount;
+	Rsp_AddOneFish & operator [](unsigned int)
+        {
+	   return ((Rsp_AddOneFish *)((unsigned char *)this + sizeof(*this)))[index];
+        }
+	int getLength()const{return sizeof(*this) + nFishCount * sizeof(Rsp_AddOneFish);}
+};
+
+//发射一发炮弹
+struct Req_UserShoot
+{
+    Req_UserShoot(){memset(this, 0, sizeof(*this));}
+	//TBulletID						BulletID;
+	TAngle							Angle;
+	TGunGrade                       GunGrade;
+};
+
+//发射一发炮弹
+struct Rsp_UserShoot:Req_UserShoot
+{
+	Rsp_UserShoot(){memset(this, 0, sizeof(*this));}
+	int iRes;
+	TBulletID BulletID;
+	TTableID TableID;
+	TChairID ChairID;
+	char	szName[USER_NAME_LEN];			// 用户名
+};
+//struct Rsp_UserShoot
+//{
+//	Rsp_UserShoot(){memset(this, 0, sizeof(*this));}
+//	TChairID						ChairID;								
+//	TAngle							Angle;
+//	TGunGrade                       GunGrade;
+//};
+
+//击中几条鱼
+struct Req_HitFish
+{
+	Req_HitFish(){memset(this, 0, sizeof(*this));}
+	TBulletID						BulletID;
+	unsigned int                    nFishCount;
+	TFishID							FishIDs[MAX_HIT_FISH_COUNT];
+};
+
+//捕获一条鱼
+struct Rsp_CaptureFish
+{
+	Rsp_CaptureFish(){memset(this, 0, sizeof(*this));}
+	TChairID						ChairID;
+	TFishID							FishID;
+	TFishKind						FishKind;
+	TFishMulti						FishMulti;
+};
+
+//////////////////////////////////////////////////////////////////////////

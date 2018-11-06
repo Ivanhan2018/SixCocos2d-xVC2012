@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pcc version="1">
+    <Scene bg="" />
+    <Sprite name="CCSprite-0001" path="C:\Users\Administrator\Desktop\Art\鱼类级别排序\__fishAndBomb调整过的大小\Bomb_08">
+        <Frames name="Bomb_08_00000.png">
+            <Pos idx="1" x="43.5" y="151.5" />
+            <Pos idx="2" x="91.5" y="154.5" />
+            <Pos idx="3" x="142.5" y="128.5" />
+            <Pos idx="4" x="156.5" y="78.5" />
+            <Pos idx="5" x="139.5" y="28.5" />
+            <Pos idx="6" x="91.5" y="3.5" />
+            <Pos idx="7" x="32.5" y="18.5" />
+            <Pos idx="8" x="9.5" y="57.5" />
+            <Pos idx="9" x="11.5" y="108.5" />
+        </Frames>
+        <Frames name="Bomb_08_00001.png">
+            <Pos idx="1" x="46.5" y="152.5" />
+            <Pos idx="2" x="106.5" y="153.5" />
+            <Pos idx="3" x="145.5" y="123.5" />
+            <Pos idx="4" x="157.5" y="71.5" />
+            <Pos idx="5" x="137.5" y="23.5" />
+            <Pos idx="6" x="101.5" y="4.5" />
+            <Pos idx="7" x="54.5" y="5.5" />
+            <Pos idx="8" x="10.5" y="46.5" />
+            <Pos idx="9" x="9.5" y="105.5" />
+        </Frames>
+        <Frames name="Bomb_08_00002.png">
+            <Pos idx="1" x="40.5" y="146.5" />
+            <Pos idx="2" x="86.5" y="153.5" />
+            <Pos idx="3" x="135.5" y="137.5" />
+            <Pos idx="4" x="157.5" y="87.5" />
+            <Pos idx="5" x="138.5" y="30.5" />
+            <Pos idx="6" x="101.5" y="5.5" />
+            <Pos idx="7" x="47.5" y="9.5" />
+            <Pos idx="8" x="9.5" y="50.5" />
+            <Pos idx="9" x="13.5" y="107.5" />
+        </Frames>
+        <Frames name="Bomb_08_00003.png">
+            <Pos idx="1" x="102.5" y="145.5" />
+            <Pos idx="2" x="145.5" y="116.5" />
+            <Pos idx="3" x="153.5" y="70.5" />
+            <Pos idx="4" x="136.5" y="25.5" />
+            <Pos idx="5" x="92.5" y="5.5" />
+            <Pos idx="6" x="43.5" y="23.5" />
+            <Pos idx="7" x="12.5" y="49.5" />
+            <Pos idx="8" x="12.5" y="113.5" />
+            <Pos idx="9" x="50.5" y="154.5" />
+        </Frames>
+        <Frames name="Bomb_08_00004.png">
+            <Pos idx="1" x="10.5" y="53.5" />
+            <Pos idx="2" x="16.5" y="114.5" />
+            <Pos idx="3" x="58.5" y="156.5" />
+            <Pos idx="4" x="109.5" y="155.5" />
+            <Pos idx="5" x="153.5" y="102.5" />
+            <Pos idx="6" x="147.5" y="50.5" />
+            <Pos idx="7" x="111.5" y="8.5" />
+            <Pos idx="8" x="72.5" y="3.5" />
+            <Pos idx="9" x="40.5" y="17.5" />
+        </Frames>
+        <Frames name="Bomb_08_00005.png">
+            <Pos idx="1" x="58.5" y="154.5" />
+            <Pos idx="2" x="110.5" y="145.5" />
+            <Pos idx="3" x="146.5" y="119.5" />
+            <Pos idx="4" x="157.5" y="68.5" />
+            <Pos idx="5" x="118.5" y="10.5" />
+            <Pos idx="6" x="76.5" y="3.5" />
+            <Pos idx="7" x="31.5" y="21.5" />
+            <Pos idx="8" x="3.5" y="71.5" />
+            <Pos idx="9" x="21.5" y="123.5" />
+        </Frames>
+        <Frames name="Bomb_08_00006.png">
+            <Pos idx="1" x="40.5" y="147.5" />
+            <Pos idx="2" x="106.5" y="150.5" />
+            <Pos idx="3" x="144.5" y="125.5" />
+            <Pos idx="4" x="156.5" y="81.5" />
+            <Pos idx="5" x="134.5" y="23.5" />
+            <Pos idx="6" x="104.5" y="8.5" />
+            <Pos idx="7" x="39.5" y="11.5" />
+            <Pos idx="8" x="8.5" y="50.5" />
+            <Pos idx="9" x="13.5" y="101.5" />
+        </Frames>
+        <Frames name="Bomb_08_00007.png">
+            <Pos idx="1" x="36.5" y="146.5" />
+            <Pos idx="2" x="92.5" y="157.5" />
+            <Pos idx="3" x="142.5" y="126.5" />
+            <Pos idx="4" x="157.5" y="80.5" />
+            <Pos idx="5" x="139.5" y="28.5" />
+            <Pos idx="6" x="89.5" y="4.5" />
+            <Pos idx="7" x="34.5" y="19.5" />
+            <Pos idx="8" x="4.5" y="62.5" />
+            <Pos idx="9" x="15.5" y="118.5" />
+        </Frames>
+        <Frames name="Bomb_08_00008.png">
+            <Pos idx="1" x="11.5" y="55.5" />
+            <Pos idx="2" x="31.5" y="134.5" />
+            <Pos idx="3" x="73.5" y="159.5" />
+            <Pos idx="4" x="118.5" y="147.5" />
+            <Pos idx="5" x="152.5" y="100.5" />
+            <Pos idx="6" x="127.5" y="26.5" />
+            <Pos idx="7" x="95.5" y="4.5" />
+            <Pos idx="8" x="48.5" y="11.5" />
+        </Frames>
+        <Frames name="Bomb_08_00009.png">
+            <Pos idx="1" x="68.5" y="157.5" />
+            <Pos idx="2" x="133.5" y="129.5" />
+            <Pos idx="3" x="156.5" y="98.5" />
+            <Pos idx="4" x="146.5" y="52.5" />
+            <Pos idx="5" x="100.5" y="4.5" />
+            <Pos idx="6" x="32.5" y="23.5" />
+            <Pos idx="7" x="9.5" y="59.5" />
+            <Pos idx="8" x="11.5" y="95.5" />
+            <Pos idx="9" x="46.5" y="145.5" />
+        </Frames>
+    </Sprite>
+</pcc>

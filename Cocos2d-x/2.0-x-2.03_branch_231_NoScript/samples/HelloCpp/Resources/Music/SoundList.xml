@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+	<!-- 背景音乐 -->
+	<BackgroundMusic>
+		<Music Id="0" path="Bg/0.ogg"/>
+		<Music Id="1" path="Bg/1.ogg"/>
+		<Music Id="2" path="Bg/2.ogg"/>
+		<Music Id="3" path="Bg/3.ogg"/>
+		<Music Id="4" path="Bg/4.ogg"/>
+		<Music Id="5" path="Bg/5.ogg"/>
+		<Music Id="6" path="Bg/6.ogg"/>
+		<Music Id="7" path="Bg/7.ogg"/>
+	</BackgroundMusic>
+	<!-- 特效音乐 -->
+	<EffectMusic>
+		<!-- 击毙鱼特效 -->
+		<Music Id="100" path="Fish/Fish01.ogg"/>
+		<Music Id="200" path="Fish/Fish02.ogg"/>
+		<Music Id="300" path="Fish/Fish03.ogg"/>
+		<Music Id="400" path="Fish/Fish04.ogg"/>
+		<Music Id="500" path="Fish/Fish05.ogg"/>
+		<Music Id="600" path="Fish/Fish06.ogg"/>
+		<Music Id="700" path="Fish/Fish07.ogg"/>
+		<Music Id="800" path="Fish/Fish08.ogg"/>
+		<Music Id="900" path="Fish/Fish09.ogg"/>
+		<Music Id="1000" path="Fish/Fish10.ogg"/>
+		<Music Id="1100" path="Fish/Fish11.ogg"/>
+		<Music Id="1200" path="Fish/Fish12.ogg"/>
+		<Music Id="1300" path="Fish/Fish13.ogg"/>
+		<Music Id="1400" path="Fish/Fish14.ogg"/>
+		<Music Id="1500" path="Fish/Fish15.ogg"/>
+		<Music Id="1600" path="Fish/Fish16.ogg"/>
+		<Music Id="1700" path="Fish/Fish17.ogg"/>
+		<!-- 幸运大转盘 -->
+		<Music Id="20" path="FortuneWheel/Go.ogg"/>
+		<Music Id="21" path="FortuneWheel/Setup.ogg"/>
+		<!-- 场景切换 -->
+		<Music Id="22" path="Event/ogge.ogg"/>
+		<!-- 开火 -->
+		<Music Id="23" path="Event/fire.ogg"/>
+		<!-- 金币 -->
+		<Music Id="24" path="Event/gold.ogg"/>
+		<!-- 转盘 -->
+		<Music Id="25" path="Event/bingo.ogg"/>
+		<!-- 倍率切换 -->
+		<Music Id="26" path="Event/switch.ogg"/>		
+	</EffectMusic>
+</Root>

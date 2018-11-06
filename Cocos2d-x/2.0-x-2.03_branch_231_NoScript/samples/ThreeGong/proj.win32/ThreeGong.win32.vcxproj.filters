@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\Classes\SIX_ClientHall.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_ClientLogic.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_ClientLogin.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_ClientRoom.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_PlayerMgr.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_RoomMgr.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_SceneGame.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_SceneHall.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_SceneIntro.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_SceneLogin.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_World.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_PopWndActivity.cpp">
+      <Filter>PopWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_PopWndAntiddiction.cpp">
+      <Filter>PopWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_PopWndAward.cpp">
+      <Filter>PopWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_PopWndHaveListView.cpp">
+      <Filter>PopWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_PopWndPlayerInfo.cpp">
+      <Filter>PopWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_PopWndResetPassWord.cpp">
+      <Filter>PopWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_PopWndRoomList.cpp">
+      <Filter>PopWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_PopWndSetting.cpp">
+      <Filter>PopWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_PopWndShop.cpp">
+      <Filter>PopWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_PopWndTask.cpp">
+      <Filter>PopWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_PopWndTopList.cpp">
+      <Filter>PopWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_PointCard.cpp">
+      <Filter>PopWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_LoginPanel.cpp">
+      <Filter>PopWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_PopWndPersonalInfomation.cpp">
+      <Filter>PopWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_PopWndMessage.cpp">
+      <Filter>PopWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_PopWndFirstBuy.cpp">
+      <Filter>PopWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SIX_PopWndHelp.cpp">
+      <Filter>PopWnd</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\SIX_World.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_ClientHall.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_ClientLogic.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_ClientLogin.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_ClientRoom.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_Common.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_PlayerMgr.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_RoomMgr.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_SceneGame.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_SceneHall.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_SceneIntro.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_SceneLogin.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_PopWndTopList.h">
+      <Filter>PopWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_PopWndActivity.h">
+      <Filter>PopWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_PopWndAntiddiction.h">
+      <Filter>PopWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_PopWndAward.h">
+      <Filter>PopWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_PopWndHaveListView.h">
+      <Filter>PopWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_PopWndPlayerInfo.h">
+      <Filter>PopWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_PopWndResetPassWord.h">
+      <Filter>PopWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_PopWndRoomList.h">
+      <Filter>PopWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_PopWndSetting.h">
+      <Filter>PopWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_PopWndShop.h">
+      <Filter>PopWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_PopWndTask.h">
+      <Filter>PopWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_PointCard.h">
+      <Filter>PopWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_LoginPanel.h">
+      <Filter>PopWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_PopWndPersonalInfomation.h">
+      <Filter>PopWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_PopWndMessage.h">
+      <Filter>PopWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_PopWndFirstBuy.h">
+      <Filter>PopWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SIX_PopWndHelp.h">
+      <Filter>PopWnd</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{e3931635-d25b-4305-8243-6b3ac042688b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{38dbcfb4-e8bf-426e-8eba-9205dcc8359e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{57cc00fc-2066-4b7b-9a45-d6a359d32ae7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PopWnd">
+      <UniqueIdentifier>{cf4a8cd7-6cc6-4a54-93fd-31425b873cfc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ThreeGong.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

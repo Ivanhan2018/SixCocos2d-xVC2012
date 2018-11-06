@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<!-- 背景层 -->
+	<LayerColor name="bg" tag="0" color="255,255,255,255" dirty="0">
+		<!-- 背景 -->
+		<!--
+		<Sprite file="Common/tiled_bg.png" tiledrect="0,0,800,480" anchorpoint="0,0"/>
+		-->
+		<Sprite file="login_bg.jpg" anchorpoint="0,0"/>
+		<Sprite file="lady.png" posRatio="0.0,0.0" anchorpoint="0,0"/>
+		<Node tag="1" PosRatio="0,0.9375" IgnoreAnchorPoint="true" dirty="0">
+			<!-- Version -->
+			<LabelTTF tag="11" string="" PosRatio="0.015,0" fontname="Tahoma" fontsize="12" color="255,0,0,255" />
+			<LabelTTF tag="12" string="" PosRatio="0.05,0" fontname="Tahoma" fontsize="12" color="255,255,255,255" />
+			<LabelTTF tag="13" string="" PosRatio="0.1125,0" fontname="Tahoma" fontsize="12" color="255,255,255,255" />
+		</Node>
+		<!-- 按钮区域 -->
+		<Node pos="130,30" tag="3" IgnoreAnchorPoint="true" dirty="0">
+			<!-- Logo -->
+			<Sprite file="logo.png" pos="100,80" anchorpoint="0,0"/>
+			<!-- 游客身份登录 -->
+			<Button tag="1" pos="0,0" PreferredSize="258,62" norScale9Sprite="file='login_btn_guest.png' rect='0,0,258,62'" hovScale9Sprite="file='login_btn_guest.png' rect='258,0,258,62'" Events="32" IgnoreAnchorPoint="true"/>
+			<!-- 老九账户登录 -->
+			<Button tag="2" pos="276,0" PreferredSize="258,62" norScale9Sprite="file='login_btn_user.png' rect=''0,0,258,62'" hovScale9Sprite="file='login_btn_user.png' rect='258,0,258,62'" Events="32" IgnoreAnchorPoint="true"/>
+		</Node>
+	</LayerColor>
+</root>

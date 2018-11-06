@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="resource">
+      <UniqueIdentifier>{056faf39-ca5e-4fcc-9270-74ba150e089a}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;png;manifest</Extensions>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{3fcbb159-2a15-4693-98c4-6e9b425d32c5}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{4a81a50e-c2bb-43eb-ab77-3695142ff2af}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\CCControl.ico">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\CloseSelected.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\CloseNormal.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\HelloWorld.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\background.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\button.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\buttonBackground.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\buttonHighlighted.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\CCControlColourPickerSpriteSheet.plist">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\CCControlColourPickerSpriteSheet.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\green_edit.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\orange_edit.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\potentiometerButton.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\potentiometerProgress.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\potentiometerTrack.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\ribbon.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\sliderProgress.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\sliderProgress2.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\sliderThumb.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\sliderTrack.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\sliderTrack2.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\stepper-minus.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\stepper-plus.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\switch-mask.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\switch-off.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\switch-on.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\switch-thumb.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\yellow_edit.png">
+      <Filter>resource</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

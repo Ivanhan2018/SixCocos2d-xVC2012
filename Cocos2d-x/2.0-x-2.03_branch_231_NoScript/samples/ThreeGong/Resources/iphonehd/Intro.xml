@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<!-- 背景层 -->
+	<LayerColor name="bg" tag="0" color="255,255,255,255" dirty="false">
+		<!-- 背景 -->
+		<Sprite file="intro.png" anchorpoint="0,0"/>
+	</LayerColor>
+</root>
