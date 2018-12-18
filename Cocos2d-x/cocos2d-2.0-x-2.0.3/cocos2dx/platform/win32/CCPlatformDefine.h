@@ -2,10 +2,20 @@
 #define __CCPLATFORMDEFINE_H__
 
 
+//#if defined(_USRDLL)
+//    #define CC_DLL     __declspec(dllexport)
+//#else         /* use a DLL library */
+//    #define CC_DLL     __declspec(dllimport)
+//#endif
+
+#ifdef WIN32
 #if defined(_USRDLL)
     #define CC_DLL     __declspec(dllexport)
+#elif defined(_USRLIB)
+	#define	CC_DLL
 #else         /* use a DLL library */
     #define CC_DLL     __declspec(dllimport)
+#endif
 #endif
 
 #include <assert.h>
