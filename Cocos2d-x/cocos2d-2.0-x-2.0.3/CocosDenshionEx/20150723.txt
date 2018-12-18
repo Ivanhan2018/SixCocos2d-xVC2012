@@ -1,0 +1,1 @@
+CocosDenshionEx.vcxproj -> F:\hxhwin7\Cocos2d-xVC2010\cocos2d-2.0-x-2.0.3\Debug.win32\libCocosDenshionEx.dll

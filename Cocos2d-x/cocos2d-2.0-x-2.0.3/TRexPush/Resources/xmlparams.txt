@@ -1,0 +1,3 @@
+-
+GO
+tritest.svg
