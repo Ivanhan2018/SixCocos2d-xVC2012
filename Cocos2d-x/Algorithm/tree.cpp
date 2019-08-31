@@ -33,7 +33,7 @@ void setbefore(Node<T>* node)//在当前节点后增加一节点
 template<class T>
 class tree
 {
-private:
+public:
 Node<T>*root,*head;
 public:
 tree():root(NULL),head(NULL){}
@@ -76,7 +76,50 @@ friend ostream& operator << (ostream& out,const tree<T>& t)
    }
    return out;
 }
+
+// 前序遍历
+void PreOrder(Node<T> *r);
+// 中序遍历
+void InOrder(Node<T> *r);
+// 后序遍历
+void PostOrder(Node<T> *r);
 };
+
+// 通过前序遍历打印二叉树各结点的值
+template<typename T>
+void tree<T>::PreOrder(Node<T> *r)
+{
+    if(r)
+    {
+        cout << r->data << ' ';
+        PreOrder(r->left);
+        PreOrder(r->right);
+    }
+}
+
+// 通过中序遍历打印二叉树各结点的值
+template<typename T>
+void tree<T>::InOrder(Node<T> *r)
+{
+    if(r)
+    {
+        InOrder(r->left);
+        cout << r->data << ' ';
+        InOrder(r->right);
+    }
+}
+
+// 通过后序遍历打印二叉树各结点的值
+template<typename T>
+void tree<T>::PostOrder(Node<T> *r)
+{
+    if(r)
+    {
+        PostOrder(r->left);
+        PostOrder(r->right);
+        cout << r->data << ' ';
+    }
+}
 
 int main()
 {
@@ -88,6 +131,14 @@ tree<int> tr;
 for(int i = 0; i < n; i++)
 tr.settree(a[i]);
 cout<<'\n'<<tr<<'\n'<<endl;
+
+// 用递归前序、中序、后序遍历二叉树
+tr.PreOrder(tr.root);
+cout << endl;
+tr.InOrder(tr.root);
+cout << endl;
+tr.PostOrder(tr.root);
+cout << endl;
 
 #ifdef _MSC_VER
 	system("pause");
