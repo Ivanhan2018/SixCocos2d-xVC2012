@@ -66,6 +66,8 @@ void settree(const T data)   //往树中增加节点 同时使之按次序排列
     }
    }
 }
+
+// 中序遍历，升序排列结果
 friend ostream& operator << (ostream& out,const tree<T>& t)
 {
    Node<T>*p=t.head;
@@ -129,7 +131,10 @@ int a[10]={18,27,2,34,100,51,6,9,43,35};
 int n=sizeof(a) / sizeof(a[0]);
 tree<int> tr;
 for(int i = 0; i < n; i++)
+{
 tr.settree(a[i]);
+cout << a[i] << " ";
+}
 cout<<'\n'<<tr<<'\n'<<endl;
 
 // 用递归前序、中序、后序遍历二叉树
