@@ -1,0 +1,282 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\calculator.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\calculator.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 calculator"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "calculator 1.2版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 不得盗版(C) 2004",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CALCULATOR_DIALOG DIALOGEX 0, 0, 159, 162
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "计算器V1.2"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "ce",IDC_CE,"Button",BS_OWNERDRAW,57,37,34,14
+    CONTROL         "7",IDC_7,"Button",BS_OWNERDRAW,7,59,22,14
+    CONTROL         "8",IDC_8,"Button",BS_OWNERDRAW,36,59,22,14
+    CONTROL         "9",IDC_9,"Button",BS_OWNERDRAW,66,59,22,14
+    CONTROL         "divide",IDC_DIVIDE,"Button",BS_OWNERDRAW,96,59,22,14
+    CONTROL         "4",IDC_4,"Button",BS_OWNERDRAW,7,82,22,14
+    CONTROL         "5",IDC_5,"Button",BS_OWNERDRAW,36,82,22,14
+    CONTROL         "6",IDC_6,"Button",BS_OWNERDRAW,66,82,22,14
+    CONTROL         "chen",IDC_CHEN,"Button",BS_OWNERDRAW,96,82,22,14
+    CONTROL         "1",IDC_1,"Button",BS_OWNERDRAW,7,106,22,14
+    CONTROL         "2",IDC_2,"Button",BS_OWNERDRAW,36,106,22,14
+    CONTROL         "3",IDC_3,"Button",BS_OWNERDRAW,66,106,22,14
+    CONTROL         "reduce",IDC_REDUCE,"Button",BS_OWNERDRAW,96,106,22,14
+    CONTROL         "0",IDC_0,"Button",BS_OWNERDRAW,7,130,22,14
+    CONTROL         "sign",IDC_SIGN,"Button",BS_OWNERDRAW,36,130,22,14
+    CONTROL         "point",IDC_POINT,"Button",BS_OWNERDRAW,66,130,22,14
+    CONTROL         "add",IDC_ADD,"Button",BS_OWNERDRAW,96,130,22,14
+    CONTROL         "sqrt",IDC_SQRT,"Button",BS_OWNERDRAW,126,59,22,14
+    CONTROL         "percent",IDC_PERCENT,"Button",BS_OWNERDRAW,126,82,22,14
+    CONTROL         "daoshu",IDC_DAOSHU,"Button",BS_OWNERDRAW,126,106,22,14
+    CONTROL         "equal",IDC_EQUAL,"Button",BS_OWNERDRAW,126,130,22,14
+    CONTROL         "Back",IDC_BACK,"Button",BS_OWNERDRAW,8,37,34,14
+    CONTROL         "c",IDC_C,"Button",BS_OWNERDRAW,107,37,34,14
+    EDITTEXT        IDC_EDIT1,10,5,138,16,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "高级计算器   Made in China",IDC_STATIC,19,24,112,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "calculator Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "calculator\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2004\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "calculator.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "calculator 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CALCULATOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 158
+        BOTTOMMARGIN, 157
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+1U                      BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+1D                      BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+2U                      BITMAP  DISCARDABLE     "res\\bmp00002.bmp"
+CU                      BITMAP  DISCARDABLE     "res\\bitmap2.bmp"
+REDUCEU                 BITMAP  DISCARDABLE     "res\\bitmap3.bmp"
+ADDU                    BITMAP  DISCARDABLE     "res\\bitmap4.bmp"
+SIGNU                   BITMAP  DISCARDABLE     "res\\bitmap5.bmp"
+6D                      BITMAP  DISCARDABLE     "res\\bitmap6.bmp"
+EQUALU                  BITMAP  DISCARDABLE     "res\\bitmap7.bmp"
+POINTU                  BITMAP  DISCARDABLE     "res\\bitmap8.bmp"
+DAOSHUU                 BITMAP  DISCARDABLE     "res\\bitmap9.bmp"
+3U                      BITMAP  DISCARDABLE     "res\\bitmap10.bmp"
+4U                      BITMAP  DISCARDABLE     "res\\bitmap11.bmp"
+5U                      BITMAP  DISCARDABLE     "res\\bitmap12.bmp"
+6U                      BITMAP  DISCARDABLE     "res\\bitmap13.bmp"
+7U                      BITMAP  DISCARDABLE     "res\\bitmap14.bmp"
+8U                      BITMAP  DISCARDABLE     "res\\bitmap15.bmp"
+9U                      BITMAP  DISCARDABLE     "res\\bitmap16.bmp"
+0U                      BITMAP  DISCARDABLE     "res\\bitmap17.bmp"
+BACKU                   BITMAP  DISCARDABLE     "res\\backu.bmp"
+CEU                     BITMAP  DISCARDABLE     "res\\bitmap19.bmp"
+DIVIDEU                 BITMAP  DISCARDABLE     "res\\bitmap20.bmp"
+SQRTU                   BITMAP  DISCARDABLE     "res\\bitmap21.bmp"
+CHENU                   BITMAP  DISCARDABLE     "res\\bitmap22.bmp"
+PERCENTU                BITMAP  DISCARDABLE     "res\\bitmap23.bmp"
+2D                      BITMAP  DISCARDABLE     "res\\bmp00003.bmp"
+3D                      BITMAP  DISCARDABLE     "res\\bmp00004.bmp"
+4D                      BITMAP  DISCARDABLE     "res\\bmp00005.bmp"
+5D                      BITMAP  DISCARDABLE     "res\\bmp00006.bmp"
+7D                      BITMAP  DISCARDABLE     "res\\bmp00008.bmp"
+CHEND                   BITMAP  DISCARDABLE     "res\\bmp00015.bmp"
+CD                      BITMAP  DISCARDABLE     "res\\bmp00007.bmp"
+DAOSHUD                 BITMAP  DISCARDABLE     "res\\bmp00016.bmp"
+DIVIDED                 BITMAP  DISCARDABLE     "res\\bmp00017.bmp"
+EQUALD                  BITMAP  DISCARDABLE     "res\\bmp00018.bmp"
+PERCENTD                BITMAP  DISCARDABLE     "res\\bmp00019.bmp"
+POINTD                  BITMAP  DISCARDABLE     "res\\bmp00020.bmp"
+SQRTD                   BITMAP  DISCARDABLE     "res\\bmp00023.bmp"
+8D                      BITMAP  DISCARDABLE     "res\\bmp00009.bmp"
+9D                      BITMAP  DISCARDABLE     "res\\bmp00010.bmp"
+0D                      BITMAP  DISCARDABLE     "res\\bmp00011.bmp"
+ADDD                    BITMAP  DISCARDABLE     "res\\bmp00012.bmp"
+BACKD                   BITMAP  DISCARDABLE     "res\\bmp00013.bmp"
+CED                     BITMAP  DISCARDABLE     "res\\bmp00014.bmp"
+REDUCED                 BITMAP  DISCARDABLE     "res\\bmp00021.bmp"
+SIGND                   BITMAP  DISCARDABLE     "res\\bmp00022.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 calculator(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\calculator.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
