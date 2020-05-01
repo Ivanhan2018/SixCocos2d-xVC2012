@@ -1,80 +1,190 @@
-#ifndef ENCRYPT_HEAD_FILE
-#define ENCRYPT_HEAD_FILE
+// MD5.CC - source code for the C++/object oriented translation and 
+//          modification of MD5.
 
-//æ•°ç»„ç»´æ•°
-#define CountArray(Array) (sizeof(Array)/sizeof(Array[0]))
+// Translation and modification (c) 1995 by Mordechai T. Abzug 
 
-//////////////////////////////////////////////////////////////////////////
-//ç½‘ç‹32ä½MD5åŠ å¯†å’Œ20ä½å¼‚æˆ–åŠ å¯†è§£å¯†
-//MD5 åŠ å¯†ç±»
-class CMD5Encrypt
-{
-	//å‡½æ•°å®šä¹‰
-private:
-	//æ„é€ å‡½æ•°
-	CMD5Encrypt() {}
+// This translation/ modification is provided "as is," without express or 
+// implied warranty of any kind.
 
-	//åŠŸèƒ½å‡½æ•°
+// The translator/ modifier does not claim (1) that MD5 will do what you think 
+// it does; (2) that this translation/ modification is accurate; or (3) that 
+// this software is "merchantible."  (Language for this disclaimer partially 
+// copied from the disclaimer below).
+
+/* based on:
+
+   MD5.H - header file for MD5C.C
+   MDDRIVER.C - test driver for MD2, MD4 and MD5
+
+   Copyright (C) 1991-2, RSA Data Security, Inc. Created 1991. All
+rights reserved.
+
+License to copy and use this software is granted provided that it
+is identified as the "RSA Data Security, Inc. MD5 Message-Digest
+Algorithm" in all material mentioning or referencing this software
+or this function.
+
+License is also granted to make and use derivative works provided
+that such works are identified as "derived from the RSA Data
+Security, Inc. MD5 Message-Digest Algorithm" in all material
+mentioning or referencing the derived work.
+
+RSA Data Security, Inc. makes no representations concerning either
+the merchantability of this software or the suitability of this
+software for any particular purpose. It is provided "as is"
+without express or implied warranty of any kind.
+
+These notices must be retained in any copies of any part of this
+documentation and/or software.
+
+*/
+#pragma once
+//#include "MMEAD_Config.h"
+#include <stdio.h>
+//#include <fstream.h>
+//#include <iostream.h>
+
+#define RP(x)				if (x)\
+							{\
+								delete x;\
+								x = 0;\
+							}
+
+#define RP_ARRAY(x)			if (x)\
+							{\
+								delete [] x;\
+								x = 0;\
+							}
+
+typedef enum tagErrorInfo {
+	// ÎŞÒì³£
+	ERROR_NONE								=	0,
+
+	// Ô´´®²»´æÔÚ
+	ERROR_SOURCE_INVALID,
+	// Ä¿±ê´®²»´æÔÚ
+	ERROR_DEST_INVALID,
+
+	// HashÎ»Êı³¤¶È³¬³ö·¶Î§
+	ERROR_HASH_BIT_OVERFLOW,
+
+	// ÒªÉú³ÉÃÜÔ¿¶Ô³¤¶È³¬³ö·¶Î§
+	// ElGamal£º512<=keyLen<=1024
+	// RSA£º	128<=keyLen<=2048
+	// ECC£º	keyLen=160/192/256
+	ERROR_KEYLENGTH_INVALID					=	100,
+	// ÃÜÔ¿¶ÔÉÏÏÂÎÄ²»´æÔÚ
+	ERROR_KEY_CONTEXT_NOTEXISTS,
+	// ¼ÓÃÜÉÏÏÂÎÄ²»´æÔÚ
+	ERROR_ENC_CONTEXT_NOTEXISTS,
+	// ¼Ó½âÃÜ½øÖÆ²»Îª10¡¢16¡¢256
+	ERROR_IOBASE_INVALID,
+	// ¼ÓÃÜÇ°Ô´´®³¤¶È³¬¹ın
+	ERROR_SOURCELENGTH_TOO_MUCH,
+	// ½âÃÜºóÄ¿±ê´®³¤¶È³¬¹ın
+	ERROR_DESTLENGTH_TOO_MUCH,
+	// ¼Ó½âÃÜÄ¿±ê´®³¤¶È²»Îª8µÄ±¶Êı
+	ERROR_DESTLENGTH_NOT_BIT8,
+
+	// RSA£ºe/t²»»¥ÖÊ
+	ERROR_NOT_RELATIVELY_PRIME				=	200,
+	// DSA£ºÇ©Ãûr²»Ò»ÖÂ
+	ERROR_DSA_VERIFY_NOMATCH,
+
+	// ECC£ºp²»ÎªËØÊı
+	ERROR_NOT_PRIME							=	300,
+	// ECC£ºpoint(x,y)²»ÔÚECÉÏ
+	ERROR_NOT_IN_EC,
+	// ECC£ºpoint(x,y)²»ÊÇqµÄ½×
+	ERROR_NOT_ORDER_Q,
+	// ECC£ºECÉÏ°üº¬ÆæÒìµã
+	ERROR_SINGULARITY_EXISTS,
+	// ECC£º¼ÓÃÜÊ§°Ü
+	ERROR_ENCRYPT_FAILED,
+	// ECC£º½âÃÜÊ§°Ü
+	ERROR_DECRYPT_FAILED,
+	// ECC£ºy^2!=x^3+ax+b(mod p)
+	ERROR_NOT_INVALID_XY,
+
+	// ECDSA£ºÇ©ÃûrÎª0
+	ERROR_SIGN_R_ISZERO						=	400,
+	// ECDSA£ºÇ©ÃûsÎª0
+	ERROR_SIGN_S_ISZERO,
+	// ECDSA£ºĞ£Ñér/s/p²»»¥ÖÊ
+	ERROR_VERIFY_RSP_NORELATIVELYPRIME,
+	// ECCDSA/ELGAMAL£ºVR²»Ò»ÖÂ
+	ERROR_VERIFY_VR_NOMATCH,
+
+	// SHA£ºÎ»Êı²»Îª256/384/512
+	ERROR_BITS_INVALID						=	500,
+
+	// ElGamal£ºËØÊıp·¶Î§²»ÔÚ[512,1024]¼ä
+	ERROR_EL_BITS_P_INVALID					=	600
+	
+}ERROR_INFO;
+
+// MD5
+ERROR_INFO HashByMD5(char *pSrc,unsigned sLen,char *pDst,bool upper=true,unsigned power=1,char *slot="");
+
+void MakeMD5(char *src,char *dst,bool upper=true,int repeat=1);
+
+class MD5 {
+
 public:
-	//ç”Ÿæˆå¯†æ–‡
-	static void EncryptData(const char* pszSrcData, char szMD5Result[33]);
+// methods for controlled operation:
+  MD5              ();  // simple initializer
+  void  update     (unsigned char *input, unsigned int input_length);
+  void  update     (FILE *file);
+  void  finalize   ();
+
+// constructors for special circumstances.  All these constructors finalize
+// the MD5 context.
+  MD5              (unsigned char *string); // digest string, finalize
+  MD5              (FILE *file);            // digest file, close, finalize
+
+// methods to acquire finalized result
+  unsigned char    *raw_digest ();  // digest as a 16-byte binary array
+  char *            hex_digest ();  // digest as a 33-byte ascii-hex string
+  char *			hex_digest (char buffer[33],bool upper=true); //same as above, passing buffer
+
+
+
+private:
+
+// first, some types:
+  typedef unsigned       int uint4; // assumes integer is 4 words long
+  typedef unsigned short int uint2; // assumes short integer is 2 words long
+  typedef unsigned      char uint1; // assumes char is 1 word long
+
+// next, the private data:
+  uint4 state[4];
+  uint4 count[2];     // number of *bits*, mod 2^64
+  uint1 buffer[64];   // input buffer
+  uint1 digest[16];
+  uint1 finalized;
+
+// last, the private methods, mostly static:
+  void init             ();               // called by all constructors
+  void transform        (uint1 *buffer);  // does the real update work.  Note 
+                                          // that length is implied to be 64.
+
+  static void encode    (uint1 *dest, uint4 *src, uint4 length);
+  static void decode    (uint4 *dest, uint1 *src, uint4 length);
+  static void memcpy    (uint1 *dest, uint1 *src, uint4 length);
+  static void memset    (uint1 *start, uint1 val, uint4 length);
+
+  static inline uint4  rotate_left (uint4 x, uint4 n);
+  static inline uint4  F           (uint4 x, uint4 y, uint4 z);
+  static inline uint4  G           (uint4 x, uint4 y, uint4 z);
+  static inline uint4  H           (uint4 x, uint4 y, uint4 z);
+  static inline uint4  I           (uint4 x, uint4 y, uint4 z);
+  static inline void   FF  (uint4& a, uint4 b, uint4 c, uint4 d, uint4 x, 
+			    uint4 s, uint4 ac);
+  static inline void   GG  (uint4& a, uint4 b, uint4 c, uint4 d, uint4 x, 
+			    uint4 s, uint4 ac);
+  static inline void   HH  (uint4& a, uint4 b, uint4 c, uint4 d, uint4 x, 
+			    uint4 s, uint4 ac);
+  static inline void   II  (uint4& a, uint4 b, uint4 c, uint4 d, uint4 x, 
+			    uint4 s, uint4 ac);
+
 };
-
-
-//å¼‚æˆ–åŠ å¯†ç±»
-class CXOREncrypt
-{
-	//å‡½æ•°å®šä¹‰
-private:
-	//æ„é€ å‡½æ•°
-	CXOREncrypt() {}
-
-	//åŠŸèƒ½å‡½æ•°
-public:
-	//ç”Ÿæˆå¯†æ–‡
-	static unsigned short EncryptData(const char* pszSrcData, char* pszEncrypData, unsigned short wSize);
-	//è§£å¼€å¯†æ–‡
-	static unsigned short CrevasseData(const char* pszEncrypData, char* pszSrcData, unsigned short wSize);
-};
-
-
-//MD5 åŠ å¯†ç±»
-class CMD5
-{
-	//å˜é‡å®šä¹‰
-private:
-	unsigned long int				state[4];
-	unsigned long int				count[2];
-	unsigned char					buffer[64];
-	unsigned char					PADDING[64];
-
-	//å‡½æ•°å®šä¹‰
-public:
-	//æ„é€ å‡½æ•°
-	CMD5() { MD5Init(); }
-
-	//åŠŸèƒ½å‡½æ•°
-public:
-	//æœ€ç»ˆç»“æœ
-	void MD5Final(unsigned char digest[16]);
-	//è®¾ç½®æ•°å€¼
-	void MD5Update(unsigned char * input, unsigned int inputLen);
-
-	//å†…éƒ¨å‡½æ•°
-private:
-	//åˆå§‹åŒ–
-	void MD5Init();
-	//ç½®ä½å‡½æ•°
-	void MD5_memset(unsigned char * output, int value, unsigned int len);
-	//æ‹·è´å‡½æ•°
-	void MD5_memcpy(unsigned char * output, unsigned char * input, unsigned int len);
-	//è½¬æ¢å‡½æ•°
-	void MD5Transform(unsigned long int state[4], unsigned char block[64]);
-	//ç¼–ç å‡½æ•°
-	void Encode(unsigned char * output, unsigned long int * input, unsigned int len);
-	//è§£ç å‡½æ•°
-	void Decode(unsigned long int *output, unsigned char * input, unsigned int len);
-};
-
-
-#endif
